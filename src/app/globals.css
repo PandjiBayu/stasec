@@ -52,11 +52,11 @@ body {
 .gradient-image {
   grid-area: header;
   background-size: cover;
-  height: 120vh;
+  height: 100vh;
   background: linear-gradient(
     180deg,
     rgba(23, 23, 23, 0.2) 41.24%,
-    #171717 85.28%
+    #171717 100%
   );
 }
 
@@ -89,4 +89,58 @@ body {
   font-weight: 700;
   line-height: 100%;
   letter-spacing: -0.8px;
+}
+
+.content-bg-1 {
+  background-size: cover;
+  height: 53vw;
+  background-image: url(../../public/content-bg-1.png);
+}
+
+.content-bg-2 {
+  background-size: cover;
+  height: 47vw;
+  background-image: url(../../public/content-bg-2.png);
+}
+
+.content-bg-3 {
+  background-size: cover;
+  height: 47.6vw;
+  background-image: url(../../public/content-bg-3.png);
+}
+
+.content-bg-4 {
+  background-size: cover;
+  height: 53vw;
+  background-image: url(../../public/content-bg-4.png);
+}
+
+.content-bg-5 {
+  background-size: cover;
+  height: 53vw;
+  background-image: url(../../public/content-bg-5.png);
+}
+
+.content-bg-6 {
+  background-size: cover;
+  height: 53vw;
+  background-image: url(../../public/content-bg-6.png);
+}
+
+.content-bg-7 {
+  background-size: cover;
+  height: 74vw;
+  background-image: url(../../public/content-bg-7.png);
+}
+
+.content-bg-8 {
+  background-size: cover;
+  height: 68vw;
+  background-image: url(../../public/content-bg-8.png);
+}
+
+.content-bg-9 {
+  background-size: cover;
+  height: 52.3vw;
+  background-image: url(../../public/content-bg-9.png);
 }

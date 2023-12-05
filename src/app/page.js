@@ -4,6 +4,7 @@ import HeadVector from "@/components/icons/head-vector";
 import Footer from "@/components/footer/footer";
 import Features from "@/components/features/features";
 import homeFeatures from "@/data/homeFeatures";
+import RightVector from "@/components/icons/right-vector";
 
 export default function Home() {
   return (
@@ -30,12 +31,28 @@ export default function Home() {
           <div className="w-full"></div>
         </div>
       </div>
-      <div>
+      <div className="content-bg-1 flex items-center">
         <Features
           {...homeFeatures}
         />
       </div>
-      <div>
+      <div className="content-bg-2 flex items-center">
+      </div>
+      <div className="content-bg-3 flex items-center">
+      </div>
+      <div className="content-bg-4 flex items-center">
+      </div>
+      <div className="content-bg-5 flex items-center">
+      </div>
+      <div className="content-bg-6 flex items-center">
+      </div>
+      <div className="content-bg-7 flex items-center">
+      </div>
+      <div className="content-bg-8 flex items-center">
+      </div>
+      <div className="content-bg-9 flex items-center">
+      </div>
+      <div className="content-footer">
         <Footer />
       </div>
     </section>
