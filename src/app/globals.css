@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "Switzer Regular";
+  src: local("Switzer Regular"),
+    url("../../public/font/switzer/Switzer-Regular.woff") format("woff");
+}
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -18,10 +24,69 @@
 
 body {
   color: rgb(var(--foreground-rgb));
+  background: #171717;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "header";
+}
+
+.main .headers {
+  grid-area: header;
+}
+
+.main .head-vector {
+  grid-area: header;
+}
+
+.background-image {
+  grid-area: header;
+  background-size: cover;
+  height: 100vh;
+  background-image: url(../../public/Vector_2648.png);
+}
+
+.gradient-image {
+  grid-area: header;
+  background-size: cover;
+  height: 120vh;
   background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+    180deg,
+    rgba(23, 23, 23, 0.2) 41.24%,
+    #171717 85.28%
+  );
+}
+
+.get-started {
+  display: flex;
+  width: 324px;
+  padding: 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 8px;
+  background: #1a57ff;
+}
+
+.get-started-font {
+  color: var(--White, #fff);
+  text-align: center;
+  font-family: "Switzer Regular", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.header-title {
+  color: #fff;
+  font-family: "Switzer Regular", sans-serif;
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing: -0.8px;
 }
