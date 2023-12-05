@@ -7,7 +7,7 @@ const Header = () => {
   return (
     <section className="w-full header">
       <div className="flex items-center">
-        <Logo />
+        <Logo width={56} height={72}/>
         <div className="font-logo">stasec</div>
       </div>
       <div className="header-options">

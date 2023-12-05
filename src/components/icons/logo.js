@@ -1,9 +1,11 @@
-const Logo = () => {
+import React from "react";
+
+const Logo = ({ width, height }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="56"
-      height="72"
+      width={width}
+      height={height}
       viewBox="0 0 56 72"
       fill="none"
     >
