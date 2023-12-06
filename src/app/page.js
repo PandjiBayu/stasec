@@ -3,8 +3,10 @@ import Header from "@/components/header/header";
 import HeadVector from "@/components/icons/head-vector";
 import Footer from "@/components/footer/footer";
 import Features from "@/components/features/features";
-import homeFeatures from "@/data/homeFeatures";
+import homeFeatures from "@/data/home/homeFeatures";
 import RightVector from "@/components/icons/right-vector";
+import Content from "@/components/content/content";
+import { homeContent1, homeContent2, homeContent3, homeContent4 } from "@/data/home/homeContent";
 
 export default function Home() {
   return (
@@ -32,27 +34,27 @@ export default function Home() {
         </div>
       </div>
       <div className="content-bg-1 flex items-center">
-        <Features
-          {...homeFeatures}
-        />
+        <Features {...homeFeatures} />
       </div>
       <div className="content-bg-2 flex items-center">
+        <Content {...homeContent1} />
       </div>
       <div className="content-bg-3 flex items-center">
+        <Content {...homeContent2} />
       </div>
       <div className="content-bg-4 flex items-center">
+        <Content {...homeContent3} />
       </div>
       <div className="content-bg-5 flex items-center">
+        <Content {...homeContent4} />
       </div>
-      <div className="content-bg-6 flex items-center">
-      </div>
-      <div className="content-bg-7 flex items-center">
-      </div>
-      <div className="content-bg-8 flex items-center">
-      </div>
+      <div className="content-bg-6 flex items-center"></div>
+      <div className="content-bg-7 flex items-center"></div>
+      <div className="content-bg-8 flex items-center"></div>
       <div className="content-bg-9 flex items-center">
+        <div className="flex flex-col"></div>
       </div>
-      <div className="content-footer">
+      <div>
         <Footer />
       </div>
     </section>
