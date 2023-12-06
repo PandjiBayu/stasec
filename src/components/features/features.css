@@ -14,10 +14,7 @@
   text-transform: capitalize;
 }
 
-.card-start {
-  width: 382px;
-  height: 248px;
-  padding: 64px 56px 32px 56px;
+.card-container:hover .card {
   gap: 8px;
   border-radius: 16px;
   border: 2px solid #4b08b4;
@@ -27,21 +24,21 @@
     linear-gradient(
       97deg,
       #171717 -62.94%,
-      #323335 -62.92%,
+      #323335 -22.92%,
       rgba(90, 90, 90, 0) 54.42%,
       #171717 174.24%
     ),
     linear-gradient(
       -97deg,
       #171717 -62.94%,
-      #323335 -62.92%,
+      #323335 -22.92%,
       rgba(90, 90, 90, 0) 54.42%,
       #171717 174.24%
     )
   );
 }
 
-.blue-circle {
+.card-container:hover .circle {
   display: flex;
   width: 80px;
   height: 80px;
@@ -57,32 +54,30 @@
 }
 
 .card {
-  width: 382px;
-  padding: 64px 56px 32px 56px;
   gap: 8px;
   border-radius: 16px;
-  height: 248px;
+  border: 2px solid transparent;
 
   background: var(
     --Colour-Card,
     linear-gradient(
       97deg,
       #171717 -62.94%,
-      #323335 -62.92%,
+      #323335 -22.92%,
       rgba(90, 90, 90, 0) 54.42%,
       #171717 174.24%
     ),
     linear-gradient(
       -97deg,
       #171717 -62.94%,
-      #323335 -62.92%,
+      #323335 -22.92%,
       rgba(90, 90, 90, 0) 54.42%,
       #171717 174.24%
     )
   );
 }
 
-.normal-circle {
+.circle {
   display: flex;
   width: 80px;
   height: 80px;
@@ -95,4 +90,13 @@
   background: #171717;
   margin-bottom: -40px;
   z-index: 999;
+}
+
+.white-circle {
+  display: flex;
+  padding: 8px;
+  align-items: flex-start;
+  gap: 8px;
+  border-radius: 100px;
+  background: #fff;
 }

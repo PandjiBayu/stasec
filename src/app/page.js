@@ -3,10 +3,15 @@ import Header from "@/components/header/header";
 import HeadVector from "@/components/icons/head-vector";
 import Footer from "@/components/footer/footer";
 import Features from "@/components/features/features";
-import homeFeatures from "@/data/home/homeFeatures";
-import RightVector from "@/components/icons/right-vector";
+import { homeFeatures, goalsCard } from "@/data/home/cardContent";
 import Content from "@/components/content/content";
-import { homeContent1, homeContent2, homeContent3, homeContent4 } from "@/data/home/homeContent";
+import {
+  homeContent1,
+  homeContent2,
+  homeContent3,
+  homeContent4,
+} from "@/data/home/homeContent";
+import "../components/features/features.css";
 
 export default function Home() {
   return (
@@ -23,8 +28,9 @@ export default function Home() {
             <div className="header-title">A Stellar Path to Security</div>
             <div className="w-[600px] font-[16px]">
               Guiding you to a path of top-notch cybersecurity. We are devoted
-              to shielding your data and systems. With STASEC, it's not just
-              software; it's a journey to a more secure digital future.
+              to shielding your data and systems. With STASEC, it&apos;s not
+              just software; it&apos;s a journey to a more secure digital
+              future.
             </div>
             <div className="get-started">
               <div className="get-started-font">Get Started</div>
@@ -48,7 +54,9 @@ export default function Home() {
       <div className="content-bg-5 flex items-center">
         <Content {...homeContent4} />
       </div>
-      <div className="content-bg-6 flex items-center"></div>
+      <div className="content-bg-6 flex items-center px-[118px] justify-center">
+        <Features {...goalsCard} />
+      </div>
       <div className="content-bg-7 flex items-center"></div>
       <div className="content-bg-8 flex items-center"></div>
       <div className="content-bg-9 flex items-center">
