@@ -145,3 +145,11 @@ body {
   background-image: url(../../public/content-bg-9.png);
 }
 
+.fpoint-text{
+  color: var(--White, #fff);
+  text-align: center;
+  font-family: "Switzer Regular", sans-serif;
+  font-style: normal;
+  text-align: left;
+}
+

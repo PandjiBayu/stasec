@@ -12,6 +12,10 @@ import {
   homeContent4,
 } from "@/data/home/homeContent";
 import "../components/features/features.css";
+import Time from "@/components/icons/time";
+import Threat from "@/components/icons/threat";
+import Customize from "@/components/icons/customize";
+import Training from "@/components/icons/training";
 
 export default function Home() {
   return (
@@ -57,7 +61,66 @@ export default function Home() {
       <div className="content-bg-6 flex items-center px-[118px] justify-center">
         <Features {...goalsCard} />
       </div>
-      <div className="content-bg-7 flex items-center"></div>
+      <div className="content-bg-7 flex items-center">
+        <div className="flex items-center space-x-[150px] px-[118px]">
+          <div>
+            <Image
+              src="/feature-point.png"
+              width={1200}
+              height={1200}
+              alt="feature-point"
+              className="rounded-xl"
+            />
+          </div>
+          <div className="flex flex-col ">
+            <div className="text-[24px] text-[#1A57FF] font-semibold pb-[8px]">
+              Feature Point
+            </div>
+            <div className="fpoint-text text-[64px] pb-[24px]" style={{lineHeight: "70px"}}>
+              How Can We Help You Increase Your Cybersecurity System?
+            </div>
+            <div className="text-[18px]">
+              We proactively identify and neutralize potential threats, ensuring
+              a robust defense against evolving cyber threats. Trust us to
+              enhance your cybersecurity and secure your digital environment.
+            </div>
+            <div className="pt-[72px] grid grid-cols-2 gap-12" style={{lineHeight: "32px"}}>
+              <div className="flex items-center space-x-[16px]">
+                <div className="card px-[20px] py-[20px] flex items-center justify-center">
+                  <Time width={40} height={34} />
+                </div>
+                <div className="fpoint-text text-[25px]">
+                  Real-Time Incident Response
+                </div>
+              </div>
+              <div className="flex items-center space-x-[16px]">
+              <div className="card px-[20px] py-[20px] flex items-center justify-center">
+                  <Threat width={40} height={40} />
+                </div>
+                <div className="fpoint-text text-[25px]">
+                  Spot Weaknesses, Boots Security
+                </div>
+              </div>
+              <div className="flex items-center space-x-[16px]">
+              <div className="card px-[20px] py-[20px] flex items-center justify-center">
+                  <Customize width={40} height={40} />
+                </div>
+                <div className="fpoint-text text-[25px]">
+                  Improve Code Quality
+                </div>
+              </div>
+              <div className="flex items-center space-x-[16px]">
+              <div className="card px-[20px] py-[20px] flex items-center justify-center">
+                  <Training width={40} height={40} />
+                </div>
+                <div className="fpoint-text text-[25px]">
+                  AI-Powered Assessment
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       <div className="content-bg-8 flex items-center"></div>
       <div className="content-bg-9 flex items-center">
         <div className="flex flex-col"></div>

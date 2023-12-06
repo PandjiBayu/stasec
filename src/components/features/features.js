@@ -96,7 +96,7 @@ const Features = ({
               return (
                 <div key={index}>
                   <div className="card-container">
-                    <div className="card flex flex-col px-[56px] py-[64px] space-y-[10px]">
+                    <div className="card flex flex-col px-[56px] py-[64px] space-y-[10px] ">
                       <div className="white-circle w-fit">
                         <CardIcon width={48} height={48} color={"#1A57FF"} />
                       </div>
