@@ -94,7 +94,7 @@ const Features = ({
             {cards.map((card, index) => {
                 console.log(index)
               return (
-                <div className="flex items-center">
+                <div className="flex items-center" key={index}>
                   <Cards key={index} card={card} cardIcon={card.cardIcon} cardType={cardType}/>
                   {(index + 1) != cards.length && (
                     <div className="pl-[24px]">
