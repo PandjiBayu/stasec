@@ -1,21 +1,10 @@
 import Header from "@/components/header/header";
-import { homeFeatures } from "@/data/home/cardContent";
-import {
-  homeContent1,
-  homeContent2,
-  homeContent3,
-  homeContent4,
-} from "@/data/home/homeContent";
 import Features from "@/components/features/features";
-import Content from "@/components/content/content";
 import Footer from "@/components/footer/footer";
 import {
   serviceFeatures3,
 } from "@/data/service/serviceFeatures";
-import Time from "@/components/icons/time";
-import Threat from "@/components/icons/threat";
 import Customize from "@/components/icons/customize";
-import Training from "@/components/icons/training";
 import ShieldCheck from "@/components/icons/shield-check";
 import DollarSign from "@/components/icons/dollar-sign";
 import Award from "@/components/icons/award";

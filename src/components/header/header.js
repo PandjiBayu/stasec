@@ -11,6 +11,9 @@ const Header = () => {
   const [isSticky, setIsSticky] = useState(false);
   const route = usePathname();
   const isActive = (path) => {
+    if (path === "/service") {
+      return route.startsWith("/service-1") || route.startsWith("/service-2") || route.startsWith("/service-3");
+    }
     return route === path;
   };
   useEffect(() => {
@@ -40,7 +43,7 @@ const Header = () => {
         >
           HOME
         </Link>
-        <div className="flex items-center space-x-1">
+        <div className={`flex items-center space-x-1 ${isActive("/service") ? "current-btn" : ""}`}>
           <div>SERVICE</div>
           <ArrowDown />
         </div>

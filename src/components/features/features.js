@@ -15,6 +15,15 @@ import BadgeCheck from "../icons/badge-check";
 import BarChart from "../icons/bar-chart";
 import Cards from "../cards/cards";
 import RightDash from "../icons/right-dash";
+import Microscope from "../icons/microscope";
+import CheckCircle from "../icons/check-circle";
+import InfinityIcon from "../icons/infinity";
+import Database from "../icons/database";
+import Sword from "../icons/sword";
+import BookCheck from "../icons/book-check";
+import BookText from "../icons/book-text";
+import EnvironmentIcon from "../icons/environment";
+import Customize from "../icons/customize";
 
 const iconMappings = {
   cyberSecurity: CyberSecurity,
@@ -29,6 +38,15 @@ const iconMappings = {
   shieldCheck: ShieldCheck,
   badgeCheck: BadgeCheck,
   barChart: BarChart,
+  microscope: Microscope,
+  checkCircle: CheckCircle,
+  infinity: InfinityIcon,
+  database: Database,
+  sword: Sword,
+  bookCheck: BookCheck,
+  bookText: BookText,
+  environment: EnvironmentIcon,
+  customize: Customize,
 };
 
 const Features = ({
@@ -52,7 +70,14 @@ const Features = ({
           </div>
           <div className="w-full flex flex-wrap gap-12 justify-center">
             {cards.map((card, index) => {
-              return <Cards key={index} card={card} cardIcon={card.cardIcon} cardType={cardType}/>;
+              return (
+                <Cards
+                  key={index}
+                  card={card}
+                  cardIcon={card.cardIcon}
+                  cardType={cardType}
+                />
+              );
             })}
           </div>
         </section>
@@ -63,13 +88,13 @@ const Features = ({
             <div className="title-text">{title}</div>
             <div className="text-[18px]">{content}</div>
           </div>
-          <div className="flex w-full gap-12 pt-[70px]">
+          <div className="flex w-full gap-12 pt-[70px] flex-1 justify-between">
             {cards.map((card, index) => {
               const CardIcon = iconMappings[card.cardIcon];
               return (
                 <div key={index}>
                   <div className="card-container">
-                    <div className="card flex flex-col px-[56px] py-[64px] space-y-[10px] ">
+                    <div className="card flex flex-col p-[24px] space-y-[10px] ">
                       <div className="white-circle w-fit">
                         <CardIcon width={48} height={48} color={"#1A57FF"} />
                       </div>
@@ -92,11 +117,16 @@ const Features = ({
           </div>
           <div className="w-full flex gap-6 justify-center">
             {cards.map((card, index) => {
-                console.log(index)
+              console.log(index);
               return (
                 <div className="flex items-center">
-                  <Cards key={index} card={card} cardIcon={card.cardIcon} cardType={cardType}/>
-                  {(index + 1) != cards.length && (
+                  <Cards
+                    key={index}
+                    card={card}
+                    cardIcon={card.cardIcon}
+                    cardType={cardType}
+                  />
+                  {index + 1 != cards.length && (
                     <div className="pl-[24px]">
                       <RightDash width={48} height={48} />
                     </div>

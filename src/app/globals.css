@@ -224,3 +224,22 @@ body {
     #171717 100%
   );
 }
+
+.service1-image {
+  grid-area: header;
+  background-size: cover;
+  height: 100vh;
+  background-image: url(../../public/service-1.png);
+}
+
+.service1-bg-1 {
+  background-size: cover;
+  height: 64.4vw;
+  background-image: url(../../public/service1-bg-1.png);
+}
+
+.service1-bg-2 {
+  background-size: cover;
+  height: 86.5vw;
+  background-image: url(../../public/service1-bg-2.png);
+}

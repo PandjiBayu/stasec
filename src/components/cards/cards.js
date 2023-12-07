@@ -15,6 +15,11 @@ import BarChart from "../icons/bar-chart";
 import Microscope from "../icons/microscope";
 import CheckCircle from "../icons/check-circle";
 import InfinityIcon from "../icons/infinity";
+import Database from "../icons/database";
+import Sword from "../icons/sword";
+import BookCheck from "../icons/book-check";
+import BookText from "../icons/book-text";
+import Environment from "../icons/environment";
 
 const iconMappings = {
   cyberSecurity: CyberSecurity,
@@ -32,6 +37,11 @@ const iconMappings = {
   microscope: Microscope,
   checkCircle: CheckCircle,
   infinity: InfinityIcon,
+  database: Database,
+  sword: Sword,
+  bookCheck: BookCheck,
+  bookText: BookText,
+  environment: Environment
 };
 
 const Cards = ({ card, cardIcon, cardType }) => {
