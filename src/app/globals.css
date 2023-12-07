@@ -181,3 +181,28 @@ body {
   height: 53vw;
   background-image: url(../../public/industry-bg-2.png);
 }
+
+.service2-image {
+  grid-area: header;
+  background-size: cover;
+  height: 100vh;
+  background-image: url(../../public/service-2.png);
+}
+
+.service2-bg-1{
+  background-size: cover;
+  height: 44.7vw;
+  background-image: url(../../public/service2-bg-1.png);
+}
+
+.service2-bg-2 {
+  background-size: cover;
+  height: 74vw;
+  background-image: url(../../public/service2-bg-2.png);
+}
+
+.service2-bg-3{
+  background-size: cover;
+  height: 46vw;
+  background-image: url(../../public/service2-bg-3.png);
+}

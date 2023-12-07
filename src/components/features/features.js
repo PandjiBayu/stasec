@@ -11,10 +11,10 @@ import Code from "../icons/code";
 import Repeat from "../icons/repeat";
 import Siren from "../icons/siren";
 import ShieldCheck from "../icons/shield-check";
-import { useState } from "react";
 import BadgeCheck from "../icons/badge-check";
 import BarChart from "../icons/bar-chart";
 import Cards from "../cards/cards";
+import RightDash from "../icons/right-dash";
 
 const iconMappings = {
   cyberSecurity: CyberSecurity,
@@ -52,9 +52,7 @@ const Features = ({
           </div>
           <div className="w-full flex flex-wrap gap-12 justify-center">
             {cards.map((card, index) => {
-              return (
-                <Cards key={index} card={card} cardIcon={card.cardIcon} />
-              );
+              return <Cards key={index} card={card} cardIcon={card.cardIcon} cardType={cardType}/>;
             })}
           </div>
         </section>
@@ -84,39 +82,30 @@ const Features = ({
                 </div>
               );
             })}
-
-            {/* <div className="card-container">
-              <div className="card flex flex-col px-[56px] py-[64px] space-y-[10px]">
-                <div className="white-circle w-fit">
-                  <ShieldCheck width={40} height={40} color={"#1A57FF"} />
-                </div>
-                <div className="text-[24px] font-semibold">
-                  Comprehensive Security
-                </div>
-                <div className="text-[16px]">
-                  We give a holistic approach to cybersecurity, covering
-                  everything from network security to data protection and
-                  beyond.
-                </div>
-              </div>
-            </div>
-            <div className="card-container">
-              <div className="card flex flex-col px-[56px] py-[64px] space-y-[10px]">
-                <div className="white-circle w-fit">
-                  <ShieldCheck width={40} height={40} color={"#1A57FF"} />
-                </div>
-                <div className="text-[24px] font-semibold">
-                  Comprehensive Security
-                </div>
-                <div className="text-[16px]">
-                  We give a holistic approach to cybersecurity, covering
-                  everything from network security to data protection and
-                  beyond.
-                </div>
-              </div>
-            </div> */}
           </div>
         </div>
+      ) : cardType == 3 ? (
+        <section className="flex flex-col pb-12 px-[118px] space-y-12 w-full">
+          <div className="flex flex-col items-center space-y-4">
+            <div className="text-[24px] text-[#1A57FF]">{blueText}</div>
+            <div className="title-text">{title}</div>
+          </div>
+          <div className="w-full flex gap-6 justify-center">
+            {cards.map((card, index) => {
+                console.log(index)
+              return (
+                <div className="flex items-center">
+                  <Cards key={index} card={card} cardIcon={card.cardIcon} cardType={cardType}/>
+                  {(index + 1) != cards.length && (
+                    <div className="pl-[24px]">
+                      <RightDash width={48} height={48} />
+                    </div>
+                  )}
+                </div>
+              );
+            })}
+          </div>
+        </section>
       ) : null}
     </>
   );

@@ -13,9 +13,9 @@ import Footer from "@/components/footer/footer";
 export default function Industry() {
   return (
     <section className="main">
-      <div class="industry-image"></div>
-      <div class="industry-gradient"></div>
-      <div class="head-vector">
+      <div className="industry-image"></div>
+      <div className="industry-gradient"></div>
+      <div className="head-vector">
         <Header />
         <div className="w-full px-[118px] flex pt-[80px]">
           <div className="flex flex-col space-y-[30px] py-[80px] items-center justify-center w-full">

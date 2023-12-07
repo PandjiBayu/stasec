@@ -21,9 +21,9 @@ import Testimonial from "@/components/testimonial/testimonial";
 export default function Home() {
   return (
     <section className="main">
-      <div class="background-image"></div>
-      <div class="gradient-image"></div>
-      <div class="headers">
+      <div className="background-image"></div>
+      <div className="gradient-image"></div>
+      <div className="headers">
         <HeadVector />
       </div>
       <div class="head-vector">
