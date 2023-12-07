@@ -1,5 +1,4 @@
 "use client";
-
 import React, { useState, useEffect } from "react";
 import Logo from "../icons/logo";
 import "./header.css";
@@ -56,7 +55,7 @@ const Header = () => {
         </Link>
         <div>ABOUT</div>
       </div>
-      <div className="contactus-btn">CONTACT US</div>
+      <Link href={"/contact"} className="contactus-btn">CONTACT US</Link>
     </section>
   );
 };
