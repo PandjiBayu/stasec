@@ -1,113 +1,201 @@
-import Image from 'next/image'
+import Image from "next/image";
+import Header from "@/components/header/header";
+import HeadVector from "@/components/icons/head-vector";
+import Footer from "@/components/footer/footer";
+import Features from "@/components/features/features";
+import { homeFeatures, goalsCard } from "@/data/home/cardContent";
+import Content from "@/components/content/content";
+import {
+  homeContent1,
+  homeContent2,
+  homeContent3,
+  homeContent4,
+} from "@/data/home/homeContent";
+import "../components/features/features.css";
+import Time from "@/components/icons/time";
+import Threat from "@/components/icons/threat";
+import Customize from "@/components/icons/customize";
+import Training from "@/components/icons/training";
+import Testimonial from "@/components/testimonial/testimonial";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.js</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <section className="main">
+      <div class="background-image"></div>
+      <div class="gradient-image"></div>
+      <div class="headers">
+        <HeadVector />
+      </div>
+      <div class="head-vector">
+        <Header />
+        <div className="w-full px-[118px] flex pt-[80px]">
+          <div className="flex flex-col space-y-[40px] py-[80px]">
+            <div className="header-title">A Stellar Path to Security</div>
+            <div className="w-[600px] font-[16px]">
+              Guiding you to a path of top-notch cybersecurity. We are devoted
+              to shielding your data and systems. With STASEC, it&apos;s not
+              just software; it&apos;s a journey to a more secure digital
+              future.
+            </div>
+            <div className="get-started">
+              <div className="get-started-font">Get Started</div>
+            </div>
+          </div>
+          <div className="w-full"></div>
         </div>
       </div>
-
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
+      <div className="content-bg-1 flex items-center">
+        <Features {...homeFeatures} />
       </div>
-
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800 hover:dark:bg-opacity-30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
+      <div className="content-bg-2 flex items-center">
+        <Content {...homeContent1} />
       </div>
-    </main>
-  )
+      <div className="content-bg-3 flex items-center">
+        <Content {...homeContent2} />
+      </div>
+      <div className="content-bg-4 flex items-center">
+        <Content {...homeContent3} />
+      </div>
+      <div className="content-bg-5 flex items-center">
+        <Content {...homeContent4} />
+      </div>
+      <div className="content-bg-6 flex items-center px-[118px] justify-center">
+        <Features {...goalsCard} />
+      </div>
+      <div className="content-bg-7 flex items-center">
+        <div className="flex items-center space-x-[150px] px-[118px]">
+          <div>
+            <Image
+              src="/feature-point.png"
+              width={1200}
+              height={1200}
+              alt="feature-point"
+              className="rounded-xl"
+            />
+          </div>
+          <div className="flex flex-col ">
+            <div className="text-[24px] text-[#1A57FF] font-semibold pb-[8px]">
+              Feature Point
+            </div>
+            <div
+              className="fpoint-text text-[64px] pb-[24px]"
+              style={{ lineHeight: "70px" }}
+            >
+              How Can We Help You Increase Your Cybersecurity System?
+            </div>
+            <div className="text-[18px]">
+              We proactively identify and neutralize potential threats, ensuring
+              a robust defense against evolving cyber threats. Trust us to
+              enhance your cybersecurity and secure your digital environment.
+            </div>
+            <div
+              className="pt-[72px] grid grid-cols-2 gap-12"
+              style={{ lineHeight: "32px" }}
+            >
+              <div className="flex items-center space-x-[16px]">
+                <div className="card px-[20px] py-[20px] flex items-center justify-center">
+                  <Time width={40} height={34} />
+                </div>
+                <div className="fpoint-text text-[25px]">
+                  Real-Time Incident Response
+                </div>
+              </div>
+              <div className="flex items-center space-x-[16px]">
+                <div className="card px-[20px] py-[20px] flex items-center justify-center">
+                  <Threat width={40} height={40} />
+                </div>
+                <div className="fpoint-text text-[25px]">
+                  Spot Weaknesses, Boots Security
+                </div>
+              </div>
+              <div className="flex items-center space-x-[16px]">
+                <div className="card px-[20px] py-[20px] flex items-center justify-center">
+                  <Customize width={40} height={40} />
+                </div>
+                <div className="fpoint-text text-[25px]">
+                  Improve Code Quality
+                </div>
+              </div>
+              <div className="flex items-center space-x-[16px]">
+                <div className="card px-[20px] py-[20px] flex items-center justify-center">
+                  <Training width={40} height={40} />
+                </div>
+                <div className="fpoint-text text-[25px]">
+                  AI-Powered Assessment
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="content-bg-8 flex flex-col items-center justify-center">
+        <Testimonial />
+        <div className="flex flex-col items-center pt-[80px]">
+            <div className="fpoint-text text-[24px]">Our Trusted Partners</div>
+            <div className="flex space-x-[90px] items-center">
+              <div>
+                <Image
+                  src="/asgardia.png"
+                  width={160}
+                  height={38}
+                  alt="Argardia Logo"
+                />
+              </div>
+              <div>
+                <Image
+                  src="/amara.png"
+                  width={221}
+                  height={38}
+                  alt="Argardia Logo"
+                />
+              </div>
+              <div>
+                <Image
+                  src="/aven.png"
+                  width={126}
+                  height={38}
+                  alt="Argardia Logo"
+                />
+              </div>
+              <div>
+                <Image
+                  src="/circle.png"
+                  width={135}
+                  height={38}
+                  alt="Argardia Logo"
+                />
+              </div>
+              <div>
+                <Image
+                  src="/ideaa.png"
+                  width={111}
+                  height={38}
+                  alt="Argardia Logo"
+                />
+              </div>
+            </div>
+          </div>
+      </div>
+      <div className="content-bg-9 flex items-center justify-center">
+        <div className="flex flex-col items-center">
+          <div className="fpoint-text text-[46px]">
+            Fortify Your Digital Future with Our Security Solution
+          </div>
+          <div
+            className="fpoint-text text-[18px] w-[700px] pt-4"
+            style={{ textAlign: "center" }}
+          >
+            Ensures a proactive defense againts evolving threats, providing
+            peace of mind for your digital landscape.
+          </div>
+          <div className="w-[230px] px-[36px] py-[20px] flex items-center justify-center rounded-[8px] bg-[#1A57FF] mt-[50px]">
+            <div className="text-[24px]">Get In Touch</div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <Footer />
+      </div>
+    </section>
+  );
 }

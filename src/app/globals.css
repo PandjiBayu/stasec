@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "Switzer Regular";
+  src: local("Switzer Regular"),
+    url("../../public/font/switzer/Switzer-Regular.woff") format("woff");
+}
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -18,10 +24,160 @@
 
 body {
   color: rgb(var(--foreground-rgb));
+  background: #171717;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "header";
+}
+
+.main .headers {
+  grid-area: header;
+}
+
+.main .head-vector {
+  grid-area: header;
+}
+
+.background-image {
+  grid-area: header;
+  background-size: cover;
+  height: 100vh;
+  background-image: url(../../public/Vector_2648.png);
+}
+
+.gradient-image {
+  grid-area: header;
+  background-size: cover;
+  height: 100vh;
   background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+    180deg,
+    rgba(23, 23, 23, 0.2) 41.24%,
+    #171717 100%
+  );
+}
+
+.get-started {
+  display: flex;
+  width: 324px;
+  padding: 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 8px;
+  background: #1a57ff;
+}
+
+.get-started-font {
+  color: var(--White, #fff);
+  text-align: center;
+  font-family: "Switzer Regular", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.header-title {
+  color: #fff;
+  font-family: "Switzer Regular", sans-serif;
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing: -0.8px;
+}
+
+.content-bg-1 {
+  background-size: cover;
+  height: 53vw;
+  background-image: url(../../public/content-bg-1.png);
+}
+
+.content-bg-2 {
+  background-size: cover;
+  height: 47vw;
+  background-image: url(../../public/content-bg-2.png);
+}
+
+.content-bg-3 {
+  background-size: cover;
+  height: 47.6vw;
+  background-image: url(../../public/content-bg-3.png);
+}
+
+.content-bg-4 {
+  background-size: cover;
+  height: 53vw;
+  background-image: url(../../public/content-bg-4.png);
+}
+
+.content-bg-5 {
+  background-size: cover;
+  height: 53vw;
+  background-image: url(../../public/content-bg-5.png);
+}
+
+.content-bg-6 {
+  background-size: cover;
+  height: 53vw;
+  background-image: url(../../public/content-bg-6.png);
+}
+
+.content-bg-7 {
+  background-size: cover;
+  height: 74vw;
+  background-image: url(../../public/content-bg-7.png);
+}
+
+.content-bg-8 {
+  background-size: cover;
+  height: 68vw;
+  background-image: url(../../public/content-bg-8.png);
+}
+
+.content-bg-9 {
+  background-size: cover;
+  height: 52.3vw;
+  background-image: url(../../public/content-bg-9.png);
+}
+
+.fpoint-text {
+  color: var(--White, #fff);
+  font-family: "Switzer Regular", sans-serif;
+  font-style: normal;
+  text-align: left;
+}
+
+.industry-image {
+  grid-area: header;
+  background-size: cover;
+  height: 100vh;
+  background-image: url(../../public/industry-image.png);
+}
+
+.industry-gradient {
+  grid-area: header;
+  background-size: cover;
+  height: 100vh;
+  background: linear-gradient(
+    180deg,
+    rgba(23, 23, 23, 0.66) 14.67%,
+    #171717 81.42%
+  );
+}
+
+.industry-bg-1 {
+  background-size: cover;
+  height: 47vw;
+  background-image: url(../../public/industry-bg-1.png);
+}
+
+.industry-bg-2 {
+  background-size: cover;
+  height: 53vw;
+  background-image: url(../../public/industry-bg-2.png);
 }

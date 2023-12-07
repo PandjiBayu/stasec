@@ -1,0 +1,102 @@
+@font-face {
+  font-family: "Switzer Regular";
+  src: local("Switzer Regular"),
+    url("../../../public/font/switzer/Switzer-Regular.woff") format("woff");
+}
+
+.title-text {
+  color: #fff;
+  text-align: center;
+  font-size: 56px;
+  font-family: "Switzer Regular", sans-serif;
+  font-weight: 600;
+  line-height: 70px;
+  text-transform: capitalize;
+}
+
+.card-container:hover .card {
+  gap: 8px;
+  border-radius: 16px;
+  border: 2px solid #4b08b4;
+
+  background: var(
+    --Colour-Card,
+    linear-gradient(
+      97deg,
+      #171717 -62.94%,
+      #323335 -22.92%,
+      rgba(90, 90, 90, 0) 54.42%,
+      #171717 174.24%
+    ),
+    linear-gradient(
+      -97deg,
+      #171717 -62.94%,
+      #323335 -22.92%,
+      rgba(90, 90, 90, 0) 54.42%,
+      #171717 174.24%
+    )
+  );
+}
+
+.card-container:hover .circle {
+  display: flex;
+  width: 80px;
+  height: 80px;
+  padding: 16px;
+  justify-content: center;
+  align-items: center;
+  left: 151px;
+  border-radius: 40px;
+  border: 1px solid #103bc3;
+  background: #1a57ff;
+  margin-bottom: -40px;
+  z-index: 999;
+}
+
+.card {
+  gap: 8px;
+  border-radius: 16px;
+  border: 2px solid transparent;
+
+  background: var(
+    --Colour-Card,
+    linear-gradient(
+      97deg,
+      #171717 -62.94%,
+      #323335 -22.92%,
+      rgba(90, 90, 90, 0) 54.42%,
+      #171717 174.24%
+    ),
+    linear-gradient(
+      -97deg,
+      #171717 -62.94%,
+      #323335 -22.92%,
+      rgba(90, 90, 90, 0) 54.42%,
+      #171717 174.24%
+    )
+  );
+}
+
+.circle {
+  display: flex;
+  width: 80px;
+  height: 80px;
+  padding: 16px;
+  justify-content: center;
+  align-items: center;
+  left: 151px;
+  border-radius: 40px;
+  border: 1px solid #103bc3;
+  background: #171717;
+  margin-bottom: -40px;
+  z-index: 999;
+}
+
+.white-circle {
+  display: flex;
+  padding: 8px;
+  align-items: flex-start;
+  gap: 8px;
+  border-radius: 100px;
+  background: #fff;
+}
