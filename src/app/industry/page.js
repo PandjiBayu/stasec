@@ -31,19 +31,19 @@ export default function Industry() {
           </div>
         </div>
       </div>
-      <div className="industry-bg-1 flex items-center">
+      <div className="flex items-center industry-bg-1">
         <Content {...industryContent1} />
       </div>
-      <div className="content-bg-3 flex items-center">
+      <div className="flex items-center content-bg-2">
         <Content {...industryContent2} />
       </div>
-      <div className="content-bg-4 flex items-center">
+      <div className="flex items-center content-bg-4">
         <Content {...industryContent3} />
       </div>
-      <div className="content-bg-5 flex items-center">
+      <div className="flex items-center content-bg-5">
         <Content {...industryContent4} />
       </div>
-      <div className="industry-bg-2 flex items-center justify-center">
+      <div className="flex items-center justify-center industry-bg-2">
         <div className="flex flex-col items-center">
           <div className="fpoint-text text-[46px]">
             Fortify Your Digital Future with Our Security Solution

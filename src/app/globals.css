@@ -42,6 +42,12 @@ body {
   grid-area: header;
 }
 
+@media (max-width: 768px) {
+  .main .head-vector, .main .headers, .main .industry-gradient, .main .industry-image {
+    height: 100%;
+  }
+}
+
 .background-image {
   grid-area: header;
   background-size: cover;
@@ -211,6 +217,12 @@ body {
   background-size: cover;
   height: 53vw;
   background-image: url(../../public/industry-bg-2.png);
+}
+
+@media (max-width: 768px) {
+  .industry-bg-1, .industry-bg-2 {
+    height: 100%;
+  }
 }
 
 .service2-image {
