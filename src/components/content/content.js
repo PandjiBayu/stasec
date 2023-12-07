@@ -3,40 +3,33 @@ import "./content.css";
 
 const ContentRight = ({ imgPos, image, title, content }) => {
   let imgPath = "";
-  if (image == "handshake") {
+  if (image === "handshake") {
     imgPath = "/handshake.png";
-  } else if (image == "achievement") {
+  } else if (image === "achievement") {
     imgPath = "/achievement.png";
-  } else if (image == "search") {
+  } else if (image === "search") {
     imgPath = "/search.png";
-  } else if (image == "laptop") {
+  } else if (image === "laptop") {
     imgPath = "/laptop.png";
-  } else if (image == "finance") {
+  } else if (image === "finance") {
     imgPath = "/finance.png";
-  } else if (image == "car") {
+  } else if (image === "car") {
     imgPath = "/car.png";
-  } else if (image == "scales") {
+  } else if (image === "scales") {
     imgPath = "/scales.png";
-  } else if (image == "health-care") {
+  } else if (image === "health-care") {
     imgPath = "/health-care.png";
   }
 
   return (
-    <section className="flex items-center space-x-[250px] px-[118px]">
-      {imgPos == "left" && (
-        <div className="image-wrapper">
-          <Image src={imgPath} width={1500} height={1200} alt={image} />
-        </div>
-      )}
-      <div className="flex flex-col space-y-12">
-        <div className="content-title">{title}</div>
-        <div className="text-[18px]">{content}</div>
+    <section className="flex flex-col md:flex-row items-center w-full px-[80px] py-[48px]">
+      <div className={`image-wrapper ${imgPos === "right" ? "order-0 md:order-1" : ""}`}>
+        <Image className="w-[320px] md:w-[600px]" src={imgPath} width={600} height={600} alt={image} />
       </div>
-      {imgPos == "right" && (
-        <div className="image-wrapper">
-          <Image src={imgPath} width={1500} height={1200} alt={image} />
-        </div>
-      )}
+      <div className="flex flex-col space-y-12">
+        <div className="content-title" dangerouslySetInnerHTML={{ __html: title }}></div>
+        <div className="text-[18px] text-center md:text-start" dangerouslySetInnerHTML={{ __html: content }}></div>
+      </div>
     </section>
   );
 };
