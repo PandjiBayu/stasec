@@ -16,9 +16,6 @@ import Time from "@/components/icons/time";
 import Threat from "@/components/icons/threat";
 import Customize from "@/components/icons/customize";
 import Training from "@/components/icons/training";
-import ArrowLeft from "@/components/icons/arrow-left";
-import ArrowRight from "@/components/icons/arrow-right";
-import Quotation from "@/components/icons/quotation";
 import Testimonial from "@/components/testimonial/testimonial";
 
 export default function Home() {

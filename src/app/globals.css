@@ -145,10 +145,39 @@ body {
   background-image: url(../../public/content-bg-9.png);
 }
 
-.fpoint-text{
+.fpoint-text {
   color: var(--White, #fff);
   font-family: "Switzer Regular", sans-serif;
   font-style: normal;
   text-align: left;
 }
 
+.industry-image {
+  grid-area: header;
+  background-size: cover;
+  height: 100vh;
+  background-image: url(../../public/industry-image.png);
+}
+
+.industry-gradient {
+  grid-area: header;
+  background-size: cover;
+  height: 100vh;
+  background: linear-gradient(
+    180deg,
+    rgba(23, 23, 23, 0.66) 14.67%,
+    #171717 81.42%
+  );
+}
+
+.industry-bg-1 {
+  background-size: cover;
+  height: 47vw;
+  background-image: url(../../public/industry-bg-1.png);
+}
+
+.industry-bg-2 {
+  background-size: cover;
+  height: 53vw;
+  background-image: url(../../public/industry-bg-2.png);
+}
