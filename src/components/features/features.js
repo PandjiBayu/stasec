@@ -27,7 +27,7 @@ const iconMappings = {
   siren: Siren,
   shieldCheck: ShieldCheck,
   badgeCheck: BadgeCheck,
-  barChart: BarChart
+  barChart: BarChart,
 };
 
 const Features = ({
