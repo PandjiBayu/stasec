@@ -35,7 +35,7 @@
   background: linear-gradient(98deg, #4b08b4 -19.04%, #103bc3 127.47%);
 }
 
-.home-btn {
+.current-btn {
   display: flex;
   padding: 10px 24px;
   flex-direction: column;

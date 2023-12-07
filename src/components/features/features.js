@@ -14,6 +14,7 @@ import ShieldCheck from "../icons/shield-check";
 import { useState } from "react";
 import BadgeCheck from "../icons/badge-check";
 import BarChart from "../icons/bar-chart";
+import Cards from "../cards/cards";
 
 const iconMappings = {
   cyberSecurity: CyberSecurity,
@@ -51,34 +52,8 @@ const Features = ({
           </div>
           <div className="w-full flex flex-wrap gap-12 justify-center">
             {cards.map((card, index) => {
-              const CardIcon = iconMappings[card.cardIcon];
-              const [isHovered, setIsHovered] = useState(false);
               return (
-                <div key={index}>
-                  <div
-                    className="flex flex-col items-center card-container"
-                    onMouseEnter={() => setIsHovered(true)}
-                    onMouseLeave={() => setIsHovered(false)}
-                  >
-                    <div className="circle">
-                      {CardIcon && (
-                        <CardIcon
-                          width={48}
-                          height={48}
-                          color={isHovered ? "white" : "#3C94FF"}
-                        />
-                      )}
-                    </div>
-                    <div className="card flex flex-col items-center w-[382px] h-[248px] pt-[64px] pb-[32px] px-[56px]">
-                      <div className="text-[24px] font-semibold text-center">
-                        {card.cardTitle}
-                      </div>
-                      <div className="text-[16px] text-center">
-                        {card.cardContent}
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                <Cards key={index} card={card} cardIcon={card.cardIcon} />
               );
             })}
           </div>
