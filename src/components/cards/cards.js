@@ -77,7 +77,7 @@ const Cards = ({ card, cardIcon, cardType }) => {
               />
             )}
           </div>
-          <div className="card flex flex-col items-center w-[240px] h-[320px] justify-center" style={{padding: "56px 32px 16px 32px"}}>
+          <div className="card flex flex-col items-center w-[240px] h-[320px]" style={{padding: "56px 32px 16px 32px"}}>
             <div className="text-[24px] font-semibold text-center">
               {card.cardTitle}
             </div>

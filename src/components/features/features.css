@@ -50,7 +50,7 @@
   border: 1px solid #103bc3;
   background: #1a57ff;
   margin-bottom: -40px;
-  z-index: 999;
+  z-index: 2;
 }
 
 .card {
@@ -89,7 +89,7 @@
   border: 1px solid #103bc3;
   background: #171717;
   margin-bottom: -40px;
-  z-index: 999;
+  z-index: 2;
 }
 
 .white-circle {
