@@ -13,8 +13,7 @@ const Footer = () => {
     <section className="footer flex">
       <div className="flex flex-col space-y-[16px]">
         <div className="flex items-center space-x-2">
-          <Logo width={36} height={52} />
-          <div className="footer-logo">stasec</div>
+          <Logo width={120} height={52} />
         </div>
         <div>A Stellar Path to Security</div>
         <div className="flex space-x-[32px] pt-[16px]">

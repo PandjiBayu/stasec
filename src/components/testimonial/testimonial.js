@@ -37,7 +37,7 @@ const Testimonial = () => {
   };
 
   return (
-    <section className="px-[118px] flex flex-col items-center justify-center w-full">
+    <section className="p-[80px] flex flex-col items-center justify-center w-full">
       <div className="flex justify-between items-center w-full gap-[100px]">
         <button
           onClick={goToPrevious}

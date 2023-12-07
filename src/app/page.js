@@ -21,64 +21,64 @@ import Testimonial from "@/components/testimonial/testimonial";
 export default function Home() {
   return (
     <section className="main">
-      <div class="background-image"></div>
-      <div class="gradient-image"></div>
-      <div class="headers">
+      <div className="background-image"></div>
+      <div className="gradient-image"></div>
+      <div className="headers">
         <HeadVector />
       </div>
       <div class="head-vector">
         <Header />
-        <div className="w-full px-[118px] flex pt-[80px]">
-          <div className="flex flex-col space-y-[40px] py-[80px]">
-            <div className="header-title">A Stellar Path to Security</div>
-            <div className="w-[600px] font-[16px]">
+        <div className="w-full px-0 md:px-[118px] flex flex-col md:flex-row pt-[80px]">
+          <div className="flex flex-col space-y-[40px] md:py-[80px] w-full items-center md:items-start">
+            <div className="text-center md:text-left header-title">A Stellar Path to <br className="hidden md:flex" /> Security</div>
+            <div className="text-center md:w-full md:text-left font-[16px] md:font-[18px]">
               Guiding you to a path of top-notch cybersecurity. We are devoted
-              to shielding your data and systems. With STASEC, it&apos;s not
-              just software; it&apos;s a journey to a more secure digital
+              to shielding <br /> your data and systems. With STASEC, it&apos;s not
+              just software; it&apos;s a journey to a more <br /> secure digital
               future.
             </div>
             <div className="get-started">
               <div className="get-started-font">Get Started</div>
             </div>
           </div>
-          <div className="w-full"></div>
+          <div className="hidden md:w-full"></div>
         </div>
       </div>
-      <div className="content-bg-1 flex items-center">
+      <div className="flex items-center content-bg-1">
         <Features {...homeFeatures} />
       </div>
-      <div className="content-bg-2 flex items-center">
+      <div className="flex items-center content-bg-2">
         <Content {...homeContent1} />
       </div>
-      <div className="content-bg-3 flex items-center">
+      <div className="flex items-center content-bg-3">
         <Content {...homeContent2} />
       </div>
-      <div className="content-bg-4 flex items-center">
+      <div className="flex items-center content-bg-4">
         <Content {...homeContent3} />
       </div>
-      <div className="content-bg-5 flex items-center">
+      <div className="flex items-center content-bg-5">
         <Content {...homeContent4} />
       </div>
-      <div className="content-bg-6 flex items-center px-[118px] justify-center">
+      <div className="content-bg-6 flex items-center px-[80px] justify-center">
         <Features {...goalsCard} />
       </div>
-      <div className="content-bg-7 flex items-center">
-        <div className="flex items-center space-x-[150px] px-[118px]">
+      <div className="flex items-center content-bg-7">
+        <div className="flex flex-col md:flex-row items-center md:space-x-[150px] px-[80px]">
           <div>
             <Image
               src="/feature-point.png"
               width={1200}
               height={1200}
               alt="feature-point"
-              className="rounded-xl"
+              className="rounded-xl w-[320px] md:w-[1200px]"
             />
           </div>
           <div className="flex flex-col ">
-            <div className="text-[24px] text-[#1A57FF] font-semibold pb-[8px]">
+            <div className="text-[24px] text-center md:text-start text-[#1A57FF] font-semibold pb-[8px]">
               Feature Point
             </div>
             <div
-              className="fpoint-text text-[64px] pb-[24px]"
+              className="font-semibold text-[64px] pb-[24px] text-center md:text-start"
               style={{ lineHeight: "70px" }}
             >
               How Can We Help You Increase Your Cybersecurity System?
@@ -96,7 +96,7 @@ export default function Home() {
                 <div className="card px-[20px] py-[20px] flex items-center justify-center">
                   <Time width={40} height={34} />
                 </div>
-                <div className="fpoint-text text-[25px]">
+                <div className="text-[28px]">
                   Real-Time Incident Response
                 </div>
               </div>
@@ -104,7 +104,7 @@ export default function Home() {
                 <div className="card px-[20px] py-[20px] flex items-center justify-center">
                   <Threat width={40} height={40} />
                 </div>
-                <div className="fpoint-text text-[25px]">
+                <div className="text-[28px]">
                   Spot Weaknesses, Boots Security
                 </div>
               </div>
@@ -112,7 +112,7 @@ export default function Home() {
                 <div className="card px-[20px] py-[20px] flex items-center justify-center">
                   <Customize width={40} height={40} />
                 </div>
-                <div className="fpoint-text text-[25px]">
+                <div className="text-[28px]">
                   Improve Code Quality
                 </div>
               </div>
@@ -120,7 +120,7 @@ export default function Home() {
                 <div className="card px-[20px] py-[20px] flex items-center justify-center">
                   <Training width={40} height={40} />
                 </div>
-                <div className="fpoint-text text-[25px]">
+                <div className="text-[28px]">
                   AI-Powered Assessment
                 </div>
               </div>
@@ -128,9 +128,9 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="content-bg-8 flex flex-col items-center justify-center">
+      <div className="flex flex-col items-center justify-center content-bg-8">
         <Testimonial />
-        <div className="flex flex-col items-center pt-[80px]">
+        <div className="flex flex-col items-center pt-10 md:pt-[80px]">
             <div className="fpoint-text text-[24px]">Our Trusted Partners</div>
             <div className="flex space-x-[90px] items-center">
               <div>
@@ -176,9 +176,9 @@ export default function Home() {
             </div>
           </div>
       </div>
-      <div className="content-bg-9 flex items-center justify-center">
-        <div className="flex flex-col items-center">
-          <div className="fpoint-text text-[46px]">
+      <div className="flex items-center justify-center content-bg-9">
+        <div className="flex flex-col items-center px-10 md:px-20">
+          <div className="text-4xl md:text-[48px]">
             Fortify Your Digital Future with Our Security Solution
           </div>
           <div
