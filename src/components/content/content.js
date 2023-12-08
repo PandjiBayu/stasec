@@ -29,7 +29,7 @@ const ContentRight = ({ imgPos, image, title, content }) => {
         }`}
       >
         <Image
-          className="w-[320px] md:w-[400px]"
+          className="w-[320px] md:w-[600px]"
           src={imgPath}
           width={400}
           height={600}
