@@ -22,13 +22,29 @@ const ContentRight = ({ imgPos, image, title, content }) => {
   }
 
   return (
-    <section className="flex flex-col md:flex-row items-center w-full px-[80px] py-[48px]">
-      <div className={`image-wrapper ${imgPos === "right" ? "order-0 md:order-1" : ""}`}>
-        <Image className="w-[320px] md:w-[600px]" src={imgPath} width={600} height={600} alt={image} />
+    <section className="flex flex-col md:flex-row items-center justify-center w-full px-[80px] py-[48px] space-y-8 md:space-y-0 md:space-x-4">
+      <div
+        className={`image-wrapper ${
+          imgPos === "right" ? "order-0 md:order-1" : ""
+        }`}
+      >
+        <Image
+          className="w-full md:w-[600px]"
+          src={imgPath}
+          width={600}
+          height={600}
+          alt={image}
+        />
       </div>
-      <div className="flex flex-col space-y-12">
-        <div className="content-title" dangerouslySetInnerHTML={{ __html: title }}></div>
-        <div className="text-[18px] text-center md:text-start" dangerouslySetInnerHTML={{ __html: content }}></div>
+      <div className="flex flex-col items-center space-y-8 md:items-start md:space-y-12">
+        <div
+          className="content-title"
+          dangerouslySetInnerHTML={{ __html: title }}
+        ></div>
+        <div
+          className="text-[18px] text-center md:text-start"
+          dangerouslySetInnerHTML={{ __html: content }}
+        ></div>
       </div>
     </section>
   );

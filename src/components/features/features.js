@@ -60,7 +60,7 @@ const Features = ({
   return (
     <>
       {cardType == 1 ? (
-        <section className="flex flex-col py-12 space-y-12 md:px-20">
+        <section className="flex flex-col items-center justify-center w-full py-12 space-y-12 overflow-hidden md:px-10">
           <div className="flex flex-col items-center space-y-4">
             {blueCondition && (
               <div className="text-[24px] text-[#1A57FF]">{blueText}</div>
@@ -71,17 +71,15 @@ const Features = ({
             ></div>
             <div className="text-[18px]">{content}</div>
           </div>
-          <div className="flex flex-wrap items-center justify-center w-full gap-8">
-            {cards.map((card, index) => {
-              return (
-                <Cards
-                  key={index}
-                  card={card}
-                  cardIcon={card.cardIcon}
-                  cardType={cardType}
-                />
-              );
-            })}
+          <div className="flex flex-wrap items-center justify-center space-x-8">
+            {cards.map((card, index) => (
+              <Cards
+                key={index}
+                card={card}
+                cardIcon={card.cardIcon}
+                cardType={cardType}
+              />
+            ))}
           </div>
         </section>
       ) : cardType == 2 ? (
