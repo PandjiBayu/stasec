@@ -66,7 +66,7 @@ export default function Home() {
             <div className="text-[24px] text-[#1A57FF]">
               {goalsCard.blueText}
             </div>
-            <div className="title-text">{goalsCard.title}</div>
+            <div className="title-text" dangerouslySetInnerHTML={{ __html: goalsCard.title }}></div>
             <div className="text-[18px]">{goalsCard.content}</div>
           </div>
           <div className="flex w-full gap-12 pt-[70px] flex-1 justify-between">
