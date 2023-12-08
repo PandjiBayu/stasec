@@ -13,7 +13,7 @@ export default function Service1() {
       <div className="service3-gradient"></div>
       <div className="head-vector">
         <Header />
-        <div className="w-full px-[118px] flex pt-[80px]">
+        <div className="w-full px-[80px] flex pt-[80px]">
           <div className="flex flex-col space-y-[40px] py-[80px]">
             <div className="header-title">Penetration Test</div>
             <div className="w-[600px] font-[16px]">
@@ -25,7 +25,7 @@ export default function Service1() {
               <div className="get-started-font">Get Started</div>
             </div>
           </div>
-          <div className="w-full"></div>
+          <div className="hidden md:w-full"></div>
         </div>
       </div>
       <div className="service1-bg-1 flex items-center justify-center mt-[-50px]">
@@ -95,10 +95,10 @@ export default function Service1() {
           </div>
         </div>
       </div>
-      <div className="service2-bg-3 flex items-center">
+      <div className="flex items-center service2-bg-3">
         <Features {...workProcess1} />
       </div>
-      <div className="industry-bg-2 flex items-center justify-center">
+      <div className="flex items-center justify-center industry-bg-2">
         <div className="flex flex-col items-center">
           <div className="fpoint-text text-[46px]">
             Fortify Your Digital Future with Our Security Solution

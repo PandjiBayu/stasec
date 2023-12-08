@@ -20,7 +20,7 @@ export default function Service3() {
         <Header />
         <div className="w-full px-[118px] flex pt-[80px]">
           <div className="flex flex-col space-y-[30px] py-[80px] items-center justify-center w-full">
-            <div className="header-title">Security Monitoring & Assessment</div>
+            <div className="text-center header-title">Security Monitoring & Assessment</div>
             <div className="w-[1000px] font-[16px] text-center">
               This tool and service offer real-time monitoring and protection
               for software applications to detect and respond to potential
@@ -35,7 +35,7 @@ export default function Service3() {
       <div className="service2-bg-1 flex items-center justify-center mt-[-50px]">
         <Features {...serviceFeatures3} />
       </div>
-      <div className="service2-bg-2 flex items-center">
+      <div className="flex items-center service2-bg-2">
         <div className="flex items-center space-x-[150px] px-[118px]">
           <div>
             <Image
@@ -112,10 +112,10 @@ export default function Service3() {
           </div>
         </div>
       </div>
-      <div className="service2-bg-3 flex items-center">
+      <div className="flex items-center service2-bg-3">
         <Features {...workProcess3} />
       </div>
-      <div className="industry-bg-2 flex items-center justify-center">
+      <div className="flex items-center justify-center industry-bg-2">
         <div className="flex flex-col items-center">
           <div className="fpoint-text text-[46px]">
             Fortify Your Digital Future with Our Security Solution
