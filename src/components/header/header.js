@@ -8,6 +8,8 @@ import { usePathname } from "next/navigation";
 
 const Header = () => {
   const [isSticky, setIsSticky] = useState(false);
+  const [isActiveDropdown, setIsActiveDropdown] = useState(false);
+  const [selectedService, setSelectedService] = useState(null);
   const route = usePathname();
   const isActive = (path) => {
     if (path === "/service") {
@@ -33,6 +35,15 @@ const Header = () => {
     };
   }, []);
 
+  const toggleDropdown = () => {
+    setIsActiveDropdown(!isActiveDropdown);
+  };
+
+  const selectService = (service) => {
+    setSelectedService(service);
+    setIsActiveDropdown(false);
+  };
+
   return (
     <section className={`w-full header ${isSticky ? " sticky" : ""}`}>
       <div className="flex items-center">
@@ -46,13 +57,47 @@ const Header = () => {
         >
           HOME
         </Link>
-        <div
-          className={`flex items-center space-x-1 ${
-            isActive("/service") ? "current-btn" : ""
-          }`}
-        >
-          <div>SERVICE</div>
-          <ArrowDown />
+        <div className={`relative inline-block`} onClick={toggleDropdown}>
+          <div
+            className={`flex items-center space-x-1 cursor-pointer ${
+              isActive("/service") ? "current-btn" : ""
+            }`}
+          >
+            <div>SERVICE</div>
+            <ArrowDown />
+          </div>
+
+          {isActiveDropdown && (
+            <div className="absolute mt-2 bg-[#262626] border border-gray-800 rounded-md shadow-lg w-[200px] flex flex-col">
+              <Link
+                href={"/service-1"}
+                className={`p-4 hover:bg-gray-700 cursor-pointer ${
+                  selectedService === "Service 1" ? "font-bold" : ""
+                }`}
+                onClick={() => selectService("Service 1")}
+              >
+                Penetration Testing
+              </Link>
+              <Link
+                href={"/service-2"}
+                className={`p-4 hover:bg-gray-700 cursor-pointer ${
+                  selectedService === "Service 2" ? "font-bold" : ""
+                }`}
+                onClick={() => selectService("Service 2")}
+              >
+                Secure Development Tools
+              </Link>
+              <Link
+                href={"/service-3"}
+                className={`p-4 hover:bg-gray-700 cursor-pointer ${
+                  selectedService === "Service 3" ? "font-bold" : ""
+                }`}
+                onClick={() => selectService("Service 3")}
+              >
+                Security Monitoring & Assessment
+              </Link>
+            </div>
+          )}
         </div>
         <Link
           href={"/industry"}
