@@ -16,6 +16,23 @@
   background-image: url(../../../public/content-footer.png);
 }
 
+.footer-about {
+  display: flex;
+  padding: 96px 98px;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: 23vw;
+  background-size: cover;
+  background-image: url(../../../public/footer-about.png);
+}
+
+.footer-contact {
+  display: flex;
+  padding: 96px 98px;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
 .footer-logo {
   color: #fff;
   font-family: "Montserrat Alternates";

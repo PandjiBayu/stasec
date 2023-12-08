@@ -1,3 +1,36 @@
+export const workProcess1 = {
+    cardType: 3,
+    blueText: "Our Work Process",
+    title: "The 4 Stages of Our Penetration Test",
+    cards: [
+      {
+        cardIcon: "bookText",
+        cardTitle: "Plan and Prepare",
+        cardContent:
+          "Set the scope, rules, permissions, gather info, and plan for successful penetration test",
+      },
+      {
+        cardIcon: "database",
+        cardTitle: "Data Gather",
+        cardContent:
+          "Gather info about the target system with passive and active reconnaissance",
+      },
+      {
+        cardIcon: "sword",
+        cardTitle: "Attack and Assess",
+        cardContent:
+          "Enables in-depth analysis of security gaps, facilitating comprehensive mitigation strategies against threats",
+      },
+      {
+        cardIcon: "bookCheck",
+        cardTitle: "Remediation and Report",
+        cardContent:
+          "Generate a report, collaborate with the security team, and improve overall security based on test results",
+      }
+    ],
+  };
+  
+
 export const workProcess2 = {
   cardType: 3,
   blueText: "Our Work Process",

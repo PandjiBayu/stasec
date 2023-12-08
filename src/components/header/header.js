@@ -1,5 +1,4 @@
 "use client";
-
 import React, { useState, useEffect } from "react";
 import Logo from "../icons/logo";
 import "./header.css";
@@ -11,6 +10,13 @@ const Header = () => {
   const [isSticky, setIsSticky] = useState(false);
   const route = usePathname();
   const isActive = (path) => {
+    if (path === "/service") {
+      return (
+        route.startsWith("/service-1") ||
+        route.startsWith("/service-2") ||
+        route.startsWith("/service-3")
+      );
+    }
     return route === path;
   };
   useEffect(() => {
@@ -40,7 +46,11 @@ const Header = () => {
         >
           HOME
         </Link>
-        <div className="flex items-center space-x-1">
+        <div
+          className={`flex items-center space-x-1 ${
+            isActive("/service") ? "current-btn" : ""
+          }`}
+        >
           <div>SERVICE</div>
           <ArrowDown />
         </div>
@@ -51,9 +61,17 @@ const Header = () => {
         >
           INDUSTRY
         </Link>
-        <div>ABOUT</div>
+        <Link
+          href={"/about"}
+          className={isActive("/about") ? "current-btn" : ""}
+          style={{ padding: "10px 24px" }}
+        >
+          ABOUT
+        </Link>
       </div>
-      <div className="contactus-btn">CONTACT US</div>
+      <Link href={"/contact"} className="contactus-btn">
+        CONTACT US
+      </Link>
     </section>
   );
 };

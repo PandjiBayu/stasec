@@ -17,6 +17,7 @@ import Threat from "@/components/icons/threat";
 import Customize from "@/components/icons/customize";
 import Training from "@/components/icons/training";
 import Testimonial from "@/components/testimonial/testimonial";
+import iconMappings from "@/components/icons/iconMappings";
 
 export default function Home() {
   return (
@@ -59,8 +60,36 @@ export default function Home() {
       <div className="flex items-center content-bg-5">
         <Content {...homeContent4} />
       </div>
-      <div className="content-bg-6 flex items-center px-[80px] justify-center">
-        <Features {...goalsCard} />
+      <div className="content-bg-6 flex items-center px-[118px] justify-center">
+        <div className="flex flex-col items-center">
+          <div className="flex flex-col items-center space-y-4 w-[800px] text-center">
+            <div className="text-[24px] text-[#1A57FF]">
+              {goalsCard.blueText}
+            </div>
+            <div className="title-text">{goalsCard.title}</div>
+            <div className="text-[18px]">{goalsCard.content}</div>
+          </div>
+          <div className="flex w-full gap-12 pt-[70px] flex-1 justify-between">
+            {goalsCard.cards.map((card, index) => {
+              const CardIcon = iconMappings[card.cardIcon];
+              return (
+                <div key={index}>
+                  <div className="card-container w-[444px] h-[308px]">
+                    <div className="card flex flex-col px-[32px] py-[48px] space-y-[10px] ">
+                      <div className="white-circle w-fit">
+                        <CardIcon width={48} height={48} color={"#1A57FF"} />
+                      </div>
+                      <div className="text-[24px] font-semibold">
+                        {card.cardTitle}
+                      </div>
+                      <div className="text-[16px]">{card.cardContent}</div>
+                    </div>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        </div>
       </div>
       <div className="flex items-center content-bg-7">
         <div className="flex flex-col md:flex-row items-center md:space-x-[150px] px-[80px]">
@@ -130,51 +159,51 @@ export default function Home() {
       </div>
       <div className="flex flex-col items-center justify-center content-bg-8">
         <Testimonial />
-        <div className="flex flex-col items-center pt-10 md:pt-[80px]">
-            <div className="fpoint-text text-[24px]">Our Trusted Partners</div>
-            <div className="flex space-x-[90px] items-center">
-              <div>
-                <Image
-                  src="/asgardia.png"
-                  width={160}
-                  height={38}
-                  alt="Argardia Logo"
-                />
-              </div>
-              <div>
-                <Image
-                  src="/amara.png"
-                  width={221}
-                  height={38}
-                  alt="Argardia Logo"
-                />
-              </div>
-              <div>
-                <Image
-                  src="/aven.png"
-                  width={126}
-                  height={38}
-                  alt="Argardia Logo"
-                />
-              </div>
-              <div>
-                <Image
-                  src="/circle.png"
-                  width={135}
-                  height={38}
-                  alt="Argardia Logo"
-                />
-              </div>
-              <div>
-                <Image
-                  src="/ideaa.png"
-                  width={111}
-                  height={38}
-                  alt="Argardia Logo"
-                />
-              </div>
+        <div className="flex flex-col items-center pt-[80px]">
+          <div className="fpoint-text text-[24px]">Our Trusted Partners</div>
+          <div className="flex space-x-[90px] items-center">
+            <div>
+              <Image
+                src="/asgardia.png"
+                width={160}
+                height={38}
+                alt="Argardia Logo"
+              />
+            </div>
+            <div>
+              <Image
+                src="/amara.png"
+                width={221}
+                height={38}
+                alt="Argardia Logo"
+              />
+            </div>
+            <div>
+              <Image
+                src="/aven.png"
+                width={126}
+                height={38}
+                alt="Argardia Logo"
+              />
+            </div>
+            <div>
+              <Image
+                src="/circle.png"
+                width={135}
+                height={38}
+                alt="Argardia Logo"
+              />
+            </div>
+            <div>
+              <Image
+                src="/ideaa.png"
+                width={111}
+                height={38}
+                alt="Argardia Logo"
+              />
             </div>
           </div>
+        </div>
       </div>
       <div className="flex items-center justify-center content-bg-9">
         <div className="flex flex-col items-center px-10 md:px-20">
