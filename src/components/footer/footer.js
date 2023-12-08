@@ -12,11 +12,19 @@ import { usePathname } from "next/navigation";
 
 const Footer = () => {
   const route = usePathname();
-  const isContact = (path) => {
-    return route === path;
+  const getFooterClass = () => {
+    if (route === "/contact") {
+      return "footer-contact";
+    } else if (route === "/about") {
+      return "footer-about";
+    } else {
+      return "footer";
+    }
   };
+
+  const footerClass = getFooterClass();
   return (
-    <section className={isContact("/contact") ? "footer-contact" : "footer"}>
+    <section className={footerClass}>
       <div className="flex flex-col space-y-[16px]">
         <div className="flex items-center space-x-2">
           <Logo width={120} height={52} />

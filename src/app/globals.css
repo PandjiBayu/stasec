@@ -243,3 +243,25 @@ body {
   height: 86.5vw;
   background-image: url(../../public/service1-bg-2.png);
 }
+
+.about-bg-2 {
+  background-size: cover;
+  height: 54.2vw;
+  background-image: url(../../public/about-bg-2.png);
+}
+
+.about-bg-3 {
+  background-size: cover;
+  height: 52.8vw;
+  background-image: url(../../public/about-bg-3.png);
+}
+
+.content-title{
+  color: #fff;
+  font-family: "Switzer Regular", sans-serif;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing: -0.64px;
+}

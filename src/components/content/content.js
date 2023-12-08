@@ -24,7 +24,7 @@ const ContentRight = ({ imgPos, image, title, content }) => {
   return (
     <section className="flex items-center space-x-[250px] px-[118px]">
       {imgPos == "left" && (
-        <div className="image-wrapper">
+        <div>
           <Image src={imgPath} width={1500} height={1200} alt={image} />
         </div>
       )}
@@ -33,7 +33,7 @@ const ContentRight = ({ imgPos, image, title, content }) => {
         <div className="text-[18px]">{content}</div>
       </div>
       {imgPos == "right" && (
-        <div className="image-wrapper">
+        <div>
           <Image src={imgPath} width={1500} height={1200} alt={image} />
         </div>
       )}

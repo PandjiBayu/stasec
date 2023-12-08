@@ -119,7 +119,7 @@ const Features = ({
             {cards.map((card, index) => {
               console.log(index);
               return (
-                <div className="flex items-center">
+                <div key={index} className="flex items-center">
                   <Cards
                     key={index}
                     card={card}
