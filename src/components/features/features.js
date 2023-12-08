@@ -65,10 +65,13 @@ const Features = ({
             {blueCondition && (
               <div className="text-[24px] text-[#1A57FF]">{blueText}</div>
             )}
-            <div className="title-text" dangerouslySetInnerHTML={{ __html: title }}></div>
+            <div
+              className="title-text"
+              dangerouslySetInnerHTML={{ __html: title }}
+            ></div>
             <div className="text-[18px]">{content}</div>
           </div>
-          <div className="flex flex-col items-center w-full gap-12 md:flex-row">
+          <div className="flex flex-wrap items-center justify-center w-full gap-8">
             {cards.map((card, index) => {
               return (
                 <Cards
@@ -85,8 +88,14 @@ const Features = ({
         <div className="flex flex-col items-center py-12 md:py-0">
           <div className="flex flex-col items-center w-full space-y-4 text-center">
             <div className="text-[24px] text-[#1A57FF]">{blueText}</div>
-            <div className="title-text" dangerouslySetInnerHTML={{ __html: title }}></div>
-            <div className="text-[18px]" dangerouslySetInnerHTML={{ __html: content }}></div>
+            <div
+              className="title-text"
+              dangerouslySetInnerHTML={{ __html: title }}
+            ></div>
+            <div
+              className="text-[18px]"
+              dangerouslySetInnerHTML={{ __html: content }}
+            ></div>
           </div>
           <div className="flex flex-col md:flex-row items-center w-full gap-12 pt-[70px]">
             {cards.map((card, index) => {
@@ -120,8 +129,13 @@ const Features = ({
               console.log(index);
               return (
                 <div className="flex items-center" key={index}>
-                  <Cards key={index} card={card} cardIcon={card.cardIcon} cardType={cardType}/>
-                  {(index + 1) != cards.length && (
+                  <Cards
+                    key={index}
+                    card={card}
+                    cardIcon={card.cardIcon}
+                    cardType={cardType}
+                  />
+                  {index + 1 != cards.length && (
                     <div className="pl-[24px]">
                       <RightDash width={48} height={48} />
                     </div>
