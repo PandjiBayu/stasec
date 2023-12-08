@@ -37,10 +37,10 @@ export default function Service3() {
       </div>
       <div className="flex items-center service2-bg-2">
         <div className="flex items-center space-x-[150px] px-[118px]">
-          <div>
+          <div className="w-full">
             <Image
               src="/service3-content.png"
-              width={1200}
+              width={2400}
               height={1200}
               alt="feature-point"
               className="rounded-xl"
