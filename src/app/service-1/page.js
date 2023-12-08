@@ -61,17 +61,6 @@ export default function Service1() {
         </div>
         <div>
           <div className="flex flex-col items-center">
-            <div className="flex flex-col items-center space-y-4 w-[800px] text-center">
-              <div className="text-[24px] text-[#1A57FF]">OUR GOALS</div>
-              <div className="title-text">
-                Leading you to a stellar path to security
-              </div>
-              <div className="text-[18px]">
-                Providing solution with some goals to improve the security that
-                leading the your company with comprehensive system and tailored
-                solutions.
-              </div>
-            </div>
             <div className="flex w-full gap-12 pt-[70px] flex-1 justify-between">
               {keyBenefits.cards.map((card, index) => {
                 const CardIcon = iconMappings[card.cardIcon];
