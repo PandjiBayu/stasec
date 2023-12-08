@@ -34,7 +34,7 @@ const Header = () => {
   }, []);
 
   return (
-    <section className={`w-full header${isSticky ? " sticky" : ""}`}>
+    <section className={`w-full header ${isSticky ? " sticky" : ""}`}>
       <div className="flex items-center">
         <Logo width={150} height={72} isSticky={isSticky} />
       </div>

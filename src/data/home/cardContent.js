@@ -3,7 +3,7 @@ export const homeFeatures = {
   blueCondition: true,
   blueText: "PRODUCTS AND SERVICES",
   title:
-    "Enhance the Cybersecurity Infrastructure for an Optimal Security Measure",
+    "Enhance the Cybersecurity Infrastructure for an <br /> Optimal Security Measure",
   content:
     "We help you prepare, process, and evaluate the security of your digital future.",
   cards: [
@@ -32,15 +32,15 @@ export const goalsCard = {
   cardType: 2,
   blueCondition: true,
   blueText: "OUR GOALS",
-  title: "Leading you to a stellar path to security",
+  title: "Leading you to a stellar <br /> path to security",
   content:
-    " Providing solution with some goals to improve the security that leading the your company with comprehensive system and tailored solutions.",
+    " Providing solution with some goals to improve the security that leading the your company with <br /> comprehensive system and tailored solutions.",
   cards: [
     {
       cardIcon: "shieldCheck",
       cardTitle: "Comprehensive Security",
       cardContent:
-        "We give a holistic approach to cybersecurity, covering everything from network security to data protection and beyond.",
+        "We give a holistic approach to cybersecurity, covering everything from network security to data protection",
     },
     {
       cardIcon: "badgeCheck",

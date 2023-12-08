@@ -42,6 +42,12 @@ body {
   grid-area: header;
 }
 
+@media (max-width: 768px) {
+  .main .head-vector, .main .headers, .main .industry-gradient, .main .industry-image {
+    height: 100%;
+  }
+}
+
 .background-image {
   grid-area: header;
   background-size: cover;
@@ -58,6 +64,16 @@ body {
     rgba(23, 23, 23, 0.2) 41.24%,
     #171717 100%
   );
+}
+
+@media (max-width: 768px) {
+  .background-image {
+    height: 640px;
+  }
+
+  .gradient-image {
+    height: 640px;
+  }
 }
 
 .get-started {
@@ -89,6 +105,12 @@ body {
   font-weight: 700;
   line-height: 100%;
   letter-spacing: -0.8px;
+}
+
+@media (max-width: 768px) {
+  .header-title {
+    font-size: 56px;
+  }
 }
 
 .content-bg-1 {
@@ -145,11 +167,26 @@ body {
   background-image: url(../../public/content-bg-9.png);
 }
 
+@media (max-width: 768px) {
+  .content-bg-1, .content-bg-2, .content-bg-3, .content-bg-4, .content-bg-5, .content-bg-6, .content-bg-7, .content-bg-8, .content-bg-9 {
+    height: 100%;
+  }
+  .content-bg-1 {
+    display: block;
+  }
+}
+
 .fpoint-text {
   color: var(--White, #fff);
   font-family: "Switzer Regular", sans-serif;
   font-style: normal;
   text-align: left;
+}
+
+@media (max-width: 768px) {
+  .fpoint-text {
+    text-align: center;
+  }
 }
 
 .industry-image {
@@ -180,6 +217,12 @@ body {
   background-size: cover;
   height: 53vw;
   background-image: url(../../public/industry-bg-2.png);
+}
+
+@media (max-width: 768px) {
+  .industry-bg-1, .industry-bg-2 {
+    height: 100%;
+  }
 }
 
 .service2-image {

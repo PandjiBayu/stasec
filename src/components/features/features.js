@@ -60,15 +60,15 @@ const Features = ({
   return (
     <>
       {cardType == 1 ? (
-        <section className="flex flex-col pb-12 px-[118px] space-y-12">
+        <section className="flex flex-col py-12 space-y-12 md:px-20">
           <div className="flex flex-col items-center space-y-4">
             {blueCondition && (
               <div className="text-[24px] text-[#1A57FF]">{blueText}</div>
             )}
-            <div className="title-text">{title}</div>
+            <div className="title-text" dangerouslySetInnerHTML={{ __html: title }}></div>
             <div className="text-[18px]">{content}</div>
           </div>
-          <div className="w-full flex flex-wrap gap-12 justify-center">
+          <div className="flex flex-col items-center w-full gap-12 md:flex-row">
             {cards.map((card, index) => {
               return (
                 <Cards
@@ -82,19 +82,19 @@ const Features = ({
           </div>
         </section>
       ) : cardType == 2 ? (
-        <div className="flex flex-col items-center">
-          <div className="flex flex-col items-center space-y-4 w-[800px] text-center">
+        <div className="flex flex-col items-center py-12 md:py-0">
+          <div className="flex flex-col items-center w-full space-y-4 text-center">
             <div className="text-[24px] text-[#1A57FF]">{blueText}</div>
-            <div className="title-text">{title}</div>
-            <div className="text-[18px]">{content}</div>
+            <div className="title-text" dangerouslySetInnerHTML={{ __html: title }}></div>
+            <div className="text-[18px]" dangerouslySetInnerHTML={{ __html: content }}></div>
           </div>
-          <div className="flex w-full gap-12 pt-[70px] flex-1 justify-between">
+          <div className="flex flex-col md:flex-row items-center w-full gap-12 pt-[70px]">
             {cards.map((card, index) => {
               const CardIcon = iconMappings[card.cardIcon];
               return (
                 <div key={index}>
                   <div className="card-container">
-                    <div className="card flex flex-col p-[24px] space-y-[10px] ">
+                    <div className="card flex flex-col px-[32px] py-[48px] space-y-[10px] ">
                       <div className="white-circle w-fit">
                         <CardIcon width={48} height={48} color={"#1A57FF"} />
                       </div>
@@ -110,23 +110,18 @@ const Features = ({
           </div>
         </div>
       ) : cardType == 3 ? (
-        <section className="flex flex-col pb-12 px-[118px] space-y-12 w-full">
+        <section className="flex flex-col pb-12 px-[80px] space-y-12 w-full">
           <div className="flex flex-col items-center space-y-4">
             <div className="text-[24px] text-[#1A57FF]">{blueText}</div>
             <div className="title-text">{title}</div>
           </div>
-          <div className="w-full flex gap-6 justify-center">
+          <div className="flex justify-center w-full gap-6">
             {cards.map((card, index) => {
               console.log(index);
               return (
-                <div key={index} className="flex items-center">
-                  <Cards
-                    key={index}
-                    card={card}
-                    cardIcon={card.cardIcon}
-                    cardType={cardType}
-                  />
-                  {index + 1 != cards.length && (
+                <div className="flex items-center" key={index}>
+                  <Cards key={index} card={card} cardIcon={card.cardIcon} cardType={cardType}/>
+                  {(index + 1) != cards.length && (
                     <div className="pl-[24px]">
                       <RightDash width={48} height={48} />
                     </div>
