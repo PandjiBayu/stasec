@@ -29,23 +29,19 @@ export default function About() {
             <div className="flex flex-col space-y-12">
               <div className="content-title">A Stellar Path to Security</div>
               <div className="text-[18px]">
-                STASEC is the amalgamation of two fundamental concepts:
-                “Stellar” and “Security”. Just as stars light up the night sky
-                and act as a guilding beacons, STATEC shines a light on your
-                path to comprehensive cybersecurity. We help you embarking on a
-                journey towards a more secure, resilient, and thriving digital
-                future.
+              STASEC is the amalgamation of two fundamental concepts: “Stellar” 
+and “Security”. Just as stars light up the night sky and act as a guilding beacons. We help  you embarking on a journey towards a more secure, resilient, and thriving digital future. STASEC is registered and operates under PT. Digital Berkah Mandiri.
               </div>
             </div>
           </div>
           <div className="flex items-center space-x-[250px]">
             <div className="flex flex-col space-y-6">
               <div className="fpoint-text text-[24px] flex">
-                <div className="border-b-2 w-full flex-1">Our Vision</div>
+                <div className="flex-1 w-full border-b-2">Our Vision</div>
                 <div className="border-b-2 border-[#366BE9] flex-1">
                   Our Mission
                 </div>
-                <div className="border-b-2 w-full flex-1"></div>
+                <div className="flex-1 w-full border-b-2"></div>
               </div>
               <div className="text-[18px]">
                 Providing cybersecurity integrated solutions for comprehensive,
@@ -70,7 +66,7 @@ export default function About() {
       <div className="about-bg-2">
         <Testimonial />
       </div>
-      <div className="about-bg-3 flex items-center justify-center">
+      <div className="flex items-center justify-center about-bg-3">
         <div className="flex flex-col items-center">
           <div className="fpoint-text text-[46px]">
             Fortify Your Digital Future with Our Security Solution
