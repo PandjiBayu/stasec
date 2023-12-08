@@ -34,13 +34,13 @@ export default function Industry() {
       <div className="flex items-center industry-bg-1">
         <Content {...industryContent1} />
       </div>
-      <div className="flex items-center content-bg-2">
+      <div className="flex items-center content-bg-3">
         <Content {...industryContent2} />
       </div>
       <div className="flex items-center content-bg-4">
         <Content {...industryContent3} />
       </div>
-      <div className="flex items-center content-bg-5">
+      <div className="flex items-center content-bg-3">
         <Content {...industryContent4} />
       </div>
       <div className="flex items-center justify-center industry-bg-2">
