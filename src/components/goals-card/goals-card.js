@@ -7,8 +7,8 @@ const GoalsCard = ({goalsCard}) => {
         {goalsCard.cards.map((card, index) => {
           const CardIcon = iconMappings[card.cardIcon];
           return (
-              <div className="card-container sm:h-[308px] "  key={index}>
-                <div className="card flex flex-col px-[32px] py-[48px] space-y-[10px] ">
+              <div className="card-container sm:h-[320px] " key={index}>
+                <div className="card flex flex-col px-[32px] py-[48px] space-y-[10px] min-h-full">
                   <div className="white-circle w-fit">
                     <CardIcon width={48} height={48} color={"#1A57FF"} />
                   </div>

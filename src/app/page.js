@@ -47,8 +47,8 @@ export default function Home() {
    
 
       <div className="my-8 sm:my-16">
-        <div className="flex flex-col items-center">
-          <div className="flex flex-col items-center space-y-4 w-full text-center">
+        <div className="flex flex-col items-center px-16">
+          <div className="flex flex-col items-center w-full space-y-4 text-center">
             <div className="text-[24px] text-[#1A57FF]">
               {goalsCard.blueText}
             </div>
@@ -61,7 +61,7 @@ export default function Home() {
       </div>
       
       <div className="flex items-center content-bg-7">
-        <div className="flex flex-col lg:flex-row items-center px-3 sm:px-20 gap-20">
+        <div className="flex flex-col items-center gap-20 px-3 lg:flex-row sm:px-20">
           <figure className="">
             <Image
               src="/feature-point.png"
@@ -93,7 +93,7 @@ export default function Home() {
                 <div className="card px-[20px] py-[20px] flex items-center justify-center">
                   <Time width={40} height={34} />
                 </div>
-                <p className="md:text-2xl sm:text-xl text-sm">
+                <p className="text-sm md:text-2xl sm:text-xl">
                   Real-Time Incident Response
                 </p>
               </div>
@@ -101,7 +101,7 @@ export default function Home() {
                 <div className="card px-[20px] py-[20px] flex items-center justify-center">
                   <Threat width={40} height={40} />
                 </div>
-                <p className="md:text-2xl sm:text-xl text-sm">
+                <p className="text-sm md:text-2xl sm:text-xl">
                   Spot Weaknesses, Boots Security
                 </p>
               </div>
@@ -109,7 +109,7 @@ export default function Home() {
                 <div className="card px-[20px] py-[20px] flex items-center justify-center">
                   <Customize width={40} height={40} />
                 </div>
-                <p className="md:text-2xl sm:text-xl text-sm">
+                <p className="text-sm md:text-2xl sm:text-xl">
                   Improve Code Quality
                 </p>
               </div>
@@ -117,7 +117,7 @@ export default function Home() {
                 <div className="card px-[20px] py-[20px] flex items-center justify-center">
                   <Training width={40} height={40} />
                 </div>
-                <p className="md:text-2xl sm:text-xl text-sm">
+                <p className="text-sm md:text-2xl sm:text-xl">
                   AI-Powered Assessment
                 </p>
               </div>
@@ -130,7 +130,7 @@ export default function Home() {
         <Testimonial />
         <div className="flex flex-col items-center px-10">
           <div className="text-[24px]">Our Trusted Partners</div>
-          <div className="flex sm:flex-row flex-col flex-wrap gap-4 pt-6 sm:pt-0 items-center">
+          <div className="flex flex-col flex-wrap items-center gap-4 pt-6 sm:flex-row sm:pt-0">
             <div>
               <Image
                 src="/asgardia.png"
