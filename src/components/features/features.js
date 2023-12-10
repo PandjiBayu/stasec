@@ -122,7 +122,7 @@ const Features = ({
             <div className="text-[24px] text-[#1A57FF]">{blueText}</div>
             <div className="title-text">{title}</div>
           </div>
-          <div className="flex flex-col items-center justify-center h-full gap-2 space-x-1 md:flex-row md:gap-6 md:space-x-8">
+          <div className="flex flex-col items-center justify-center h-full gap-2 space-x-1 space-y-8 md:space-y-0 md:flex-row md:gap-6 md:space-x-8">
             {cards.map((card, index) => {
               console.log(index);
               return (
