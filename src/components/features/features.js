@@ -60,18 +60,18 @@ const Features = ({
   return (
     <>
       {cardType == 1 ? (
-        <section className="flex flex-col items-center justify-center w-full py-12 space-y-12 overflow-hidden md:px-10">
+        <section className="flex flex-col items-center justify-center w-full py-12 space-y-12  md:px-10 ">
           <div className="flex flex-col items-center space-y-4">
             {blueCondition && (
-              <div className="text-[24px] text-[#1A57FF]">{blueText}</div>
+              <div className="text-[24px] text-center text-[#1A57FF]">{blueText}</div>
             )}
-            <div
+            <h2
               className="title-text"
               dangerouslySetInnerHTML={{ __html: title }}
-            ></div>
-            <div className="text-[18px]">{content}</div>
+            ></h2>
+            <p className="text-[18px] text-center">{content}</p>
           </div>
-          <div className="flex flex-wrap items-center justify-center space-x-8">
+          <div className="flex flex-wrap h-full items-center justify-center gap-2 md:gap-6 space-x-1 md:space-x-8 px-2">
             {cards.map((card, index) => (
               <Cards
                 key={index}
@@ -83,7 +83,7 @@ const Features = ({
           </div>
         </section>
       ) : cardType == 2 ? (
-        <div className="flex flex-col items-center py-12 md:py-0">
+        <div className="flex flex-col items-center py-12 md:py-0 ">
           <div className="flex flex-col items-center w-full space-y-4 text-center">
             <div className="text-[24px] text-[#1A57FF]">{blueText}</div>
             <div
@@ -117,12 +117,12 @@ const Features = ({
           </div>
         </div>
       ) : cardType == 3 ? (
-        <section className="flex flex-col pb-12 px-[80px] space-y-12 w-full">
+        <section className="flex flex-col pb-12 px-4 md:px-[80px] space-y-12 w-full ">
           <div className="flex flex-col items-center space-y-4">
             <div className="text-[24px] text-[#1A57FF]">{blueText}</div>
             <div className="title-text">{title}</div>
           </div>
-          <div className="flex justify-center w-full gap-6">
+          <div className="flex flex-wrap h-full items-center justify-center gap-2 md:gap-6 space-x-1 md:space-x-8">
             {cards.map((card, index) => {
               console.log(index);
               return (
@@ -134,7 +134,7 @@ const Features = ({
                     cardType={cardType}
                   />
                   {index + 1 != cards.length && (
-                    <div className="pl-[24px]">
+                    <div className="pl-[24px] lg:block hidden">
                       <RightDash width={48} height={48} />
                     </div>
                   )}

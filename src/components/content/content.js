@@ -22,7 +22,7 @@ const ContentRight = ({ imgPos, image, title, content }) => {
   }
 
   return (
-    <section className="flex flex-col md:flex-row items-center justify-center w-full px-[80px] py-[48px] space-x-24">
+    <section className=" flex flex-col md:flex-row items-start md:items-center justify-center w-full px-2 md:px-[80px] py-[48px] space-x-1 md:space-x-24">
       <div
         className={`image-wrapper ${
           imgPos === "right" ? "order-0 md:order-1" : ""
@@ -36,9 +36,9 @@ const ContentRight = ({ imgPos, image, title, content }) => {
           alt={image}
         />
       </div>
-      <div className="flex flex-col items-center md:items-start space-y-12 max-w-[400px] md:max-w-full">
-        <div className="content-title w-[600px]">{title}</div>
-        <div className="text-[18px] text-center md:text-start w-[500px]">{content}</div>
+      <div className="flex flex-col items-center md:items-start space-y-12 ">
+        <h3 className="content-title  ">{title}</h3>
+        <p className="text-[18px] text-center md:text-start ">{content}</p>
       </div>
     </section>
   );

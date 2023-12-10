@@ -5,108 +5,80 @@ import Footer from "@/components/footer/footer";
 import { serviceFeatures1, keyBenefits } from "@/data/service/serviceFeatures";
 import { workProcess1 } from "@/data/service/workProcess";
 import iconMappings from "@/components/icons/iconMappings";
+import BannerService1 from "@/components/banner-homepage/banner-service-1";
+import FooterContainer from "@/components/footer/footer-container";
 
 export default function Service1() {
   return (
-    <section className="main">
-      <div className="service1-image"></div>
-      <div className="service3-gradient"></div>
-      <div className="head-vector">
-        <Header />
-        <div className="w-full px-[80px] flex pt-[80px]">
-          <div className="flex flex-col space-y-[40px] py-[80px]">
-            <div className="header-title">Penetration Test</div>
-            <div className="w-[600px] font-[16px]">
-              It&apos;s a comprehensive services that help you identify
-              vulnerabilities in your systems and applications, enabling you to
-              proactively strengthen your defenses.
-            </div>
-            <div className="get-started">
-              <div className="get-started-font">Get Started</div>
-            </div>
-          </div>
-          <div className="hidden md:w-full"></div>
-        </div>
-      </div>
-      <div className="service1-bg-1 flex items-center justify-center mt-[-50px]">
+    <section>
+      <BannerService1 />
+
+      <div className="md:service1-bg-1 flex items-center justify-center ">
         <Features {...serviceFeatures1} />
       </div>
-      <div className="service1-bg-2 flex flex-col items-center px-[118px]">
+ 
+      <div className="md:service1-bg-2 flex flex-col items-center w-full px-4 md:px-12 ">
         <div className="flex flex-col">
-          <div className="flex items-center space-x-[250px]">
-            <div className="flex flex-col space-y-[24px] w-[1000px]">
-              <div
-                className="fpoint-text text-[64px]"
-                style={{ lineHeight: "70px" }}
+          <div className="grid grid-cols-3 items-center gap-6">
+            <div className="flex flex-col space-y-[24px] col-span-3 md:col-span-2">
+              <h4
+                className="fpoint-text text-2xl sm:text-4xl md:text-7xl"
               >
                 The Key Benefit Of Our Service
-              </div>
-              <div className="text-[18px]">
+              </h4>
+              
+              <p className="text-sm sm:text-[18px] leading-6">
                 Unlock unparalleled security insights with our Penetration Test
                 solution. Safeguard your digital assets by proactively
                 identifying vulnerabilities, fortifying your defenses, and
                 ensuring resilience against potential cyber threats. Get all of
                 the benefit to provide your cybersecurity needs.
-              </div>
+              </p>
             </div>
-            <div>
+
+            <div className="col-span-3 md:col-span-1 h-[350px] md:h-[500px]">
               <Image
                 src={"/service1-content.png"}
                 width={1000}
                 height={1000}
                 alt="service1-content"
+                className="h-full w-full object-cover"
               />
             </div>
           </div>
         </div>
         <div>
+
           <div className="flex flex-col items-center">
-            <div className="flex w-full gap-12 pt-[70px] flex-1 justify-between">
+            <div className="grid lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-2 xl:grid-cols-4 w-full gap-4 sm:gap-5 md:gap-12 pt-[70px] flex-1 ">
               {keyBenefits.cards.map((card, index) => {
                 const CardIcon = iconMappings[card.cardIcon];
                 return (
-                  <div key={index}>
-                    <div className="card-container w-[240px] ">
+                    <div className="card-container" key={index}>
                       <div className="card flex flex-col p-[24px] space-y-[10px] h-[422px]">
                         <div className="white-circle w-fit">
                           <CardIcon width={48} height={48} color={"#1A57FF"} />
                         </div>
-                        <div className="text-[24px] font-semibold">
+                        <h4 className="text-xl md:text-[24px] font-semibold">
                           {card.cardTitle}
-                        </div>
-                        <div className="text-[14px]">{card.cardContent}</div>
+                        </h4>
+                        <p className="text-[14px]">{card.cardContent}</p>
                       </div>
                     </div>
-                  </div>
                 );
               })}
             </div>
+
           </div>
         </div>
       </div>
-      <div className="flex items-center service2-bg-3">
+
+      <div className="flex flex-wrap items-center md:service2-bg-3 sm:mt-0 mt-7">
         <Features {...workProcess1} />
       </div>
-      <div className="flex items-center justify-center industry-bg-2">
-        <div className="flex flex-col items-center">
-          <div className="fpoint-text text-[46px]">
-            Fortify Your Digital Future with Our Security Solution
-          </div>
-          <div
-            className="fpoint-text text-[18px] w-[700px] pt-4"
-            style={{ textAlign: "center" }}
-          >
-            Ensures a proactive defense againts evolving threats, providing
-            peace of mind for your digital landscape.
-          </div>
-          <div className="w-[230px] px-[36px] py-[20px] flex items-center justify-center rounded-[8px] bg-[#1A57FF] mt-[50px]">
-            <div className="text-[24px]">Get In Touch</div>
-          </div>
-        </div>
-      </div>
-      <div>
-        <Footer />
-      </div>
+
+      <FooterContainer />
+
     </section>
   );
 }

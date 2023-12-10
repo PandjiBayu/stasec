@@ -5,11 +5,21 @@ import "./header.css";
 import ArrowDown from "../icons/arrow-down";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import MobileMenu from "./mobile-menu";
 
 const Header = () => {
   const [isSticky, setIsSticky] = useState(false);
   const [isActiveDropdown, setIsActiveDropdown] = useState(false);
   const [selectedService, setSelectedService] = useState(null);
+
+  const [open, setOpen] = useState(false);
+ 
+ 
+  const openMobileMenu = (e) => {
+    e.preventDefault();
+    setOpen(!open);
+  };
+
   const route = usePathname();
   const isActive = (path) => {
     if (path === "/service") {
@@ -44,23 +54,28 @@ const Header = () => {
     setIsActiveDropdown(false);
   };
 
+  const currentBtnClass = "z-10 text-white bg-blue-700 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center me-2  dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+
+  const fixedHeader = "fixed top-0 w-full bg-header-bg"
   return (
-    <section className={`w-full header ${isSticky ? " sticky" : ""}`}>
-      <div className="flex items-center">
+    <header className={`w-full py-8 z-10 px-2 sm:px-4 lg:px-10 ${isSticky ? fixedHeader : "bg-transparent"}`}>
+
+     <nav className="flex justify-between w-full lg:gap-5 items-center">
+      <Link href="/" className="flex items-center px-2 lg:px-10 z-10">
         <Logo width={150} height={72} isSticky={isSticky} />
-      </div>
-      <div className="header-options">
+      </Link>
+
+      <div className="md:flex hidden items-center lg:gap-14 md:gap-8 sm:gap-4 hidden">
         <Link
           href={"/"}
-          className={isActive("/") ? "current-btn" : ""}
-          style={{ padding: "10px 24px" }}
+          className={isActive("/") ? currentBtnClass : "z-10"}
         >
           HOME
         </Link>
         <div className={`relative inline-block`} onClick={toggleDropdown}>
           <div
             className={`flex items-center space-x-1 cursor-pointer ${
-              isActive("/service") ? "current-btn" : ""
+              isActive("/service") ? currentBtnClass : ""
             }`}
           >
             <div>SERVICE</div>
@@ -101,23 +116,41 @@ const Header = () => {
         </div>
         <Link
           href={"/industry"}
-          className={isActive("/industry") ? "current-btn" : ""}
-          style={{ padding: "10px 24px" }}
+          className={isActive("/industry") ? currentBtnClass : "z-10"}
         >
           INDUSTRY
         </Link>
         <Link
           href={"/about"}
-          className={isActive("/about") ? "current-btn" : ""}
-          style={{ padding: "10px 24px" }}
+          className={isActive("/about") ? currentBtnClass : "z-10"}
         >
           ABOUT
         </Link>
       </div>
-      <Link href={"/contact"} className="contactus-btn">
+      <Link href={"/contact"} className="md:block hidden text-white bg-blue-800 hover:bg-blue-900 focus:ring-4 focus:ring-blue-300 font-medium rounded-xl text-xs sm:text-sm md:px-5 md:py-4 px-2 py-2.5 sm:ml-1 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">
         CONTACT US
       </Link>
-    </section>
+
+      <button
+  onClick={openMobileMenu}
+  class="text-gray-400 hover:text-white font-bold text-xl block md:hidden">
+     { open ? 
+     <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+   </svg>
+      :   
+     <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+        </svg>
+     } 
+</button>
+
+
+     </nav>
+ 
+   <MobileMenu open={open} isActive={isActive} />
+ 
+    </header>
   );
 };
 

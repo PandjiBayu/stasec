@@ -1,5 +1,5 @@
 .contact-img {
-  display: flex;
+  /* display: flex;
   width: 485px;
   height: 704px;
   padding: 40px 24px;
@@ -7,14 +7,14 @@
   justify-content: center;
   align-items: flex-start;
   gap: 40px;
-  flex-shrink: 0;
+  flex-shrink: 0; */
+  height: 704px;
   background-image: url(../../../public/contact-img.png);
 }
 
 .contact-form {
   display: flex;
-  width: 793px;
-  padding: 40px;
+  /* width: 793px; */
   flex-direction: column;
   justify-content: center;
   align-items: center;

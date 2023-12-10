@@ -37,28 +37,26 @@ const Testimonial = () => {
   };
 
   return (
-    <section className="p-[80px] flex flex-col items-center justify-center w-full">
-      <div className="flex justify-between items-center w-full gap-[100px]">
+    <section className="xl:p-28 lg-p:24 p-2 py-10 flex flex-col items-center justify-center w-full">
+      <div className="flex justify-between items-center gap-2 sm:gap-8 md:gap-16">
         <button
           onClick={goToPrevious}
-          className="rounded-full bg-white w-[42px] h-[42px] p-[15px]"
+          className="rounded-full bg-white px-1.5 py-1.5 sm:px-3 sm:py-3"
         >
           <ArrowLeft width={14} height={13} />
         </button>
         <div className="flex flex-col space-y-[60px] items-center">
-          <div className="space-y-[22.5px] flex flex-col items-center">
-            <div
-              className="fpoint-text text-[56px] w-[551px]"
-              style={{ textAlign: "center", lineHeight: "65.625px" }}
+          <div className="sm:gap-7 gap-3 flex flex-col items-center">
+            <h2
+              className="sm:text-5xl text-3xl font-bold text-center"
             >
               Why Customers Love Working With Us
-            </div>
+            </h2>
             <div>
               <Quotation width={32} height={26} />
             </div>
             <div
-              className="fpoint-text text-[18px] h-[120px]"
-              style={{ textAlign: "center", lineHeight: "33.375px" }}
+              className="fpoint-text sm:text-sm tracking-wide leading-7"
             >
               {testimonials[currentIndex].content}
             </div>
@@ -90,7 +88,7 @@ const Testimonial = () => {
         </div>
         <button
           onClick={goToNext}
-          className="rounded-full bg-white w-[42px] h-[42px] p-[15px]"
+          className="rounded-full bg-white px-1.5 py-1.5 sm:px-3 sm:py-3"
         >
           <ArrowRight width={14} height={13} />
         </button>

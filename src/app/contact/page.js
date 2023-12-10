@@ -8,21 +8,17 @@ import Location from "@/components/icons/location";
 
 export default function Contact() {
   return (
-    <section className="main">
-      <div className="gradient-image"></div>
-      <div className="headers">
-        <HeadVector />
-      </div>
-      <div class="head-vector">
+    <section>
+      <div class="head-vector gradient">
         <Header />
-        <div className="flex items-center justify-center h-full">
-          <div className="contact-img">
-            <div
-              className="text-[50px] font-semibold"
-              style={{ lineHeight: "normal" }}
+        
+        <div className="grid md:grid-cols-2 grid-cols-1 items-center justify-center h-full">
+          <div className="contact-img bg-no-repeat w-full bg-cover h-full flex flex-col gap-10 justify-center py-3 px-6">
+            <h3
+              className="text-3xl md:text-5xl font-semibold"
             >
               Contact us using the form on the cyber security
-            </div>
+            </h3>
             <div className="flex flex-col space-y-[20px]">
               <div className="flex space-x-[10px]">
                 <div className="rounded-full bg-white w-[45px] h-[45px] flex items-center justify-center">
@@ -33,6 +29,7 @@ export default function Contact() {
                   <div className="text-[18px]">infocontact@gmail.com</div>
                 </div>
               </div>
+              
               <div className="flex space-x-[10px]">
                 <div className="rounded-full bg-white w-[45px] h-[45px] flex items-center justify-center">
                   <Phone width={22} height={22} color={"#103BC3"} />
@@ -53,9 +50,10 @@ export default function Contact() {
               </div>
             </div>
           </div>
-          <div className="contact-form">
+
+          <div className="contact-form w-full sm:p-10 p-4">
             <form className="input-list">
-              <div className="flex items-center space-x-[32px] w-full ">
+              <div className="flex sm:flex-row flex-col gap-4 sm:gap-0 sm:space-x-[32px] w-full ">
                 <div className="input-inner-container space-y-[16px] flex-1">
                   <div>Name*</div>
                   <input
@@ -71,7 +69,7 @@ export default function Contact() {
                   />
                 </div>
               </div>
-              <div className="flex items-center space-x-[32px] w-full ">
+              <div className="flex sm:flex-row flex-col gap-4 sm:gap-0 sm:space-x-[32px] w-full ">
                 <div className="input-inner-container space-y-[16px] flex-1">
                   <div>Company Name*</div>
                   <input
@@ -116,9 +114,8 @@ export default function Contact() {
           </div>
         </div>
       </div>
-      <div>
+
         <Footer />
-      </div>
     </section>
   );
 }
