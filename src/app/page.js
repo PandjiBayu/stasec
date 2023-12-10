@@ -166,7 +166,7 @@ export default function Home() {
       {/* TESTI */}
       <div className="flex flex-col items-center justify-center content-bg-8">
         <Testimonial />
-        <div className="flex flex-col items-center px-10">
+        <div className="flex-col items-center hidden px-10 sm:flex">
           <div className="text-[24px]">Our Trusted Partners</div>
           <div className="flex flex-col flex-wrap items-center gap-4 pt-6 sm:flex-row sm:pt-0">
             <div>

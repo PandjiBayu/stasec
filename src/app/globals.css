@@ -219,9 +219,7 @@ body {
 }
 
 .content-bg-9 {
-  background-size: cover;
-  height: 100%;
-  /* background-image: url(../../public/content-bg-9.png); */
+  z-index: -1;
 }
 
 @media (max-width: 768px) {
