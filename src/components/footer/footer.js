@@ -24,7 +24,7 @@ const Footer = () => {
 
   const footerClass = getFooterClass();
   return (
-    <footer className="flex sm:flex-row sm:gap-0 gap-6 flex-col flex-wrap items-start justify-between px-1 sm:px-12 md:px-14 lg:px-16 py-10">
+    <footer className="flex flex-col flex-wrap items-start justify-between gap-6 px-10 py-10 sm:flex-row sm:gap-0 sm:px-12 md:px-14 lg:px-16">
       <div className="flex flex-col space-y-[16px]">
         <div className="flex items-center space-x-2">
           <Logo width={120} height={52} />
@@ -76,11 +76,11 @@ const Footer = () => {
         <div className="input-field flex  lg:h-[80px] h-[60px]  sm:h-[70px] p-1 sm:p-2 lg:p-8">
           <input
             style={{ color: "#4A4A4A", outline: "none" }}
-            className="px-1 w-full"
+            className="w-full px-1"
             placeholder="Enter your email"
           />
  
-          <span className="subs-button text-sm sm:text-2xl  py-3 px-4 lg:py-4 lg:px-5">Subscribe</span>
+          <span className="px-4 py-3 text-sm subs-button sm:text-2xl lg:py-4 lg:px-5">Subscribe</span>
         </div>
       </div>
     </footer>
