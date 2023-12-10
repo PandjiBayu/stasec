@@ -22,7 +22,7 @@ export default function Service1() {
           <div className="grid items-center grid-cols-3 gap-6">
             <div className="flex flex-col space-y-[24px] col-span-3 md:col-span-2">
               <h4
-                className="text-2xl fpoint-text sm:text-4xl md:text-7xl"
+                className="text-2xl font-bold fpoint-text sm:text-4xl md:text-7xl"
               >
                 The Key Benefit Of Our Service
               </h4>

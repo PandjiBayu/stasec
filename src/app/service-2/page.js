@@ -31,9 +31,9 @@ export default function Service2() {
         <Features {...serviceFeatures2} />
       </div>
       
-      <div className="md:service2-bg-2 flex items-center my-14 ">
+      <div className="flex items-center md:service2-bg-2 my-14 ">
 
-        <div className="grid  grid-cols-1 md:grid-cols-2 items-start lg:items-center md:space-x-8  md:px-12 lg:px-20 sm:px-6 px-3">
+        <div className="grid items-start grid-cols-1 px-3 md:grid-cols-2 lg:items-center md:space-x-8 md:px-12 lg:px-20 sm:px-6">
           <div  >
             <Image
               src="/service2-content.png"
@@ -44,9 +44,9 @@ export default function Service2() {
             />
           </div>
 
-          <div className="flex flex-col items-center sm:items-start sm:mt-0 mt-5">
+          <div className="flex flex-col items-center mt-5 sm:items-start sm:mt-0">
             <div
-              className="fpoint-text text-3xl sm:text-4xl md:text-5xl lg:text-6xl pb-[24px]"
+              className="fpoint-text font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl pb-[24px]"
             >
               The Key Benefit Of Our Service
             </div>
@@ -67,7 +67,7 @@ export default function Service2() {
                   <Customize width={64} height={64} />
                 </div>
                 <h4
-                 className="fpoint-text text-xl lg:text-2xl"
+                 className="text-xl fpoint-text lg:text-2xl"
                   style={{ textAlign: "center" }}
                 >
                   Reduces the risk of security vulnerabilities in the software
@@ -79,7 +79,7 @@ export default function Service2() {
                   <ShieldCheck width={64} height={64} color={"white"} />
                 </div>
                 <h4
-                className="fpoint-text text-xl lg:text-2xl"
+                className="text-xl fpoint-text lg:text-2xl"
                   style={{ textAlign: "center" }}
                 >
                   Ensures that security is a part of development process
@@ -91,7 +91,7 @@ export default function Service2() {
                   <DollarSign width={64} height={64} color={"white"} />
                 </div>
                 <h4
-                className="fpoint-text text-xl lg:text-2xl"
+                className="text-xl fpoint-text lg:text-2xl"
                   style={{ textAlign: "center" }}
                 >
                   Reduce the need for costly post-development security fixes
@@ -103,7 +103,7 @@ export default function Service2() {
                   <Award width={64} height={64} color={"white"} />
                 </div>
                 <h4
-                  className="fpoint-text text-xl lg:text-2xl"
+                  className="text-xl fpoint-text lg:text-2xl"
                   style={{ textAlign: "center" }}
                 >
                   Enhances overall software quality
@@ -118,7 +118,7 @@ export default function Service2() {
 
       </div>
 
-      <div className="md:service2-bg-3 flex items-center">
+      <div className="flex items-center md:service2-bg-3">
       <Features {...workProcess2} />
       </div>
  
