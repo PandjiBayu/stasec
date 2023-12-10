@@ -5,7 +5,7 @@ const Banner = () => {
 
     return(
       <div class="head-vector background-image bg-cover h-screen relative">
-      <div className="xl:block hidden lg:absolute top-0 left-0">
+      <div className="top-0 left-0 hidden xl:block lg:absolute">
         <HeadVector />
       </div>
       <Header />
