@@ -23,44 +23,84 @@ import Banner from "@/components/banner-homepage/banner";
 import FooterContainer from "@/components/footer/footer-container";
 
 export default function Home() {
- 
- 
   return (
-    <section className="text-white">
-  
-    <Banner />
-     <div className="flex items-center content-bg-1">
+    <section className="relative overflow-x-hidden text-white ">
+      <Banner />
+      <Image
+          className="absolute hidden line-vector-1 lg:block"
+          src="/line-right.svg"
+          width={480}
+          height={480}
+          alt="head-vector"
+        />
+      <div className="flex items-center content-bg-1">
         <Features {...homeFeatures} />
       </div>
+      <Image
+          className="absolute hidden line-vector-2 lg:block"
+          src="/line-left.svg"
+          width={480}
+          height={480}
+          alt="head-vector"
+        />
       <div className="flex items-center content-bg-2">
         <Content {...homeContent1} />
       </div>
+      <Image
+          className="absolute hidden line-vector-3 lg:block"
+          src="/line-right.svg"
+          width={480}
+          height={480}
+          alt="head-vector"
+        />
       <div className="flex items-center content-bg-3">
         <Content {...homeContent2} />
       </div>
+      <Image
+          className="absolute hidden line-vector-4 lg:block"
+          src="/line-left.svg"
+          width={480}
+          height={480}
+          alt="head-vector"
+        />
       <div className="flex items-center content-bg-4">
         <Content {...homeContent3} />
       </div>
+      <Image
+          className="absolute hidden line-vector-5 lg:block"
+          src="/line-right.svg"
+          width={480}
+          height={480}
+          alt="head-vector"
+        />
       <div className="flex items-center content-bg-5">
         <Content {...homeContent4} />
       </div>
-   
-
+      <Image
+          className="absolute hidden line-vector-6 lg:block"
+          src="/line-left.svg"
+          width={480}
+          height={480}
+          alt="head-vector"
+        />
       <div className="my-8 sm:my-16">
         <div className="flex flex-col items-center px-16">
           <div className="flex flex-col items-center w-full space-y-4 text-center">
             <div className="text-[24px] text-[#1A57FF]">
               {goalsCard.blueText}
             </div>
-            <div className="title-text" dangerouslySetInnerHTML={{ __html: goalsCard.title }}></div>
+            <div
+              className="title-text"
+              dangerouslySetInnerHTML={{ __html: goalsCard.title }}
+            ></div>
             <div className="text-[18px]">{goalsCard.content}</div>
           </div>
-          
-         <GoalsCard goalsCard={goalsCard} />
+
+          <GoalsCard goalsCard={goalsCard} />
         </div>
       </div>
-      
-      <div className="flex items-center content-bg-7">
+
+      <div className="flex items-center mt-64 content-bg-7">
         <div className="flex flex-col items-center gap-20 px-3 lg:flex-row sm:px-20">
           <figure className="">
             <Image
@@ -75,9 +115,7 @@ export default function Home() {
             <p className="text-[24px] text-center md:text-start text-[#1A57FF] font-semibold pb-[8px]">
               Feature Point
             </p>
-            <h2
-              className="font-semibold text-4xl md:text-5xl lg:text-6xl pb-[24px] text-center md:text-start "
-            >
+            <h2 className="font-semibold text-4xl md:text-5xl lg:text-6xl pb-[24px] text-center md:text-start ">
               How Can We Help You Increase Your Cybersecurity System?
             </h2>
             <p className="sm:text-lg text-md">
@@ -125,7 +163,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-{/* TESTI */}
+      {/* TESTI */}
       <div className="flex flex-col items-center justify-center content-bg-8">
         <Testimonial />
         <div className="flex flex-col items-center px-10">
@@ -175,8 +213,7 @@ export default function Home() {
         </div>
       </div>
 
-     <FooterContainer />
-     
+      <FooterContainer />
     </section>
   );
 }

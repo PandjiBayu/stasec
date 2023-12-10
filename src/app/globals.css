@@ -136,59 +136,92 @@ body {
   }
 }
 
+.line-vector-1 {
+  z-index: 10;
+  right: -250px;
+  top: 1200px;
+}
+
+.line-vector-2 {
+  z-index: 10;
+  left: -250px;
+  top: 1800px;
+}
+
+.line-vector-3 {
+  z-index: 10;
+  right: -250px;
+  top: 2500px;
+}
+
+.line-vector-4 {
+  z-index: 10;
+  left: -250px;
+  top: 3200px;
+}
+
+.line-vector-5 {
+  z-index: 10;
+  right: -250px;
+  top: 3900px;
+}
+
+.line-vector-6 {
+  z-index: -1;
+  left: -250px;
+  top: 4600px;
+}
+
 .content-bg-1 {
-  background-size: cover;
-  /* height: 53vw; */
   height: 100%;
-  background-image: url(../../public/content-bg-1.png);
 }
 
 .content-bg-2 {
   background-size: cover;
   height: 100%;
-  background-image: url(../../public/content-bg-2.png);
+  /* background-image: url(../../public/content-bg-2.png); */
 }
 
 .content-bg-3 {
   background-size: cover;
   height: 100%;
-  background-image: url(../../public/content-bg-3.png);
+  /* background-image: url(../../public/content-bg-3.png); */
 }
 
 .content-bg-4 {
   background-size: cover;
   height: 100%;
-  background-image: url(../../public/content-bg-4.png);
+  /* background-image: url(../../public/content-bg-4.png); */
 }
 
 .content-bg-5 {
   background-size: cover;
   height: 100%;
-  background-image: url(../../public/content-bg-5.png);
+  /* background-image: url(../../public/content-bg-5.png); */
 }
 
 .content-bg-6 {
   background-size: cover;
   height: 100%;
-  background-image: url(../../public/content-bg-6.png);
+  /* background-image: url(../../public/content-bg-6.png); */
 }
 
 .content-bg-7 {
   background-size: cover;
   height: 100%;
-  background-image: url(../../public/content-bg-7.png);
+  /* background-image: url(../../public/content-bg-7.png); */
 }
 
 .content-bg-8 {
   background-size: cover;
   height: 100%;
-  background-image: url(../../public/content-bg-8.png);
+  /* background-image: url(../../public/content-bg-8.png); */
 }
 
 .content-bg-9 {
   background-size: cover;
   height: 100%;
-  background-image: url(../../public/content-bg-9.png);
+  /* background-image: url(../../public/content-bg-9.png); */
 }
 
 @media (max-width: 768px) {
