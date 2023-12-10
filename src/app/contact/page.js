@@ -11,12 +11,10 @@ export default function Contact() {
     <section>
       <div class="head-vector gradient">
         <Header />
-        
-        <div className="grid md:grid-cols-2 grid-cols-1 items-center justify-center h-full">
-          <div className="contact-img bg-no-repeat w-full bg-cover h-full flex flex-col gap-10 justify-center py-3 px-6">
-            <h3
-              className="text-3xl md:text-5xl font-semibold"
-            >
+
+        <div className="grid items-center justify-center h-full grid-cols-1 px-4 md:px-20 md:grid-cols-2">
+          <div className="flex flex-col justify-center w-full h-full gap-10 px-6 py-3 bg-no-repeat bg-cover contact-img">
+            <h3 className="text-3xl font-semibold md:text-5xl">
               Contact us using the form on the cyber security
             </h3>
             <div className="flex flex-col space-y-[20px]">
@@ -29,7 +27,7 @@ export default function Contact() {
                   <div className="text-[18px]">infocontact@gmail.com</div>
                 </div>
               </div>
-              
+
               <div className="flex space-x-[10px]">
                 <div className="rounded-full bg-white w-[45px] h-[45px] flex items-center justify-center">
                   <Phone width={22} height={22} color={"#103BC3"} />
@@ -51,20 +49,20 @@ export default function Contact() {
             </div>
           </div>
 
-          <div className="contact-form w-full sm:p-10 p-4">
+          <div className="w-full p-4 contact-form sm:p-10">
             <form className="input-list">
               <div className="flex sm:flex-row flex-col gap-4 sm:gap-0 sm:space-x-[32px] w-full ">
                 <div className="input-inner-container space-y-[16px] flex-1">
                   <div>Name*</div>
                   <input
-                    className="input-border w-full"
+                    className="w-full input-border"
                     placeholder="Your Name"
                   />
                 </div>
                 <div className="input-inner-container space-y-[16px] flex-1">
                   <div>Telephone Number*</div>
                   <input
-                    className="input-border w-full"
+                    className="w-full input-border"
                     placeholder="Your Phone"
                   />
                 </div>
@@ -73,14 +71,14 @@ export default function Contact() {
                 <div className="input-inner-container space-y-[16px] flex-1">
                   <div>Company Name*</div>
                   <input
-                    className="input-border w-full"
+                    className="w-full input-border"
                     placeholder="Your Company Email"
                   />
                 </div>
                 <div className="input-inner-container space-y-[16px] flex-1">
                   <div>Company Email*</div>
                   <input
-                    className="input-border w-full"
+                    className="w-full input-border"
                     placeholder="Your Email"
                   />
                 </div>
@@ -92,7 +90,7 @@ export default function Contact() {
                     <div className="text-[#737373]">(write product)</div>
                   </div>
                   <input
-                    className="input-border w-full"
+                    className="w-full input-border"
                     placeholder="Your Name"
                   />
                 </div>
@@ -115,7 +113,7 @@ export default function Contact() {
         </div>
       </div>
 
-        <Footer />
+      <Footer />
     </section>
   );
 }
