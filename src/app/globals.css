@@ -137,7 +137,7 @@ body {
 }
 
 .line-vector-1 {
-  z-index: 10;
+  z-index: -1;
   right: -250px;
   top: 1200px;
 }
@@ -155,13 +155,13 @@ body {
 }
 
 .line-vector-4 {
-  z-index: 10;
+  z-index: -1;
   left: -250px;
   top: 3200px;
 }
 
 .line-vector-5 {
-  z-index: 10;
+  z-index: -1;
   right: -250px;
   top: 3900px;
 }
