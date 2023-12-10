@@ -58,11 +58,11 @@ const Header = () => {
 
   const fixedHeader = "fixed top-0 w-full bg-header-bg"
   return (
-    <header className={`w-full py-8 z-10 px-6 sm:px-4 lg:px-10 ${isSticky ? fixedHeader : "bg-transparent"}`}>
+    <header className={`w-full py-4 md:py-8 z-10 px-6 sm:px-4 lg:px-10 ${isSticky ? fixedHeader : "bg-transparent"}`}>
 
      <nav className="flex items-center justify-between w-full lg:gap-5">
       <Link href="/" className="z-10 flex items-center px-2 lg:px-10">
-        <Logo width={150} height={72} isSticky={isSticky} />
+        <Logo width={96} height={56} isSticky={isSticky} />
       </Link>
 
       <div className="items-center hidden md:flex lg:gap-14 md:gap-8 sm:gap-4">
