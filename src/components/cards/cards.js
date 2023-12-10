@@ -52,7 +52,7 @@ const Cards = ({ card, cardIcon, cardType }) => {
     <>
       {cardType == 1 ? (
         <div
-          className="flex flex-col items-center card-container w-full"
+          className="flex flex-col items-center card-container sm:w-auto w-full"
           onMouseEnter={() => setIsHovered(true)}
           onMouseLeave={() => setIsHovered(false)}
         >

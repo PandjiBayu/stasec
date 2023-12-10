@@ -60,7 +60,7 @@ const Features = ({
   return (
     <>
       {cardType == 1 ? (
-        <section className="flex flex-col items-center justify-center w-full py-12 space-y-12  md:px-10 ">
+        <section className="flex flex-col reditems-center justify-center w-full py-12 space-y-12  md:px-10 ">
           <div className="flex flex-col items-center space-y-4">
             {blueCondition && (
               <div className="text-[24px] text-center text-[#1A57FF]">{blueText}</div>
