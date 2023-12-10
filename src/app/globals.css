@@ -34,7 +34,7 @@ body {
   grid-template-areas: "header";
 }
 
- .headers {
+.headers {
   grid-area: header;
 }
 
@@ -43,7 +43,10 @@ body {
 }
 
 @media (max-width: 768px) {
-  .main .head-vector, .main .headers, .main .industry-gradient, .main .industry-image {
+  .main .head-vector,
+  .main .headers,
+  .main .industry-gradient,
+  .main .industry-image {
     height: 100%;
   }
 }
@@ -52,14 +55,13 @@ body {
   /* grid-area: header;
   background-size: cover;
   height: 100vh; */
-  background:
-  linear-gradient(
-    180deg,
-    rgba(23, 23, 23, 0.2) 41.24%,
-    #171717 100%
-  ),
-  url(../../public/Vector_2648.png);
-background-size: cover;
+  background: linear-gradient(
+      180deg,
+      rgba(23, 23, 23, 0.2) 41.24%,
+      #171717 100%
+    ),
+    url(../../public/Vector_2648.png);
+  background-size: cover;
 }
 
 @media (max-width: 768px) {
@@ -69,7 +71,7 @@ background-size: cover;
   }
 }
 
-.gradient{
+.gradient {
   background: linear-gradient(
     180deg,
     rgba(23, 23, 23, 0.2) 41.24%,
@@ -179,7 +181,7 @@ background-size: cover;
 
 .content-bg-8 {
   background-size: cover;
- height: 100%;
+  height: 100%;
   background-image: url(../../public/content-bg-8.png);
 }
 
@@ -190,7 +192,15 @@ background-size: cover;
 }
 
 @media (max-width: 768px) {
-  .content-bg-1, .content-bg-2, .content-bg-3, .content-bg-4, .content-bg-5, .content-bg-6, .content-bg-7, .content-bg-8, .content-bg-9 {
+  .content-bg-1,
+  .content-bg-2,
+  .content-bg-3,
+  .content-bg-4,
+  .content-bg-5,
+  .content-bg-6,
+  .content-bg-7,
+  .content-bg-8,
+  .content-bg-9 {
     height: 100%;
     background-image: none;
   }
@@ -217,14 +227,13 @@ background-size: cover;
   background-size: cover;
   height: 100vh;
   background-image: url(../../public/industry-image.png); */
-  background:
-  linear-gradient(
-    180deg,
-    rgba(23, 23, 23, 0.66) 14.67%,
-    #171717 81.42%
-  ),
-  url(../../public/industry-image.png);
-background-size: cover;
+  background: linear-gradient(
+      180deg,
+      rgba(23, 23, 23, 0.66) 14.67%,
+      #171717 81.42%
+    ),
+    url(../../public/industry-image.png);
+  background-size: cover;
 }
 
 .industry-gradient {
@@ -252,23 +261,27 @@ background-size: cover;
 }
 
 @media (max-width: 768px) {
-  .industry-bg-1, .industry-bg-2 {
+  .industry-bg-1,
+  .industry-bg-2 {
     height: 100%;
   }
 }
 
 .service2-image {
-  background:
-  linear-gradient(
-    180deg,
-    rgba(23, 23, 23, 0.66) 14.67%,
-    #171717 81.42%
-  ),
-  url(../../public/service-2.png);
-  /* grid-area: header;
+  background: linear-gradient(
+      180deg,
+      rgba(23, 23, 23, 0.66) 14.67%,
+      #171717 81.42%
+    ),
+    url(../../public/service-2.png);
   background-size: cover;
-  height: 100vh;
-  background-image: url(../../public/service-2.png); */
+}
+
+@media (max-width: 768px) {
+  .service2-image {
+    background-position: center;
+    background-repeat: no-repeat;
+  }
 }
 
 .service2-bg-1 {
@@ -293,14 +306,20 @@ background-size: cover;
 }
 
 .service3-image {
-  background-size: cover;
-  background:
-  linear-gradient(
+  background: linear-gradient(
     180deg,
     rgba(23, 23, 23, 0.66) 14.67%,
     #171717 100%
-  ),
-  url(../../public/service-3.png);
+    ),
+    url(../../public/service-3.png);
+    background-size: cover;
+}
+
+@media (max-width: 768px) {
+  .service3-image {
+    background-position: center;
+    background-repeat: no-repeat;
+  }
 }
 
 .service3-gradient {
@@ -315,18 +334,20 @@ background-size: cover;
 }
 
 .service1-image {
-  background:
-  linear-gradient(
-    180deg,
-    rgba(23, 23, 23, 0.66) 14.67%,
-    #171717 100%
-  ),
-  url(../../public/service-1.png);
-/* background-size: cover;
-  grid-area: header;
+  background: linear-gradient(
+      180deg,
+      rgba(23, 23, 23, 0.66) 14.67%,
+      #171717 100%
+    ),
+    url(../../public/service-1.png);
   background-size: cover;
-  height: 100vh;
-  background-image: url(../../public/service-1.png); */
+}
+
+@media (max-width: 768px) {
+  .service1-image {
+    background-position: center;
+    background-repeat: no-repeat;
+  }
 }
 
 .service1-bg-1 {
@@ -357,7 +378,7 @@ background-size: cover;
   background-image: url(../../public/about-bg-3.png);
 }
 
-.content-title{
+.content-title {
   color: #fff;
   font-family: "Switzer Regular", sans-serif;
   font-size: 64px;
@@ -367,10 +388,9 @@ background-size: cover;
   letter-spacing: -0.64px;
 }
 
-.red{
+.red {
   border: 2px solid red !important;
 }
-
 
 @media (max-width: 355px) {
   .header-title {
