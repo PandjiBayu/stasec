@@ -5,10 +5,10 @@ const MobileMenu  = ({open,isActive}) => {
 
     return(
    <div
-  className={`block ${open ? 'max-h-[500px]' : 'max-h-0' } transition-max-h duration-300 overflow-hidden text-blue-gray-900 transition-max-h duration-500 ease-in-out lg:hidden bg-gray-900 shadow md:hidden rounded-lg`}
+  className={`block mt-4 ${open ? 'max-h-[500px]' : 'max-h-0' } transition-max-h overflow-hidden text-blue-gray-900 transition-max-h duration-500 ease-in-out lg:hidden bg-[#222] shadow md:hidden rounded-lg`}
 >
 <div class="container mx-auto pb-2 ">
-<ul class="font-medium flex space-y-3 flex-col p-4 md:p-0 mt-4 rounded-lg   md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0">
+<ul class="font-medium flex space-y-3 flex-col p-4 md:p-0 mt-4 rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0">
         <li>
           <Link href="/" className={`block py-2 px-3 text-white ${isActive("/") ? 'hover:bg-blue-800 bg-blue-700' : 'hover:bg-gray-800'} rounded md:bg-transparent md:text-blue-700 md:p-0 text-white`} aria-current="page">Home</Link>
         </li>
@@ -81,7 +81,7 @@ const MobileMenu  = ({open,isActive}) => {
         <Link href="/about" className={`block py-2 px-3 text-white ${isActive("/about") ? 'hover:bg-blue-800 bg-blue-700' : 'hover:bg-gray-800'} rounded md:bg-transparent md:text-blue-700 md:p-0 text-white`}>About</Link>
         </li>
         <li className="pt-3">
-        <Link href={"/contact"} className="text-white bg-blue-800 hover:bg-blue-900 focus:ring-4 focus:ring-blue-300 font-medium rounded-xl text-xs sm:text-sm px-5 py-4 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">
+        <Link href={"/contact"} className="px-5 py-4 text-xs font-medium text-white bg-blue-800 hover:bg-blue-900 focus:ring-4 focus:ring-blue-300 rounded-xl sm:text-sm dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">
         CONTACT US
       </Link>
         </li>
