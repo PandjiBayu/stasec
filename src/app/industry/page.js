@@ -11,7 +11,7 @@ import Image from "next/image";
 
 export default function Industry() {
   return (
-    <section >
+    <section className="relative overflow-x-hidden">
       <BannerIndustry />
       <Image
           className="absolute hidden line-vector-2 lg:block"
