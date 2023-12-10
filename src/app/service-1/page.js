@@ -13,16 +13,16 @@ export default function Service1() {
     <section>
       <BannerService1 />
 
-      <div className="md:service1-bg-1 flex items-center justify-center ">
+      <div className="flex items-center justify-center md:service1-bg-1 ">
         <Features {...serviceFeatures1} />
       </div>
  
-      <div className="md:service1-bg-2 flex flex-col items-center w-full px-4 md:px-12 ">
+      <div className="flex flex-col items-center w-full px-4 my-20 md:service1-bg-2 md:px-12">
         <div className="flex flex-col">
-          <div className="grid grid-cols-3 items-center gap-6">
+          <div className="grid items-center grid-cols-3 gap-6">
             <div className="flex flex-col space-y-[24px] col-span-3 md:col-span-2">
               <h4
-                className="fpoint-text text-2xl sm:text-4xl md:text-7xl"
+                className="text-2xl fpoint-text sm:text-4xl md:text-7xl"
               >
                 The Key Benefit Of Our Service
               </h4>
@@ -42,7 +42,7 @@ export default function Service1() {
                 width={1000}
                 height={1000}
                 alt="service1-content"
-                className="h-full w-full object-cover"
+                className="object-cover w-full h-full rounded-2xl"
               />
             </div>
           </div>
@@ -50,7 +50,7 @@ export default function Service1() {
         <div>
 
           <div className="flex flex-col items-center">
-            <div className="grid lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-2 xl:grid-cols-4 w-full gap-4 sm:gap-5 md:gap-12 pt-[70px] flex-1 ">
+            <div className="grid lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-2 xl:grid-cols-5 w-full gap-4 sm:gap-5 md:gap-12 pt-[70px] flex-1 ">
               {keyBenefits.cards.map((card, index) => {
                 const CardIcon = iconMappings[card.cardIcon];
                 return (
@@ -68,7 +68,6 @@ export default function Service1() {
                 );
               })}
             </div>
-
           </div>
         </div>
       </div>

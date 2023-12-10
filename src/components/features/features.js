@@ -60,7 +60,7 @@ const Features = ({
   return (
     <>
       {cardType == 1 ? (
-        <section className="flex flex-col reditems-center justify-center w-full py-12 space-y-12  md:px-10 ">
+        <section className="flex flex-col justify-center w-full py-12 space-y-12 reditems-center md:px-10 ">
           <div className="flex flex-col items-center space-y-4">
             {blueCondition && (
               <div className="text-[24px] text-center text-[#1A57FF]">{blueText}</div>
@@ -71,7 +71,7 @@ const Features = ({
             ></h2>
             <p className="text-[18px] text-center">{content}</p>
           </div>
-          <div className="flex flex-wrap h-full items-center justify-center gap-2 md:gap-6 space-x-1 md:space-x-8 px-2">
+          <div className="flex flex-wrap items-center justify-center h-full gap-2 px-2 space-x-1 md:gap-6 md:space-x-8">
             {cards.map((card, index) => (
               <Cards
                 key={index}
@@ -122,7 +122,7 @@ const Features = ({
             <div className="text-[24px] text-[#1A57FF]">{blueText}</div>
             <div className="title-text">{title}</div>
           </div>
-          <div className="flex flex-wrap h-full items-center justify-center gap-2 md:gap-6 space-x-1 md:space-x-8">
+          <div className="flex flex-col items-center justify-center h-full gap-2 space-x-1 md:flex-row md:gap-6 md:space-x-8">
             {cards.map((card, index) => {
               console.log(index);
               return (
