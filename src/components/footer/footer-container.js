@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Footer from "./footer";
+import Link from "next/link";
 
 const FooterContainer = () => {
   return (
@@ -19,9 +20,9 @@ const FooterContainer = () => {
             Ensures a proactive defense against evolving threats, providing
             peace of mind for your digital landscape.
           </p>
-          <div className="md:w-[230px] px-4 py-2.5 md:px-[36px] md:py-[20px] flex items-center justify-center rounded-[8px] bg-[#1A57FF] mt-[50px]">
+          <Link href={"/contact"} className="md:w-[230px] px-4 py-2.5 md:px-[36px] md:py-[20px] flex items-center justify-center rounded-[8px] bg-[#1A57FF] mt-[50px]">
             <div className="text-lg md:text-2xl">Get In Touch</div>
-          </div>
+          </Link>
         </div>
       </div>
       <Footer />
