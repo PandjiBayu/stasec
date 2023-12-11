@@ -93,7 +93,7 @@ export default function Home() {
               className="title-text"
               dangerouslySetInnerHTML={{ __html: goalsCard.title }}
             ></div>
-            <div className="text-[18px]">{goalsCard.content}</div>
+            <div className="text-[18px]" dangerouslySetInnerHTML={{ __html: goalsCard.content }}></div>
           </div>
 
           <GoalsCard goalsCard={goalsCard} />
