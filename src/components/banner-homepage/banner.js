@@ -6,10 +6,10 @@ const { default: HeadVector } = require("../icons/head-vector");
 const Banner = () => {
   return (
     <div class="head-vector background-image bg-cover h-screen relative">
-      <Header />
-      <div className="top-0 left-0 hidden xl:block lg:absolute">
+      <div className="top-0 left-0 hidden xl:block lg:absolute" style={{ zIndex: 0 }}>
         <HeadVector />
       </div>
+      <Header />
       <div className="w-full px-0 md:px-[118px] flex flex-col md:flex-row pt-[80px]" >
         <div className="flex flex-col space-y-[40px] md:py-[80px] w-full items-center md:items-start" style={{ zIndex: 1 }}>
           <div className="text-center md:text-left header-title">
