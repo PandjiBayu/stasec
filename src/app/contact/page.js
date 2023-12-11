@@ -17,33 +17,37 @@ export default function Contact() {
             <h3 className="text-3xl font-semibold md:text-5xl">
               Contact us using the form on the cyber security
             </h3>
-            <div className="flex flex-col space-y-[20px]">
-              <div className="flex space-x-[10px]">
-                <div className="rounded-full bg-white w-[45px] h-[45px] flex items-center justify-center">
+            <div className="flex flex-col space-y-4">
+              <div className="flex items-center space-x-2">
+                <div className="flex items-center justify-center w-12 h-12 overflow-hidden bg-white rounded-full aspect-w-1">
                   <Mail width={22} height={22} color={"#103BC3"} />
                 </div>
                 <div className="flex flex-col">
                   <div className="text-[14px]">Email</div>
-                  <div className="text-[18px]">infocontact@gmail.com</div>
+                  <div className="text-[18px]">info@stasec.com</div>
                 </div>
               </div>
 
-              <div className="flex space-x-[10px]">
-                <div className="rounded-full bg-white w-[45px] h-[45px] flex items-center justify-center">
+              <div className="flex items-center space-x-2">
+                <div className="flex items-center justify-center w-12 h-12 overflow-hidden bg-white rounded-full aspect-w-1">
                   <Phone width={22} height={22} color={"#103BC3"} />
                 </div>
                 <div className="flex flex-col">
                   <div className="text-[14px]">Phone:</div>
-                  <div className="text-[18px]">789-1987-2887</div>
+                  <div className="text-[18px]">+62 21-7802734</div>
                 </div>
               </div>
-              <div className="flex space-x-[10px]">
-                <div className="rounded-full bg-white w-[45px] h-[45px] flex items-center justify-center">
+
+              <div className="flex items-center space-x-2">
+                <div className="flex items-center justify-center w-[125px] md:w-[72px] h-12 overflow-hidden bg-white rounded-full aspect-w-1">
                   <Location width={22} height={22} color={"#103BC3"} />
                 </div>
                 <div className="flex flex-col">
                   <div className="text-[14px]">Location</div>
-                  <div className="text-[18px]">Howard Street, 13126 USA</div>
+                  <div className="text-[18px]">
+                    The CEO Building, Level 12 Jl. TB Simatupang No.18C Cilandak
+                    Barat, Jakarta Selatan 12430
+                  </div>
                 </div>
               </div>
             </div>
