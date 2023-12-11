@@ -12,7 +12,7 @@ const Testimonial = () => {
     {
       content:
         'Comprehensive cyber security solutions by STASEC have become Our main choice to safeguard Our digital assets. Their meticulous penetration testing service identified and addressed critical vulnerabilities in Our system before they could be exploited. Additionally, their secure code development tools provide ongoing security assessments, ensuring Our code remains robust and secure. This dual-pronged approach has dramatically enhanced my online security posture, allowing us to operate with a newfound confidence and peace of mind.',
-      role: "PT TIGAPILAR MAJU MANDIRI",
+      role: "PT Tigapilar Maju Mandiri",
       image: "/tiga-pilar-circle.png",
     },
     {
