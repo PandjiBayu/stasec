@@ -19,11 +19,11 @@ export default function About() {
   };
 
   return (
-    <section >
+    <section>
       <div class="head-vector gradient bg-cover ">
-      <div className="lg:block hidden lg:absolute top-0 left-0">
-        <HeadVector />
-      </div>
+        <div className="top-0 left-0 hidden lg:block lg:absolute">
+          <HeadVector />
+        </div>
         <Header />
         <div className="sm:px-10 px-1 xl:px-[118px] pt-1 sm:pt-[100px]">
           <div className="flex md:flex-row flex-col items-start md:items-center space-x-5 lg:space-x-[250px]">
@@ -47,25 +47,41 @@ export default function About() {
               </p>
             </div>
           </div>
-          
-          <div className="flex md:flex-row flex-col items-start md:items-center space-x-5 lg:space-x-[250px] sm:px-6 px-3 xl:px-[118px] lg:mt-0 mt-12">
-            <div className="flex flex-col space-y-6 ">
- 
-  <div class="text-sm font-medium text-center text-gray-100 border-b border-gray-200 dark:text-gray-400 dark:border-gray-700">
-    <ul class="flex flex-wrap -mb-px">
-    <li class="me-2 cursor-pointer">
-   <span   onClick={() => handleTabClick("vision")} class={`inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-blue-500 hover:border-[#366BE9]   ${
-                      activeTab === "vision" ? "text-blue-500 border-[#366BE9]" : ""
-                    }`}>  Our Vision</span>
-        </li>
-        <li class="me-2 cursor-pointer">
-        <span onClick={() => handleTabClick("mission")} class={`inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-blue-500 hover:border-[#366BE9] ${
-                      activeTab === "mission" ? "text-blue-500 border-[#366BE9]" : ""
-                    }`}> Our Mission</span>
-        </li>
-    </ul>
-</div>
-              <div className="text-[18px]">
+          <div className="flex flex-col items-center px-4 mt-12 space-y-5 md:flex-row md:space-y-0 md:px-0">
+            <div className="flex flex-col w-full space-y-6">
+              {" "}
+              {/* Ensure full width on small screens */}
+              <div className="text-sm font-medium text-center text-gray-100 border-b border-gray-200 dark:text-gray-400 dark:border-gray-700">
+                <ul className="flex flex-wrap -mb-px">
+                  <li className="cursor-pointer me-2">
+                    <span
+                      onClick={() => handleTabClick("vision")}
+                      className={`inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-blue-500 hover:border-[#366BE9]   ${
+                        activeTab === "vision"
+                          ? "text-blue-500 border-[#366BE9]"
+                          : ""
+                      }`}
+                    >
+                      Our Vision
+                    </span>
+                  </li>
+                  <li className="cursor-pointer me-2">
+                    <span
+                      onClick={() => handleTabClick("mission")}
+                      className={`inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-blue-500 hover:border-[#366BE9] ${
+                        activeTab === "mission"
+                          ? "text-blue-500 border-[#366BE9]"
+                          : ""
+                      }`}
+                    >
+                      Our Mission
+                    </span>
+                  </li>
+                </ul>
+              </div>
+              <div className="text-[18px] h-[200px] overflow-y-auto">
+                {" "}
+                {/* Set a fixed height */}
                 {activeTab === "vision"
                   ? // Content for Vision tab
                     "Become a leading company in the field of cybersecurity by delivering innovative solutions that empower businesses to grow securely in the digital era."
@@ -73,7 +89,6 @@ export default function About() {
                     "Providing cybersecurity integrated solutions for comprehensive, integrative, and adaptive protection of digital assets against evolving threats."}
               </div>
             </div>
-            
             <div>
               <Image
                 src={"/about-content-2.png"}
@@ -83,20 +98,17 @@ export default function About() {
               />
             </div>
           </div>
-
         </div>
-        
         <div className="py-[100px] overflow-hidden">
           <Marquee list={imagesRepeated} />
         </div>
       </div>
-      
+
       <div className="about-bg-2">
         <Testimonial />
       </div>
 
       <FooterContainer />
-
     </section>
   );
 }
