@@ -11,16 +11,14 @@ const Testimonial = () => {
   const testimonials = [
     {
       content:
-        'Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32',
-      author: "John Doe",
-      role: "CEO of Company A",
-      image: "/customers.png",
+        'Comprehensive cyber security solutions by STASEC have become Our main choice to safeguard Our digital assets. Their meticulous penetration testing service identified and addressed critical vulnerabilities in Our system before they could be exploited. Additionally, their secure code development tools provide ongoing security assessments, ensuring Our code remains robust and secure. This dual-pronged approach has dramatically enhanced my online security posture, allowing us to operate with a newfound confidence and peace of mind.',
+      role: "PT TIGAPILAR MAJU MANDIRI",
+      image: "/tiga-pilar-circle.png",
     },
     {
-      content: "Pellentesque habitant morbi tristique senectus et netus.",
-      author: "Jane Smith",
-      role: "Marketing Director at Company B",
-      image: "/path-to-image-2.jpg",
+      content: "STASEC's cyber security services have been a game-changer for Our SAAS business. Their penetration test service unearthed critical vulnerabilities in my system, and their security monitoring tool provides peace of mind knowing my system is constantly under security watch. With STASEC, I feel confident that my data is safe and secure, allowing me to focus on growing my business without cybersecurity worries.",
+      role: "Rekruit.site",
+      image: "/rekruit-circle.png",
     },
   ];
 
@@ -37,8 +35,8 @@ const Testimonial = () => {
   };
 
   return (
-    <section className="xl:p-28 lg-p:24 p-2 py-10 flex flex-col items-center justify-center w-full">
-      <div className="flex justify-between items-center gap-2 sm:gap-8 md:gap-16">
+    <section className="flex flex-col items-center justify-center w-full p-2 py-10 xl:p-28 lg-p:24">
+      <div className="flex items-center justify-between gap-2 sm:gap-8 md:gap-16">
         <button
           onClick={goToPrevious}
           className="rounded-full bg-white px-1.5 py-1.5 sm:px-3 sm:py-3"
@@ -46,9 +44,9 @@ const Testimonial = () => {
           <ArrowLeft width={14} height={13} />
         </button>
         <div className="flex flex-col space-y-[60px] items-center">
-          <div className="sm:gap-7 gap-3 flex flex-col items-center">
+          <div className="flex flex-col items-center gap-3 sm:gap-7">
             <h2
-              className="sm:text-5xl text-3xl font-bold text-center"
+              className="text-3xl font-bold text-center sm:text-5xl"
             >
               Why Customers Love Working With Us
             </h2>
@@ -56,7 +54,7 @@ const Testimonial = () => {
               <Quotation width={32} height={26} />
             </div>
             <div
-              className="fpoint-text sm:text-sm tracking-wide leading-7"
+              className="leading-7 tracking-wide fpoint-text sm:text-sm min-h-[150px]" style={{ textAlign: "center"  }}
             >
               {testimonials[currentIndex].content}
             </div>
@@ -64,7 +62,7 @@ const Testimonial = () => {
           <div className="flex flex-col items-center space-y-[7.5px]">
             <div>
               <Image
-                src="/customers.png"
+                src={testimonials[currentIndex].image}
                 width={75}
                 height={75}
                 alt="customer img"
