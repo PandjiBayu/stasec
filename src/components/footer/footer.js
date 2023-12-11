@@ -50,17 +50,17 @@ const Footer = () => {
         <div className="text-[24px] font-bold">Quick Links</div>
         <div className="flex flex-col gap-4">
           <Link href={"/"}>Home</Link>
-          <div>Industry</div>
-          <div>About</div>
-          <div>Contact</div>
+          <Link href={"/industry"}>Industry</Link>
+          <Link href={"/about"}>About</Link>
+          <Link href={"/Contact"}>Contact</Link>
         </div>
       </div>
       <div className="flex flex-col space-y-8 md:space-y-[40px]">
         <div className="text-[24px] font-bold">Services</div>
         <div className="flex flex-col gap-4">
-          <div>Penetration Testing</div>
-          <div>Secure Development Tools</div>
-          <div>Security Monitoring & Assessment</div>
+          <Link href={"/service-1"}>Penetration Testing</Link>
+          <Link href={"/service-2"}>Secure Development Tools</Link>
+          <Link href={"/service-3"}>Security Monitoring & Assessment</Link>
         </div>
       </div>
       <div className="flex flex-col space-y-8 md:space-y-[40px]">
