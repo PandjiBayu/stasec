@@ -25,7 +25,7 @@ const Footer = () => {
 
   const footerClass = getFooterClass();
   return (
-    <footer className="flex flex-col items-start justify-between gap-6 px-10 py-10 sm:flex-row sm:gap-0 sm:px-12 md:px-14 lg:px-16 bg-[#171717]">
+    <footer className="flex flex-col items-start justify-between gap-6 px-10 py-10 lg:flex-row sm:gap-0 sm:px-12 md:px-14 lg:px-16 bg-[#171717]">
       <div className="flex flex-col space-y-[16px]">
         <div className="flex items-center space-x-2">
           <Logo width={120} height={52} />
@@ -46,21 +46,21 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="flex flex-col space-y-8 md:space-y-[40px]">
+      <div className="flex flex-col space-y-8 md:space-y-[40px] mt-10 lg:mt-0">
         <div className="text-[24px] font-bold">Quick Links</div>
         <div className="flex flex-col gap-4">
           <Link href={"/"}>Home</Link>
-          <Link href={"/industry"}>Industry</Link>
-          <Link href={'/about'}>About</Link>
-          <Link href={'/contact'}>Contact</Link>
+          <div>Industry</div>
+          <div>About</div>
+          <div>Contact</div>
         </div>
       </div>
       <div className="flex flex-col space-y-8 md:space-y-[40px]">
         <div className="text-[24px] font-bold">Services</div>
         <div className="flex flex-col gap-4">
-          <Link href={"/service-1"}>Penetration Testing</Link>
-          <Link href={"/service-2"}>Secure Development Tools</Link>
-          <Link href={"/service-3"}>Security Monitoring & Assessment</Link>
+          <div>Penetration Testing</div>
+          <div>Secure Development Tools</div>
+          <div>Security Monitoring & Assessment</div>
         </div>
       </div>
       <div className="flex flex-col space-y-8 md:space-y-[40px]">

@@ -54,7 +54,8 @@ const Header = () => {
     setIsActiveDropdown(false);
   };
 
-  const currentBtnClass = "z-10 text-white bg-blue-700 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center me-2  dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+
+  const currentBtnClass = "z-10 text-white bg-blue-700 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300  rounded-full text-center text-sm"
 
   const fixedHeader = "fixed top-0 w-full bg-header-bg"
   return (
@@ -64,17 +65,16 @@ const Header = () => {
       <Link href="/" className="z-10 flex items-center px-2 lg:px-10">
         <Logo width={96} height={56} isSticky={isSticky} />
       </Link>
-
-      <div className="items-center hidden md:flex lg:gap-14 md:gap-8 sm:gap-4">
+      <div className="items-center hidden md:flex lg:gap-14 md:gap-8 sm:gap-4 text-sm">
         <Link
           href={"/"}
-          className={isActive("/") ? currentBtnClass : "z-10"}
+          className={`${isActive("/") ? currentBtnClass : "z-10"} px-5 py-2.5 `}
         >
           HOME
         </Link>
         <div className={`relative inline-block`} onClick={toggleDropdown}>
           <div
-            className={`flex items-center space-x-1 cursor-pointer ${
+            className={`flex items-center space-x-1 cursor-pointer px-5 py-2.5  ${
               isActive("/service") ? currentBtnClass : ""
             }`}
           >
@@ -116,13 +116,13 @@ const Header = () => {
         </div>
         <Link
           href={"/industry"}
-          className={isActive("/industry") ? currentBtnClass : "z-10"}
+          className={`${isActive("/industry") ? currentBtnClass : "z-10"} px-5 py-2.5`}
         >
           INDUSTRY
         </Link>
         <Link
-          href={"/about"}
-          className={isActive("/about") ? currentBtnClass : "z-10"}
+          href={"/about"}   
+          className={`${isActive("/about") ? currentBtnClass : "z-10"} px-5 py-2.5`}
         >
           ABOUT
         </Link>

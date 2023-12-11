@@ -6,13 +6,10 @@ const FooterContainer = () => {
     <div className="relative z-0">
       <div className="flex items-center justify-center h-[720px] mt-8">
         <div
-          className="absolute top-0 bottom-0 left-0 right-0 content-bg-9"
+          className="absolute top-0 bottom-0 left-0 right-0 content-bg-9 bg-no-repeat bg-right-top bg-cover"
           style={{
             backgroundImage: "url(/contact-bg.png)",
             backgroundSize: "70%",
-            backgroundPosition: "top center",
-            backgroundRepeat: "no-repeat",
-            right: "-800px",
           }}
         />
         <div className="relative z-10 flex flex-col items-center p-6 md:p-20 sm:p-10">
