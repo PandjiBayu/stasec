@@ -174,37 +174,18 @@ export default function Home() {
           <div className="grid items-center grid-cols-2 gap-4 pt-6 md:flex md:flex-row sm:flex-row sm:pt-0 md:space-x-20 md:mt-8">
             <div>
               <Image
-                src="/asgardia.png"
+                src="/partner-1.png"
                 width={160}
                 height={38}
-                alt="Asgardia Logo"
+                alt="partner 1 logo"
               />
             </div>
             <div>
               <Image
-                src="/amara.png"
+                src="/partner-2.png"
                 width={221}
                 height={38}
-                alt="Amara Logo"
-              />
-            </div>
-            <div>
-              <Image src="/aven.png" width={126} height={38} alt="Aven Logo" />
-            </div>
-            <div>
-              <Image
-                src="/circle.png"
-                width={135}
-                height={38}
-                alt="Circle Logo"
-              />
-            </div>
-            <div className="text-center md:col-span-2 md:text-left">
-              <Image
-                src="/ideaa.png"
-                width={111}
-                height={38}
-                alt="Ideaa Logo"
+                alt="partner-2 Logo"
               />
             </div>
           </div>
