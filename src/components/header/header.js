@@ -82,7 +82,7 @@ const Header = () => {
                 isActive("/service") ? currentBtnClass : ""
               }`}
             >
-              <div>SERVICE</div>
+              <div>SERVICES</div>
               <ArrowDown />
             </div>
 
