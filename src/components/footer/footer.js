@@ -52,7 +52,7 @@ const Footer = () => {
           <Link href={"/"}>Home</Link>
           <Link href={"/industry"}>Industry</Link>
           <Link href={"/about"}>About</Link>
-          <Link href={"/Contact"}>Contact</Link>
+          <Link href={"/contact"}>Contact</Link>
         </div>
       </div>
       <div className="flex flex-col space-y-8 md:space-y-[40px]">
