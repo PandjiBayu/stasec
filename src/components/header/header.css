@@ -10,19 +10,9 @@
 }
 
 .header {
-  /* display: flex;
-  align-items: center;
-  background: transparent; */
   transition: background-color 0.5s ease;
   z-index: 3;
 }
-
-/* .header.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  background-color: #171717;
-} */
 
 .header-options {
   display: flex;
