@@ -63,9 +63,9 @@ const Header = () => {
 
      <nav className="flex items-center justify-between w-full lg:gap-5">
       <Link href="/" className="z-10 flex items-center px-2 lg:px-10">
-        <Logo width={96} height={56} isSticky={isSticky} />
+        <Logo width={136} height={56} isSticky={isSticky} />
       </Link>
-      <div className="items-center hidden md:flex lg:gap-14 md:gap-8 sm:gap-4 text-sm">
+      <div className="items-center hidden text-sm md:flex lg:gap-14 md:gap-8 sm:gap-4">
         <Link
           href={"/"}
           className={`${isActive("/") ? currentBtnClass : "z-10"} px-5 py-2.5 `}
