@@ -27,62 +27,62 @@ export default function Home() {
     <section className="relative overflow-x-hidden text-white ">
       <Banner />
       <Image
-          className="absolute hidden line-vector-1 lg:block"
-          src="/line-right.svg"
-          width={480}
-          height={480}
-          alt="head-vector"
-        />
+        className="absolute hidden line-vector-1 lg:block"
+        src="/line-right.svg"
+        width={480}
+        height={480}
+        alt="head-vector"
+      />
       <div className="flex items-center content-bg-1">
         <Features {...homeFeatures} />
       </div>
       <Image
-          className="absolute hidden line-vector-2 lg:block"
-          src="/line-left.svg"
-          width={480}
-          height={480}
-          alt="head-vector"
-        />
+        className="absolute hidden line-vector-2 lg:block"
+        src="/line-left.svg"
+        width={480}
+        height={480}
+        alt="head-vector"
+      />
       <div className="flex items-center content-bg-2">
         <Content {...homeContent1} />
       </div>
       <Image
-          className="absolute hidden line-vector-3 lg:block"
-          src="/line-right.svg"
-          width={480}
-          height={480}
-          alt="head-vector"
-        />
+        className="absolute hidden line-vector-3 lg:block"
+        src="/line-right.svg"
+        width={480}
+        height={480}
+        alt="head-vector"
+      />
       <div className="flex items-center content-bg-3">
         <Content {...homeContent2} />
       </div>
       <Image
-          className="absolute hidden line-vector-4 lg:block"
-          src="/line-left.svg"
-          width={480}
-          height={480}
-          alt="head-vector"
-        />
+        className="absolute hidden line-vector-4 lg:block"
+        src="/line-left.svg"
+        width={480}
+        height={480}
+        alt="head-vector"
+      />
       <div className="flex items-center content-bg-4">
         <Content {...homeContent3} />
       </div>
       <Image
-          className="absolute hidden line-vector-5 lg:block"
-          src="/line-right.svg"
-          width={480}
-          height={480}
-          alt="head-vector"
-        />
+        className="absolute hidden line-vector-5 lg:block"
+        src="/line-right.svg"
+        width={480}
+        height={480}
+        alt="head-vector"
+      />
       <div className="flex items-center content-bg-5">
         <Content {...homeContent4} />
       </div>
       <Image
-          className="absolute hidden line-vector-6 lg:block"
-          src="/line-left.svg"
-          width={480}
-          height={480}
-          alt="head-vector"
-        />
+        className="absolute hidden line-vector-6 lg:block"
+        src="/line-left.svg"
+        width={480}
+        height={480}
+        alt="head-vector"
+      />
       <div className="my-8 sm:my-16">
         <div className="flex flex-col items-center px-16">
           <div className="flex flex-col items-center w-full space-y-4 text-center">
@@ -93,7 +93,10 @@ export default function Home() {
               className="title-text"
               dangerouslySetInnerHTML={{ __html: goalsCard.title }}
             ></div>
-            <div className="text-[18px]" dangerouslySetInnerHTML={{ __html: goalsCard.content }}></div>
+            <div
+              className="text-[18px]"
+              dangerouslySetInnerHTML={{ __html: goalsCard.content }}
+            ></div>
           </div>
 
           <GoalsCard goalsCard={goalsCard} />
@@ -166,15 +169,15 @@ export default function Home() {
       {/* TESTI */}
       <div className="flex flex-col items-center justify-center content-bg-8">
         <Testimonial />
-        <div className="flex-col items-center hidden px-10 sm:flex">
+        <div className="flex flex-col items-center px-10">
           <div className="text-[24px]">Our Trusted Partners</div>
-          <div className="flex flex-col flex-wrap items-center gap-4 pt-6 sm:flex-row sm:pt-0">
+          <div className="grid items-center grid-cols-2 gap-4 pt-6 md:flex md:flex-row sm:flex-row sm:pt-0 md:space-x-20 md:mt-8">
             <div>
               <Image
                 src="/asgardia.png"
                 width={160}
                 height={38}
-                alt="Argardia Logo"
+                alt="Asgardia Logo"
               />
             </div>
             <div>
@@ -182,31 +185,26 @@ export default function Home() {
                 src="/amara.png"
                 width={221}
                 height={38}
-                alt="Argardia Logo"
+                alt="Amara Logo"
               />
             </div>
             <div>
-              <Image
-                src="/aven.png"
-                width={126}
-                height={38}
-                alt="Argardia Logo"
-              />
+              <Image src="/aven.png" width={126} height={38} alt="Aven Logo" />
             </div>
             <div>
               <Image
                 src="/circle.png"
                 width={135}
                 height={38}
-                alt="Argardia Logo"
+                alt="Circle Logo"
               />
             </div>
-            <div>
+            <div className="text-center md:col-span-2 md:text-left">
               <Image
                 src="/ideaa.png"
                 width={111}
                 height={38}
-                alt="Argardia Logo"
+                alt="Ideaa Logo"
               />
             </div>
           </div>
