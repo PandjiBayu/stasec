@@ -1,7 +1,4 @@
 export const images = [
-    "/asgardia.png",
-    "/amara.png",
-    "/aven.png",
-    "/circle.png",
-    "/ideaa.png"
+    "/partner-1.png",
+    "/partner-2.png",
 ]
