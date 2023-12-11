@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const { default: Header } = require("../header/header");
 const { default: HeadVector } = require("../icons/head-vector");
 
@@ -13,9 +15,9 @@ const BannerService1 = () => {
             vulnerabilities in your systems and applications, enabling you to
             proactively strengthen your defenses.
           </div>
-          <div className="get-started">
+          <Link href={'/contact'} className="get-started">
             <div className="get-started-font">Get Started</div>
-          </div>
+          </Link>
         </div>
         <div className="hidden md:w-full"></div>
       </div>

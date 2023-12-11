@@ -1,3 +1,4 @@
+import Link from "next/link"
 import Header from "../header/header"
 
 const BannerService2 = () => {
@@ -12,9 +13,9 @@ const BannerService2 = () => {
             A cutting-edge software to assess and enhance the security of your
             code, ensuring your applications are built with security in mind.
           </h4>
-          <div className="get-started">
+          <Link href={'/contact'} className="get-started">
             <div className="get-started-font">Get Started</div>
-          </div>
+          </Link>
         </div>
       </div>
     </div>
