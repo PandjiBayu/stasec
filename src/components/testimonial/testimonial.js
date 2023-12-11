@@ -43,7 +43,7 @@ const Testimonial = () => {
         >
           <ArrowLeft width={14} height={13} />
         </button>
-        <div className="flex flex-col space-y-[60px] items-center">
+        <div className="flex flex-col space-y-[16px] items-center">
           <div className="flex flex-col items-center gap-3 sm:gap-7">
             <h2
               className="text-3xl font-bold text-center sm:text-5xl"
@@ -59,7 +59,7 @@ const Testimonial = () => {
               {testimonials[currentIndex].content}
             </div>
           </div>
-          <div className="flex flex-col items-center space-y-[7.5px]">
+          <div className="flex flex-col items-center space-y-2">
             <div>
               <Image
                 src={testimonials[currentIndex].image}
