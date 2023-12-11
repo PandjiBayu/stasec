@@ -19,9 +19,9 @@ export default function About() {
   };
 
   return (
-    <section >
+    <section className="relative overflow-x-hidden">
       <div class="head-vector gradient bg-cover ">
-      <div className="lg:block hidden lg:absolute top-0 left-0">
+      <div className="top-0 left-0 hidden lg:block lg:absolute">
         <HeadVector />
       </div>
         <Header />
