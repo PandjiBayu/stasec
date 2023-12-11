@@ -25,7 +25,7 @@ const Footer = () => {
 
   const footerClass = getFooterClass();
   return (
-    <footer className="flex flex-col items-start justify-between gap-6 px-10 py-10 lg:flex-row sm:gap-0 sm:px-12 md:px-14 lg:px-16 bg-[#171717]">
+    <footer className="flex h-[400px] flex-col items-start justify-between gap-6 px-10 py-10 lg:flex-row sm:gap-0 sm:px-12 md:px-14 lg:px-16 bg-[#171717]">
       <div className="flex flex-col space-y-[16px]">
         <div className="flex items-center space-x-2">
           <Logo width={120} height={52} />
