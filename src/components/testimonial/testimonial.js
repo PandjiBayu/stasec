@@ -54,7 +54,7 @@ const Testimonial = () => {
               <Quotation width={32} height={26} />
             </div>
             <div
-              className="leading-7 tracking-wide fpoint-text sm:text-sm min-h-[150px]" style={{ textAlign: "center"  }}
+              className="leading-7 tracking-wide fpoint-text sm:text-sm min-h-[100px]" style={{ textAlign: "center"  }}
             >
               {testimonials[currentIndex].content}
             </div>
