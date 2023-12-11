@@ -9,6 +9,7 @@ import Mail from "../icons/mail";
 import Location from "../icons/location";
 import Phone from "../icons/phone";
 import { usePathname } from "next/navigation";
+import Link from "next/link";
 
 const Footer = () => {
   const route = usePathname();
@@ -24,7 +25,7 @@ const Footer = () => {
 
   const footerClass = getFooterClass();
   return (
-    <footer className="flex flex-col flex-wrap items-start justify-between gap-6 px-10 py-10 sm:flex-row sm:gap-0 sm:px-12 md:px-14 lg:px-16 bg-[#171717]">
+    <footer className="flex flex-col items-start justify-between gap-6 px-10 py-10 sm:flex-row sm:gap-0 sm:px-12 md:px-14 lg:px-16 bg-[#171717]">
       <div className="flex flex-col space-y-[16px]">
         <div className="flex items-center space-x-2">
           <Logo width={120} height={52} />
@@ -45,44 +46,43 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="flex flex-col space-y-[40px]">
+      <div className="flex flex-col space-y-8 md:space-y-[40px]">
         <div className="text-[24px] font-bold">Quick Links</div>
-        <div className="flex flex-col space-y-[16px]">
-          <div>Our Service</div>
-          <div>About Us</div>
-          <div>Pricing</div>
-          <div>Testimonial</div>
+        <div className="flex flex-col gap-4">
+          <Link href={"/"}>Home</Link>
+          <div>Industry</div>
+          <div>About</div>
+          <div>Contact</div>
         </div>
       </div>
-      <div className="flex flex-col space-y-[40px]">
+      <div className="flex flex-col space-y-8 md:space-y-[40px]">
+        <div className="text-[24px] font-bold">Services</div>
+        <div className="flex flex-col gap-4">
+          <div>Penetration Testing</div>
+          <div>Secure Development Tools</div>
+          <div>Security Monitoring & Assessment</div>
+        </div>
+      </div>
+      <div className="flex flex-col space-y-8 md:space-y-[40px]">
         <div className="text-[24px] font-bold">Contact Us</div>
         <div className="flex flex-col space-y-[16px]">
           <div className="flex items-center space-x-2">
             <Mail width={16} height={16} />
-            <div>hello@website.com</div>
+            <div>info@stasec.com</div>
           </div>
           <div className="flex items-center space-x-2">
-            <Location width={16} height={16} />
-            <div>838 Cantt Sialkot, ENG</div>
+            <div style={{ width: "16px" }}>
+            <Location width={16} height={16}/>
+            </div>
+            <div className="w-64">
+              The CEO Building, Level 12 Jl. TB Simatupang No.18C Cilandak
+              Barat, Jakarta Selatan 12430
+            </div>
           </div>
           <div className="flex items-center space-x-2">
             <Phone width={16} height={16} />
-            <div>+02 5421234560</div>
+            <div>+62 21-7802734</div>
           </div>
-        </div>
-      </div>
-      <div className="flex flex-col  space-y-[40px]">
-        <div className="text-[24px] font-bold">Newsletter</div>
-        <div className="input-field flex  lg:h-[80px] h-[60px]  sm:h-[70px] p-1 sm:p-2 lg:p-4">
-          <input
-            style={{ color: "#4A4A4A", outline: "none" }}
-            className="w-full px-1"
-            placeholder="Enter your email"
-          />
-
-          <span className="px-4 py-3 text-sm subs-button sm:text-lg lg:py-4 lg:px-5">
-            Subscribe
-          </span>
         </div>
       </div>
     </footer>

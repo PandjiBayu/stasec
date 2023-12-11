@@ -3,7 +3,7 @@ import Footer from "./footer";
 
 const FooterContainer = () => {
   return (
-    <div className="relative">
+    <div className="relative z-0">
       <div className="flex items-center justify-center h-[720px] mt-8">
         <div
           className="absolute top-0 bottom-0 left-0 right-0 content-bg-9"
