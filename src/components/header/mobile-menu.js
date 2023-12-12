@@ -18,7 +18,7 @@ const MobileMenu  = ({open,isActive}) => {
   
             className={`flex cursor-pointer items-center justify-between py-2 px-3 text-white ${isActive("/service") ? 'hover:bg-blue-800 bg-blue-700' : 'hover:bg-gray-800'} rounded md:bg-transparent md:text-blue-700 md:p-0 text-white`}
           >
-            <span class="text-base font-medium">Services</span>
+            <span class="text-base font-medium">Service</span>
 
             <span class="shrink-0 transition duration-300 group-open:-rotate-180">
               { open ? <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
