@@ -3,9 +3,10 @@ export const images = [
     "-",
     "Adaptability",
     "-",
-    "Trustworthyness",
+    "Trustworthiness",
     "-",
     "Technology",
     "-",
     "Intelligence",
+    "-",
 ]
