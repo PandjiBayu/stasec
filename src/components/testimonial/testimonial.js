@@ -11,12 +11,13 @@ const Testimonial = () => {
   const testimonials = [
     {
       content:
-        'Comprehensive cyber security solutions by STASEC have become Our main choice to safeguard Our digital assets. Their meticulous penetration testing service identified and addressed critical vulnerabilities in Our system before they could be exploited. Additionally, their secure code development tools provide ongoing security assessments, ensuring Our code remains robust and secure. This dual-pronged approach has dramatically enhanced my online security posture, allowing us to operate with a newfound confidence and peace of mind.',
+        "Comprehensive cyber security solutions by STASEC have become Our main choice to safeguard Our digital assets. Their meticulous penetration testing service identified and addressed critical vulnerabilities in Our system before they could be exploited. Additionally, their secure code development tools provide ongoing security assessments, ensuring Our code remains robust and secure. This dual-pronged approach has dramatically enhanced my online security posture, allowing us to operate with a newfound confidence and peace of mind.",
       role: "PT Tigapilar Maju Mandiri",
       image: "/tiga-pilar-circle.png",
     },
     {
-      content: "STASEC's cyber security services have been a game-changer for Our SAAS business. Their penetration test service unearthed critical vulnerabilities in my system, and their security monitoring tool provides peace of mind knowing my system is constantly under security watch. With STASEC, I feel confident that my data is safe and secure, allowing me to focus on growing my business without cybersecurity worries.",
+      content:
+        "STASEC's cyber security services have been a game-changer for Our SAAS business. Their penetration test service unearthed critical vulnerabilities in my system, and their security monitoring tool provides peace of mind knowing my system is constantly under security watch. With STASEC, I feel confident that my data is safe and secure, allowing me to focus on growing my business without cybersecurity worries.",
       role: "Rekruit.site",
       image: "/rekruit-circle.png",
     },
@@ -45,18 +46,14 @@ const Testimonial = () => {
         </button>
         <div className="flex flex-col space-y-[16px] items-center">
           <div className="flex flex-col items-center gap-3 sm:gap-7">
-            <h2
-              className="text-3xl font-bold text-center sm:text-5xl"
-            >
+            <h2 className="text-3xl font-bold text-center sm:text-5xl">
               Why Customers Love Working With Us
             </h2>
-            <div>
-              <Quotation width={32} height={26} />
-            </div>
             <div
-              className="leading-7 tracking-wide fpoint-text sm:text-sm min-h-[100px]" style={{ textAlign: "center"  }}
+              className="leading-7 tracking-wide fpoint-text sm:text-sm min-h-[100px]"
+              style={{ textAlign: "center" }}
             >
-              {testimonials[currentIndex].content}
+              {'"' + testimonials[currentIndex].content + '"'}
             </div>
           </div>
           <div className="flex flex-col items-center space-y-2">
