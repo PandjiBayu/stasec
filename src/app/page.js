@@ -109,9 +109,9 @@ export default function Home() {
             <Image
               src="/feature-point.png"
               width={1200}
-              height={1200}
+              height={800}
               alt="feature-point"
-              className="rounded-xl w-full object-cover lg:w-[1200px]"
+              className="rounded-xl w-full object-cover lg:w-[1200px] h-[800px]"
             />
           </figure>
           <div className="flex flex-col ">
@@ -169,27 +169,6 @@ export default function Home() {
       {/* TESTI */}
       <div className="flex flex-col items-center justify-center content-bg-8">
         <Testimonial />
-        <div className="flex flex-col items-center px-10">
-          <div className="text-[24px]">Our Trusted Partners</div>
-          <div className="grid items-center grid-cols-2 gap-4 pt-6 md:flex md:flex-row sm:flex-row sm:pt-0 md:space-x-20 md:mt-8">
-            <div>
-              <Image
-                src="/partner-1.png"
-                width={160}
-                height={38}
-                alt="partner 1 logo"
-              />
-            </div>
-            <div>
-              <Image
-                src="/partner-2.png"
-                width={221}
-                height={38}
-                alt="partner-2 Logo"
-              />
-            </div>
-          </div>
-        </div>
       </div>
 
       <FooterContainer />
