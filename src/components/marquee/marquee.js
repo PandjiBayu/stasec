@@ -8,11 +8,13 @@ const Marquee = ({ list }) => {
         {list.map((src, index) => (
           <div key={index} className="inline-block mx-10">
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
+            {/* <img
               src={src}
               style={{ height: 50, objectFit: "contain" }}
               alt={`partner ${index + 1}`}
-            />
+            /> */}
+            {/* text h3 */}
+            <h3 className="text-2xl text-white">{src}</h3>
           </div>
         ))}
       </div>
