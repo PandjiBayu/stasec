@@ -15,7 +15,7 @@ export default function Contact() {
         <div className="grid items-center justify-center h-full grid-cols-1 px-4 md:px-20 md:grid-cols-2">
           <div className="flex flex-col justify-center w-full h-full gap-10 px-6 py-3 bg-no-repeat bg-cover contact-img">
             <h3 className="text-3xl font-semibold md:text-5xl">
-              Contact us using the form on the cyber security
+              Discuss Your Company Security Needs with Us
             </h3>
             <div className="flex flex-col space-y-4">
               <div className="flex items-center space-x-2">
