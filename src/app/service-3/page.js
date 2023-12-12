@@ -34,7 +34,7 @@ export default function Service3() {
               width={1200}
               height={1200}
               alt="feature-point"
-              className="rounded-xl"
+              className="rounded-xl object-cover h-[880px]"
             />
           </div>
 
@@ -43,11 +43,8 @@ export default function Service3() {
               The Key Benefit Of Our Service
             </div>
             <div className="text-[18px]">
-              Introducing Security Development Tools, your key to fortified
-              digital resilience. Enhance your cybersecurity posture with
-              advanced tools designed to streamline security development,
-              reducing vulnerabilities and ensuring robust protection against
-              evolving threats.
+              The assessment features go beyond mere identification, offering
+              in-depth analyses of vulnerabilities and potential weaknesses.
             </div>
 
             <div
@@ -107,13 +104,13 @@ export default function Service3() {
         </div>
       </div>
       <Image
-          className="absolute hidden line-vector-2 lg:block"
-          src="/line-left.svg"
-          width={480}
-          height={480}
-          alt="head-vector"
-          style={{ top: "2400px" }}
-        />
+        className="absolute hidden line-vector-2 lg:block"
+        src="/line-left.svg"
+        width={480}
+        height={480}
+        alt="head-vector"
+        style={{ top: "2400px" }}
+      />
       <div className="flex items-center mt-64 md:service2-bg-3">
         <Features {...workProcess3} />
       </div>
