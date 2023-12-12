@@ -45,7 +45,7 @@ export default function Service2() {
               width={1200}
               height={1200}
               alt="feature-point"
-              className="rounded-xl"
+              className="rounded-xl w-full h-[880px] object-cover"
             />
           </div>
 
@@ -54,9 +54,7 @@ export default function Service2() {
               The Key Benefit Of Our Service
             </div>
             <div className="text-[18px]">
-              Introducing Security Development Tools, your key to fortified
-              digital resilience. Enhance your cybersecurity posture with
-              advanced tools designed to streamline security development,
+              An advanced tools designed to streamline security development,
               reducing vulnerabilities and ensuring robust protection against
               evolving threats.
             </div>
@@ -117,13 +115,13 @@ export default function Service2() {
         </div>
       </div>
       <Image
-          className="absolute hidden line-vector-2 lg:block"
-          src="/line-left.svg"
-          width={480}
-          height={480}
-          alt="head-vector"
-          style={{ top: "2400px" }}
-        />
+        className="absolute hidden line-vector-2 lg:block"
+        src="/line-left.svg"
+        width={480}
+        height={480}
+        alt="head-vector"
+        style={{ top: "2400px" }}
+      />
       <div className="flex items-center mt-64 md:service2-bg-3">
         <Features {...workProcess2} />
       </div>
