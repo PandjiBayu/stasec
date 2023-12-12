@@ -1,0 +1,52 @@
+{
+  "banner": {
+    "title": "Security Monitoring & Assessment",
+    "content": "Layanan kami dirancang khusus untuk menjaga keamanan siber di berbagai industri. Kami memberikan solusi kepada bisnis agar bisa berkembang dengan aman di era digital.",
+    "button": "Cari Tahu"
+  },
+  "features": {
+    "title": "Fitur Utama",
+    "content": "Layanan kami dirancang khusus untuk menjaga keamanan siber di berbagai industri. Kami memberikan solusi kepada bisnis agar bisa berkembang dengan aman di era digital.",
+    "cards": [
+      {
+        "title": "Pemantauan Berkelanjutan untuk ancaman keamanan"
+      },
+      {
+        "title": "Notifikasi ketika aktivitas mencurigakan terdeteksi"
+      },
+      {
+        "title": "Mengidentifikasi dan melaporkan potensi kelemahan"
+      }
+    ]
+  },
+  "benefit": {
+    "title": "Manfaat Utama dari <br /> Layanan Kami",
+    "content": "Fitur assessment ini tidak hanya sebatas mengidentifikasi, tetapi juga menyediakan analisis mendalam terhadap kerentanan dan potensi kelemahan.Berikut merupakan beberapa manfaat yang ditawarkan:",
+    "item1": "Memperkuat keamanan perangkat lunak dengan pemantauan ancaman aktif ",
+    "item2": "Mengurangi risiko pelanggaran data dan insiden keamanan",
+    "item3": "Mengurangi waktu berhenti operasi dan kerugian finansial akibat serangan siber",
+    "item4": "Mendukung kesesuaian dengan aturan dan standar keamanan"
+  },
+  "process": {
+    "blueText": "Proses Kerja",
+    "title": "Bagaimana Langkah Kerja Produk Ini?",
+    "cards": [
+      {
+        "title": "Pindai dan Deteksi",
+        "content": "Pemeriksaan menyeluruh terhadap aplikasi web untuk mengidentifikasi potensi kerentanan"
+      },
+      {
+        "title": "Analisis",
+        "content": "Menilai dan memberikan prioritas perbaikan terhadap kerentanan yang terdeteksi"
+      },
+      {
+        "title": "Mengatasi",
+        "content": "Mengidentifikasi masalah dan menangani kerentanan keamanan dalam aplikasi web"
+      },
+      {
+        "title": "Menjaga Kemanan",
+        "content": "Menjaga protokol keamanan yang berkelanjutan untuk melindungi aplikasi web"
+      }
+    ]
+  }
+}

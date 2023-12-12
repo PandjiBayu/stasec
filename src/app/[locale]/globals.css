@@ -5,7 +5,7 @@
 @font-face {
   font-family: "Switzer Regular";
   src: local("Switzer Regular"),
-    url("../../public/font/switzer/Switzer-Regular.woff") format("woff");
+    url("../../../public/font/switzer/Switzer-Regular.woff") format("woff");
 }
 
 :root {
@@ -60,7 +60,7 @@ body {
       rgba(23, 23, 23, 0.2) 41.24%,
       #171717 100%
     ),
-    url(../../public/Vector_2648.png);
+    url(../../../public/Vector_2648.png);
   background-size: cover;
 }
 
@@ -179,43 +179,43 @@ body {
 .content-bg-2 {
   background-size: cover;
   height: 100%;
-  /* background-image: url(../../public/content-bg-2.png); */
+  /* background-image: url(../../../public/content-bg-2.png); */
 }
 
 .content-bg-3 {
   background-size: cover;
   height: 100%;
-  /* background-image: url(../../public/content-bg-3.png); */
+  /* background-image: url(../../../public/content-bg-3.png); */
 }
 
 .content-bg-4 {
   background-size: cover;
   height: 100%;
-  /* background-image: url(../../public/content-bg-4.png); */
+  /* background-image: url(../../../public/content-bg-4.png); */
 }
 
 .content-bg-5 {
   background-size: cover;
   height: 100%;
-  /* background-image: url(../../public/content-bg-5.png); */
+  /* background-image: url(../../../public/content-bg-5.png); */
 }
 
 .content-bg-6 {
   background-size: cover;
   height: 100%;
-  /* background-image: url(../../public/content-bg-6.png); */
+  /* background-image: url(../../../public/content-bg-6.png); */
 }
 
 .content-bg-7 {
   background-size: cover;
   height: 100%;
-  /* background-image: url(../../public/content-bg-7.png); */
+  /* background-image: url(../../../public/content-bg-7.png); */
 }
 
 .content-bg-8 {
   background-size: cover;
   height: 100%;
-  /* background-image: url(../../public/content-bg-8.png); */
+  /* background-image: url(../../../public/content-bg-8.png); */
 }
 
 .content-bg-9 {
@@ -257,13 +257,13 @@ body {
   /* grid-area: header;
   background-size: cover;
   height: 100vh;
-  background-image: url(../../public/industry-image.png); */
+  background-image: url(../../../public/industry-image.png); */
   background: linear-gradient(
       180deg,
       rgba(23, 23, 23, 0.66) 14.67%,
       #171717 81.42%
     ),
-    url(../../public/industry-image.png);
+    url(../../../public/industry-image.png);
   background-size: cover;
 }
 
@@ -282,13 +282,13 @@ body {
   background-size: cover;
   /* height: 47vw; */
   height: 100%;
-  background-image: url(../../public/industry-bg-1.png);
+  background-image: url(../../../public/industry-bg-1.png);
 }
 
 .industry-bg-2 {
   background-size: cover;
   height: 53vw;
-  background-image: url(../../public/industry-bg-2.png);
+  background-image: url(../../../public/industry-bg-2.png);
 }
 
 @media (max-width: 768px) {
@@ -304,7 +304,7 @@ body {
       rgba(23, 23, 23, 0.66) 14.67%,
       #171717 81.42%
     ),
-    url(../../public/service-2.png);
+    url(../../../public/service-2.png);
   background-size: cover;
 }
 
@@ -325,14 +325,14 @@ body {
   background-size: cover;
   /* height: 74vw; */
   height: 100%;
-  background-image: url(../../public/service2-bg-2.png);
+  background-image: url(../../../public/service2-bg-2.png);
 }
 
 .service2-bg-3 {
   background-size: cover;
   /* height: 46vw; */
   height: 100%;
-  background-image: url(../../public/service2-bg-3.png);
+  background-image: url(../../../public/service2-bg-3.png);
 }
 
 .service3-image {
@@ -341,7 +341,7 @@ body {
     rgba(23, 23, 23, 0.66) 14.67%,
     #171717 100%
     ),
-    url(../../public/service-3.png);
+    url(../../../public/service-3.png);
     background-size: cover;
 }
 
@@ -369,7 +369,7 @@ body {
       rgba(23, 23, 23, 0.66) 14.67%,
       #171717 100%
     ),
-    url(../../public/service-1.png);
+    url(../../../public/service-1.png);
   background-size: cover;
 }
 
@@ -384,28 +384,28 @@ body {
   background-size: cover;
   /* height: 64.4vw; */
   height: 100%;
-  background-image: url(../../public/service1-bg-1.png);
+  background-image: url(../../../public/service1-bg-1.png);
 }
 
 .service1-bg-2 {
   background-size: cover;
   /* height: 86.5vw; */
   height: 100%;
-  background-image: url(../../public/service1-bg-2.png);
+  background-image: url(../../../public/service1-bg-2.png);
 }
 
 .about-bg-2 {
   background-size: cover;
   /* height: 54.2vw; */
   height: 100%;
-  background-image: url(../../public/about-bg-2.png);
+  background-image: url(../../../public/about-bg-2.png);
 }
 
 .about-bg-3 {
   background-size: cover;
   /* height: 52.8vw; */
   height: 100%;
-  background-image: url(../../public/about-bg-3.png);
+  background-image: url(../../../public/about-bg-3.png);
 }
 
 .content-title {

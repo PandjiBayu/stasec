@@ -9,7 +9,7 @@
   gap: 40px;
   flex-shrink: 0; */
   height: 704px;
-  background-image: url(../../../public/contact-img.png);
+  background-image: url(../../../../public/contact-img.png);
 }
 
 .contact-form {

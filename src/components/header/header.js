@@ -6,8 +6,12 @@ import ArrowDown from "../icons/arrow-down";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import MobileMenu from "./mobile-menu";
+import { useTranslation } from "react-i18next";
+import { link } from "@/libs/utils";
 
 const Header = () => {
+  const { t, i18n } = useTranslation();
+
   const [isSticky, setIsSticky] = useState(false);
   const [isActiveDropdown, setIsActiveDropdown] = useState(false);
   const [selectedService, setSelectedService] = useState(null);
@@ -64,17 +68,20 @@ const Header = () => {
       }`}
     >
       <nav className="flex items-center justify-between w-full lg:gap-5">
-        <Link href="/" className="z-10 flex items-center px-2 lg:px-10">
+        <Link
+          href={link(i18n, "/")}
+          className="z-10 flex items-center px-2 lg:px-10"
+        >
           <Logo width={136} height={56} isSticky={isSticky} />
         </Link>
         <div className="items-center hidden text-sm md:flex lg:gap-14 md:gap-8 sm:gap-4">
           <Link
-            href={"/"}
+            href={link(i18n, "/")}
             className={`${
               isActive("/") ? currentBtnClass : "z-10"
             } px-5 py-2.5 `}
           >
-            HOME
+            {t("component:header.home")}
           </Link>
           <div className={`relative inline-block`} onClick={toggleDropdown}>
             <div
@@ -82,14 +89,14 @@ const Header = () => {
                 isActive("/service") ? currentBtnClass : ""
               }`}
             >
-              <div>SERVICES</div>
+              <div>{t("component:header.service")}</div>
               <ArrowDown />
             </div>
 
             {isActiveDropdown && (
               <div className="absolute mt-2 bg-[#262626] border border-gray-800 rounded-md shadow-lg w-[200px] flex flex-col">
                 <Link
-                  href={"/service-1"}
+                  href={link(i18n, "/service-1")}
                   className={`p-4 hover:bg-gray-700 cursor-pointer ${
                     selectedService === "Service 1" ? "font-bold" : ""
                   }`}
@@ -98,7 +105,7 @@ const Header = () => {
                   Penetration Testing
                 </Link>
                 <Link
-                  href={"/service-2"}
+                  href={link(i18n, "/service-2")}
                   className={`p-4 hover:bg-gray-700 cursor-pointer ${
                     selectedService === "Service 2" ? "font-bold" : ""
                   }`}
@@ -107,7 +114,7 @@ const Header = () => {
                   Secure Development Tools
                 </Link>
                 <Link
-                  href={"/service-3"}
+                  href={link(i18n, "/service-3")}
                   className={`p-4 hover:bg-gray-700 cursor-pointer ${
                     selectedService === "Service 3" ? "font-bold" : ""
                   }`}
@@ -119,27 +126,27 @@ const Header = () => {
             )}
           </div>
           <Link
-            href={"/industry"}
+            href={link(i18n, "/industry")}
             className={`${
               isActive("/industry") ? currentBtnClass : "z-10"
             } px-5 py-2.5`}
           >
-            INDUSTRY
+            {t("component:header.industry")}
           </Link>
           <Link
-            href={"/about"}
+            href={link(i18n, "/about")}
             className={`${
               isActive("/about") ? currentBtnClass : "z-10"
             } px-5 py-2.5`}
           >
-            ABOUT
+            {t("component:header.about")}
           </Link>
         </div>
         <Link
-          href={"/contact"}
+          href={link(i18n, "/contact")}
           className="md:block hidden text-white bg-gradient-to-br from-[#4B08B4] to-[#103BC3] hover:bg-blue-900 focus:ring-4 focus:ring-blue-300 font-medium rounded-xl text-xs sm:text-sm md:px-5 md:py-4 px-2 py-2.5 sm:ml-1 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
         >
-          CONTACT US
+          {t("component:header.contact")}
         </Link>
 
         <button

@@ -20,6 +20,7 @@ import Sword from "../icons/sword";
 import BookCheck from "../icons/book-check";
 import BookText from "../icons/book-text";
 import Environment from "../icons/environment";
+import { useTranslation } from "react-i18next";
 
 const iconMappings = {
   cyberSecurity: CyberSecurity,
@@ -41,10 +42,18 @@ const iconMappings = {
   sword: Sword,
   bookCheck: BookCheck,
   bookText: BookText,
-  environment: Environment
+  environment: Environment,
 };
 
-const Cards = ({ card, cardIcon, cardType }) => {
+const Cards = ({
+  card,
+  cardIcon,
+  cardType,
+  index,
+  withContent,
+  translateKey,
+}) => {
+  const { t } = useTranslation();
   const [isHovered, setIsHovered] = useState(false);
   const CardIcon = iconMappings[cardIcon];
 
@@ -67,9 +76,13 @@ const Cards = ({ card, cardIcon, cardType }) => {
           </div>
           <div className="card flex flex-col items-center w-full sm:w-[382px] min-h-[248px] h-auto sm:h-[248px] pt-[64px] pb-[32px] px-[56px] justify-center">
             <div className="text-[24px] font-semibold text-center">
-              {card.cardTitle}
+              {t(`${translateKey}.cards.${index}.title`)}
             </div>
-            <div className="text-[16px] text-center">{card.cardContent}</div>
+            {withContent && (
+              <div className="text-[16px] text-center">
+                {t(`${translateKey}.cards.${index}.content`)}
+              </div>
+            )}
           </div>
         </div>
       ) : cardType == 3 ? (
@@ -87,11 +100,16 @@ const Cards = ({ card, cardIcon, cardType }) => {
               />
             )}
           </div>
-          <div className="card flex flex-col items-center w-[240px] h-[320px]" style={{padding: "56px 32px 16px 32px"}}>
+          <div
+            className="card flex flex-col items-center w-[240px] h-[320px]"
+            style={{ padding: "56px 32px 16px 32px" }}
+          >
             <div className="text-[24px] font-semibold text-center">
-              {card.cardTitle}
+              {t(`${translateKey}.cards.${index}.title`)}
             </div>
-            <div className="text-[16px] text-center">{card.cardContent}</div>
+            <div className="text-[16px] text-center">
+              {t(`${translateKey}.cards.${index}.content`)}
+            </div>
           </div>
         </div>
       ) : null}

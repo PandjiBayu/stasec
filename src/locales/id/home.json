@@ -1,0 +1,72 @@
+{
+  "banner": {
+    "title": "Langkah Cemerlang Menuju Keamanan",
+    "content": "Bersedia menyajikan keamanan siber terbaik, kami berkomitmen untuk melindungi data dan sistem anda. Dengan STASEC, setiap langkah adalah bagian dari perjalanan menuju masa depan digital yang lebih aman.",
+    "button": "Mulai"
+  },
+  "features": {
+    "blueText": "PRODUK DAN LAYANAN",
+    "title": "perkuat Infrastruktur Keamanan Siber untuk <br /> Keamanan yang Optimal",
+    "content": "Kami siap membantu persiapan, proses, dan evaluasi keamanan digital anda yang sesuai dengan kebutuhan perusahaan",
+    "cards": [
+      {
+        "title": "Penetration Testing",
+        "content": "Percobaan serangan terotorisasi yang dilakukan pada sistem komputer untuk mengevaluasi keamanannya."
+      },
+      {
+        "title": "Secure Development Tools",
+        "content": "Menanamkan keamanan dalam proses pengembangan perangkat lunak untuk pemrograman yang aman hingga akhir."
+      },
+      {
+        "title": "Security Monitoring & Assessment Tools",
+        "content": "Mengidentifikasi potensi serangan pada aplikasi perangkat lunak secara real-time."
+      }
+    ]
+  },
+  "contents": [
+    {
+      "title": "Terpercaya, Adaptif & Aman",
+      "content": "Dengan mempercayakan perlindungan data dan keamanan perangkat anda pada kami, terdapat banyak aspek keamanan yang akan kami tangani mulai dari mendeteksi dan memantau secara berkelanjutan serta mengevaluasi sistem dengan ketat. Bersama STASEC, anda dapat dengan nyaman mempercayakan perlindungan data dan keamanan perangkat anda."
+    },
+    {
+      "title": "Meneliti Sistem dari Potensi Serangan",
+      "content": "Dengan strategi pertahanan digital yang komprehensif, kami berkomitmen melindungi aset anda dari potensi ancaman dan mengurangi bahaya yang dapat menyerang aset digital anda."
+    },
+    {
+      "title": "Meningkatkan Kualitas Perangkat Lunak",
+      "content": "Kami membantu anda mengatasi masalah sebelum peluncuran produk dan mengurangi kebutuhan perbaikan keamanan yang mahal setelah pengembangan sistem. Pendekatan kami yang komprehensif menjamin pemeriksaan yang mendetail."
+    },
+    {
+      "title": "Pemantauan Real-time untuk Aplikasi Perangkat Lunak",
+      "content": "Sistem kami secara proaktif membantu Anda mengurangi risiko dengan mengatasi ancaman siber dan melakukan pemantauan dan pemindaian real-time untuk aplikasi guna mendeteksi ancaman keamanan. Notifikasi Instan tanpa Penundaan."
+    }
+  ],
+  "goals": {
+    "blueText": "TUJUAN",
+    "title": "Langkah Cemerlang <br /> Menuju Keamanan",
+    "content": "Menawarkan solusi untuk meningkatkan keamanan siber anda dengan sistem yang <br /> komprehensif dan dapat disesuaikan dengan kebutuhan perusahaan.",
+    "cards": [
+      {
+        "title": "Keamanan yang Komprehensif",
+        "content": "Kami memberikan pendekatan holistik terhadap keamanan siber, melibatkan berbagai aspek mulai dari keamanan jaringan hingga perlindungan data."
+      },
+      {
+        "title": "Solusi yang Personal",
+        "content": "Setiap organisasi memiliki keunikan tersendiri, dan kami memahaminya. Solusi-solusi kami disesuaikan untuk memenuhi kebutuhan perusahaan anda."
+      },
+      {
+        "title": "Pengawasan Real-time",
+        "content": "Sistem kami selalu waspada, memberikan pemantauan dan respons terhadap ancaman setiap saat."
+      }
+    ]
+  },
+  "point": {
+    "blueText": "Fitur Utama",
+    "title": "Bagaimana Kami Dapat  Meningkatkan Keamanan Sistem Anda?",
+    "content": "Kami secara proaktif mengidentifikasi dan menetralkan potensi ancaman, memastikan pertahanan yang kuat pada perangkat anda terhadap ancaman siber yang terus berkembang.",
+    "item1": "Respons Cepat Terhadap Insiden",
+    "item2": "Mengidentifikasi Kelemahan.",
+    "item3": "Meningkatkan Kualitas Kode",
+    "item4": "Didukung oleh AI"
+  }
+}

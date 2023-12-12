@@ -1,0 +1,52 @@
+{
+  "banner": {
+    "title": "Secure Development Tools",
+    "content": "Alat ini merupakan sebuah perangkat lunak yang dapat menilai dan meningkatkan keamanan kode anda serta memastikan aplikasi anda dikembangkan dengan mengutamakan keamanan.",
+    "button": "Cari Tahu"
+  },
+  "features": {
+    "title": "Fitur Utama",
+    "content": "Berikut merupakan fitur-fitur utama dalam perangkat lunak kami yang membantu memastikan praktek pemrograman yang aman",
+    "cards": [
+      {
+        "title": "Pendeteksian masalah yang lebih cepat"
+      },
+      {
+        "title": "Meningkatkan Kualitas Kode"
+      },
+      {
+        "title": "Perbaikan masalah sebelum merilis kode"
+      }
+    ]
+  },
+  "benefit": {
+    "title": "Manfaat Utama dari <br /> Layanan Kami",
+    "content": "Lindungi aset digital anda dengan mengidentifikasi celah keamanan secara proaktif, memperkuat pertahanan, dan memastikan ketangguhan terhadap potensi ancaman. Dapatkan semua manfaat yang dibutuhkan untuk memenuhi kebutuhan keamanan siber anda.",
+    "item1": "Mengurangi risiko kerentanan keamanan pada perangkat lunak",
+    "item2": "Memastikan bahwa keamanan menjadi bagian dari proses pengembangan",
+    "item3": "Mengurangi  perbaikan keamanan yang mahal setelah pengembangan",
+    "item4": "Menyempurnakan keseluruhan kualitas perangkat lunak "
+  },
+  "process": {
+    "blueText": "Proses Kerja",
+    "title": "Bagaimana Langkah Produk ini Bekerja?",
+    "cards": [
+      {
+        "title": "Deteksi",
+        "content": "Menganalisis dan mendeteksi kerentanan aplikasi, dan menggunakan sebuah mekanisme untuk menemukan masalah"
+      },
+      {
+        "title": "Periksa",
+        "content": "Menilai sejauh mana kerentanan tersebut bisa berdampak dan menentukan prioritas perbaikan berdasarkan potensi dampaknya"
+      },
+      {
+        "title": "Selesaikan",
+        "content": "Mengatasi kerentanan dengan menerapkan langkah-langkah komprehensif untuk mengidentifikasi dan menanggulangi potensi ancaman"
+      },
+      {
+        "title": "Menjaga Kemanan",
+        "content": "Pemantauan rutin untuk memastikan pertahanan keamanan yang baik terhadap potensi ancaman"
+      }
+    ]
+  }
+}

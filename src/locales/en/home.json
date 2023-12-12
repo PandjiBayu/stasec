@@ -1,0 +1,75 @@
+{
+  "banner": {
+    "title": "A Stellar Path to Security",
+    "content": "Guiding you to a path of top-notch cybersecurity. We are devoted to shielding your data and systems. With STASEC, it's not just software; it's a journey to a more secure digital future.",
+    "button": "Get Started"
+  },
+  "features": {
+    "blueText": "PRODUCTS AND SERVICES",
+    "title": "Enhance the Cybersecurity Infrastructure for an <br /> Optimal Security Measure",
+    "content": "We help you prepare, process, and evaluate the security of your digital future.",
+    "cards": [
+      {
+        "title": "Penetration Testing",
+        "content": "Authorized simulated attack performed on a computer system to evaluate its security"
+      },
+      {
+        "title": "Secure Development Tools",
+        "content": "Embedded security into the software development process for end-to-end secure programming"
+      },
+      {
+        "title": "Security Monitoring & Assessment Tools",
+        "content": "Actively identifying potential attacks on software applications in real-time"
+      }
+    ]
+  },
+  "contents": [
+    {
+      "title": "Trustworthy, Adaptive & Secure",
+      "content": "We cover everything from detecting threats and continuous monitoring to rigorous system evaluation, Trust our expertise to make safety the foundation of your cybersecurity strategy."
+    },
+    {
+      "title": "Examine System from Potential Attacks",
+      "content": "We are dedicated to safeguard your digital assets from a potential threats and mitigate variety attacks that could threaten your digital asset. Ensuring a comprehensive defense strategy."
+    },
+    {
+      "title": "Enhance the Software Quality",
+      "content": "We help you addressing issues before production deployment. Reducing the need for costly post-development security fixes. Our comprehensive approach ensures a thorough examination and mitigation."
+    },
+    {
+      "title": "Real-time Monitoring for Software App",
+      "content": "Our Security Monitoring & Assessment Tools feature proactively helps you minimize risk by mitigating cyber threats and offers a real-time monitor and scan applications for security threats and vulnerabilities. Instant Alert. Zero Delays."
+    }
+  ],
+  "goals": {
+    "blueText": "OUR GOALS",
+    "title": "Leading you to a stellar <br /> path to security",
+    "content": " Providing solution with some goals to improve the security that leading the your company with <br /> comprehensive system and tailored solutions.",
+    "cards": [
+      {
+        "icon": "shieldCheck",
+        "title": "Comprehensive Security",
+        "content": "We give a holistic approach to cybersecurity, covering everything from network security to data protection"
+      },
+      {
+        "icon": "badgeCheck",
+        "title": "Tailored Solutions",
+        "content": "Every organization is unique, and we understand that. Our solutions are customize to fit your specific needs."
+      },
+      {
+        "icon": "barChart",
+        "title": "Real-Time Monitoring",
+        "content": "Our System is always vigilant, providing round-the-clock monitoring and response to threats."
+      }
+    ]
+  },
+  "point": {
+    "blueText": "Feature Point",
+    "title": "How Can We Help You Increase Your Cybersecurity System?",
+    "content": "We proactively identify and neutralize potential threats, ensuring a robust defense against evolving cyber threats. Trust us to enhance your cybersecurity and secure your digital environment.",
+    "item1": "Real-Time Incident Response",
+    "item2": "Spot Weaknesses, Boots Security",
+    "item3": "Improve Code Quality",
+    "item4": "AI-Powered Assessment"
+  }
+}

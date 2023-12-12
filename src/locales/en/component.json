@@ -1,0 +1,20 @@
+{
+  "header": {
+    "home": "HOME",
+    "service": "SERVICE",
+    "industry": "INDUSTRY",
+    "about": "ABOUT",
+    "contact": "CONTACT US",
+    "service_1": "Penetration Testing",
+    "service_2": "Secure Development Tools",
+    "service_3": "Security Monitoring & Assessment"
+  },
+  "testimonial": {
+    "title": "Why Customers Love Working With Us"
+  },
+  "footer": {
+    "title": "Fortify Your Digital Future with Our Security Solution",
+    "content": "Ensures a proactive defense against evolving threats, providing peace of mind for your digital landscape.",
+    "button": "Get In Touch"
+  }
+}

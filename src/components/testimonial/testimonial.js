@@ -4,6 +4,7 @@ import ArrowLeft from "../icons/arrow-left";
 import ArrowRight from "../icons/arrow-right";
 import Image from "next/image";
 import Quotation from "../icons/quotation";
+import { useTranslation } from "react-i18next";
 
 const Testimonial = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -35,6 +36,8 @@ const Testimonial = () => {
     setCurrentIndex(newIndex);
   };
 
+  const { t } = useTranslation();
+
   return (
     <section className="flex flex-col items-center justify-center w-full p-2 py-10 xl:p-28 lg-p:24">
       <div className="flex items-center justify-between gap-2 sm:gap-8 md:gap-16">
@@ -46,8 +49,8 @@ const Testimonial = () => {
         </button>
         <div className="flex flex-col space-y-[16px] items-center">
           <div className="flex flex-col items-center gap-3 sm:gap-7">
-            <h2 className="text-3xl font-bold text-center sm:text-5xl">
-              Why Customers Love Working With Us
+            <h2 className="text-3xl text-center sm:text-6xl mb-10">
+              {t("component:testimonial.title")}
             </h2>
             <div
               className="leading-7 tracking-wide fpoint-text sm:text-sm min-h-[100px]"

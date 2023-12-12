@@ -9,14 +9,17 @@ import Marquee from "@/components/marquee/marquee";
 import { images } from "@/data/marquee/marqueeData";
 import { useState } from "react";
 import FooterContainer from "@/components/footer/footer-container";
+import { useTranslation } from "react-i18next";
 
-export default function About() {
+export default function AboutContent() {
   const imagesRepeated = images.concat(images, images, images);
   const [activeTab, setActiveTab] = useState("vision");
 
   const handleTabClick = (tab) => {
     setActiveTab(tab);
   };
+
+  const { t } = useTranslation();
 
   return (
     <section>
@@ -36,15 +39,8 @@ export default function About() {
               />
             </div>
             <div className="flex flex-col space-y-12">
-              <h3 className="content-title">A Stellar Path to Security</h3>
-              <p className="text-[18px]">
-                STASEC is the amalgamation of two fundamental concepts:
-                “Stellar” and “Security”. Just as stars light up the night sky
-                and act as a guilding beacons. We help you embarking on a
-                journey towards a more secure, resilient, and thriving digital
-                future. STASEC is registered and operates under PT. Digital
-                Berkah Mandiri.
-              </p>
+              <h3 className="content-title">{t("banner.title")}</h3>
+              <p className="text-[18px]">{t("banner.content")}</p>
             </div>
           </div>
           <div className="flex flex-col items-center px-4 mt-12 space-y-5 md:flex-row md:space-y-0 md:px-0">
@@ -62,7 +58,7 @@ export default function About() {
                           : ""
                       }`}
                     >
-                      Our Vision
+                      {t("visi.title")}
                     </span>
                   </li>
                   <li className="cursor-pointer me-2">
@@ -74,7 +70,7 @@ export default function About() {
                           : ""
                       }`}
                     >
-                      Our Mission
+                      {t("misi.title")}
                     </span>
                   </li>
                 </ul>
@@ -84,9 +80,9 @@ export default function About() {
                 {/* Set a fixed height */}
                 {activeTab === "vision"
                   ? // Content for Vision tab
-                    "Become a leading company in the field of cybersecurity by delivering innovative solutions that empower businesses to grow securely in the digital era."
+                    t("visi.content")
                   : // Content for Mission tab
-                    "Providing cybersecurity integrated solutions for comprehensive, integrative, and adaptive protection of digital assets against evolving threats."}
+                    t("misi.content")}
               </div>
             </div>
             <div>

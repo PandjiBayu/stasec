@@ -10,6 +10,8 @@ import Location from "../icons/location";
 import Phone from "../icons/phone";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
+import { useTranslation } from "react-i18next";
+import { link } from "@/libs/utils";
 
 const Footer = () => {
   const route = usePathname();
@@ -24,6 +26,8 @@ const Footer = () => {
   };
 
   const footerClass = getFooterClass();
+  const { t, i18n } = useTranslation();
+
   return (
     <footer className="flex h-[400px] flex-col items-start justify-between gap-6 px-10 py-10 lg:flex-row sm:gap-0 sm:px-12 md:px-14 lg:px-16 bg-[#171717]">
       <div className="flex flex-col space-y-[16px]">
@@ -49,18 +53,20 @@ const Footer = () => {
       <div className="flex flex-col space-y-8 md:space-y-[40px] mt-10 lg:mt-0">
         <div className="text-[24px] font-bold">Quick Links</div>
         <div className="flex flex-col gap-4">
-          <Link href={"/"}>Home</Link>
-          <Link href={"/industry"}>Industry</Link>
-          <Link href={"/about"}>About</Link>
-          <Link href={"/contact"}>Contact</Link>
+          <Link href={link(i18n, "/")}>Home</Link>
+          <Link href={link(i18n, "/industry")}>Industry</Link>
+          <Link href={link(i18n, "/about")}>About</Link>
+          <Link href={link(i18n, "/contact")}>Contact</Link>
         </div>
       </div>
       <div className="flex flex-col space-y-8 md:space-y-[40px]">
         <div className="text-[24px] font-bold">Services</div>
         <div className="flex flex-col gap-4">
-          <Link href={"/service-1"}>Penetration Testing</Link>
-          <Link href={"/service-2"}>Secure Development Tools</Link>
-          <Link href={"/service-3"}>Security Monitoring & Assessment</Link>
+          <Link href={link(i18n, "/service-1")}>Penetration Testing</Link>
+          <Link href={link(i18n, "/service-2")}>Secure Development Tools</Link>
+          <Link href={link(i18n, "/service-3")}>
+            Security Monitoring & Assessment
+          </Link>
         </div>
       </div>
       <div className="flex flex-col space-y-8 md:space-y-[40px]">
@@ -72,7 +78,7 @@ const Footer = () => {
           </div>
           <div className="flex items-center space-x-2">
             <div style={{ width: "16px" }}>
-            <Location width={16} height={16}/>
+              <Location width={16} height={16} />
             </div>
             <div className="w-64">
               The CEO Building, Level 12 Jl. TB Simatupang No.18C Cilandak

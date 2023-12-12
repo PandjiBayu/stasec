@@ -1,0 +1,76 @@
+{
+  "banner": {
+    "title": "Penetration Test",
+    "content": "It’s a comprehensive services that help you identify vulnerabilities in your systems and applications, enabling you to proactively strengthen your defenses.",
+    "button": "Get Started"
+  },
+  "features": {
+    "title": "Key Features",
+    "content": "There are 5 key features of our Penetration Test to help you stimulate attacks on your system security.",
+    "cards": [
+      {
+        "title": "Asset discover and detection"
+      },
+      {
+        "title": "Scheduled vulnerability tests"
+      },
+      {
+        "title": "Identifying vulnerable frameworks"
+      },
+      {
+        "title": "Detection related to OWASP Top 10 attacks"
+      },
+      {
+        "title": "Creates detailed reports"
+      }
+    ]
+  },
+  "benefit": {
+    "title": "The Key <br /> Benefit Of Our <br /> Service",
+    "content": "Unlock unparalleled security insights with our Penetration Test solution. Safeguard your digital assets by proactively identifying vulnerabilities, fortifying your defenses, and ensuring resilience against potential cyber threats. Get all of the benefit to provide your cybersecurity needs.",
+    "cards": [
+      {
+        "title": "Identify and Prioritize Risks",
+        "content": "Get a chance to recognize and prioritize risks based on their significance that happen on the software"
+      },
+      {
+        "title": "Prevent Hackers from Infiltrating Systems",
+        "content": "Safeguard your systems by implementing robust security measures that actively prevent hackers from gaining unauthorized access"
+      },
+      {
+        "title": "Mature your Environment",
+        "content": "Strengthen and advance your cybersecurity environment. Fortify defenses and mitigate potential threats effectively"
+      },
+      {
+        "title": "Prevent Data Breaches and Business Disruption",
+        "content": "Deploying robust cybersecurity defenses against evolving threats"
+      },
+      {
+        "title": "Comply with Industry Regulations",
+        "content": "Adhere to industry regulations seamlessly with our cybersecurity solution"
+      }
+    ]
+  },
+  "process": {
+    "blueText": "Our Work Process",
+    "title": "The 4 Stages of Our Penetration Test",
+    "cards": [
+      {
+        "title": "Plan and Prepare",
+        "content": "Set the scope, rules, permissions, gather info, and plan for successful penetration test"
+      },
+      {
+        "title": "Data Gather",
+        "content": "Gather info about the target system with passive and active reconnaissance"
+      },
+      {
+        "title": "Attack and Assess",
+        "content": "Enables in-depth analysis of security gaps, facilitating comprehensive mitigation strategies against threats"
+      },
+      {
+        "title": "Remediation and Report",
+        "content": "Generate a report, collaborate with the security team, and improve overall security based on test results"
+      }
+    ]
+  }
+}

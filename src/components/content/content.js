@@ -1,7 +1,10 @@
+"use client";
+
 import Image from "next/image";
 import "./content.css";
+import { useTranslation } from "react-i18next";
 
-const ContentRight = ({ imgPos, image, title, content }) => {
+const ContentRight = ({ imgPos, image, title, content, index }) => {
   let imgPath = "";
   if (image === "handshake") {
     imgPath = "/handshake.png";
@@ -21,6 +24,8 @@ const ContentRight = ({ imgPos, image, title, content }) => {
     imgPath = "/health-care.png";
   }
 
+  const { t } = useTranslation();
+
   return (
     <section className=" flex flex-col md:flex-row items-start md:items-center justify-center w-full px-2 md:px-[80px] py-[48px] space-x-1 md:space-x-24">
       <div
@@ -38,8 +43,10 @@ const ContentRight = ({ imgPos, image, title, content }) => {
       </div>
 
       <div className="flex flex-col items-center max-w-lg space-y-12 md:items-start">
-        <h3 className="content-title ">{title}</h3>
-        <p className="text-[18px] text-center md:text-start ">{content}</p>
+        <h3 className="content-title ">{t(`contents.${index}.title`)}</h3>
+        <p className="text-[18px] text-center md:text-start ">
+          {t(`contents.${index}.content`)}
+        </p>
       </div>
     </section>
   );

@@ -1,0 +1,76 @@
+{
+  "banner": {
+    "title": "Penetration Test",
+    "content": "Sebuah layanan komprehensif yang membantu mengidentifikasi celah keamanan dalam sistem dan aplikasi, memberikan kesempatan untuk secara proaktif memperkuat pertahanan perangkat anda.",
+    "button": "Cari Tahu"
+  },
+  "features": {
+    "title": "Fitur Utama",
+    "content": "Terdapat 5 fitur utama dari Penetration Test untuk membantu anda melakukan simulasi serangan terhadap keamanan sistem",
+    "cards": [
+      {
+        "title": "Penemuan dan Deteksi Aset"
+      },
+      {
+        "title": "Uji Kelemahan Rutin"
+      },
+      {
+        "title": "Mengidentifikasi Kerentanan"
+      },
+      {
+        "title": "Pendeteksian Serangan OWASP Top 10"
+      },
+      {
+        "title": "Penyusunan Laporan Rinci"
+      }
+    ]
+  },
+  "benefit": {
+    "title": "Manfaat <br /> Utama dari <br /> Layanan Kami",
+    "content": "Lindungi aset digital anda dengan mengidentifikasi celah keamanan secara proaktif, memperkuat pertahanan, dan memastikan ketangguhan terhadap potensi ancaman. Dapatkan semua manfaat yang dibutuhkan untuk memenuhi kebutuhan keamanan siber anda.",
+    "cards": [
+      {
+        "title": "Kenali dan Prioritaskan Risiko",
+        "content": "Mengenali dan mendata risiko berdasarkan signifikansinya yang terjadi pada perangkat lunak"
+      },
+      {
+        "title": "Cegah Peretas ke dalam Sistem",
+        "content": "Melindungi sistem dengan menerapkan keamanan yang kuat, yang secara aktif mencegah peretas untuk mendapatkan akses ilegal"
+      },
+      {
+        "title": "Meningkatkan Keamanan",
+        "content": "Tingkatkan keamanan siber Anda dengan memperkuat pertahanan dan mitigasi potensi serangan dengan efektif"
+      },
+      {
+        "title": "Cegah Gangguan dan Pencurian Data",
+        "content": "Menerapkan pertahanan siber yang kuat melawan ancaman yang terus berkembang"
+      },
+      {
+        "title": "Patuhi Regulasi Industri",
+        "content": "Melindungi bisnismu dengan solusi keamanan siber yang sesuai dengan standar regulasi industri"
+      }
+    ]
+  },
+  "process": {
+    "blueText": "Proses Kerja",
+    "title": "4 Langkah Pengerjaan Penetration Test",
+    "cards": [
+      {
+        "title": "Perencanaan",
+        "content": "Menentukan lingkup, aturan, izin, mengumpulkan informasi, dan merencanakan uji penetrasi yang sesuai"
+      },
+      {
+        "title": "Pendataan",
+        "content": "Pengumpulan informasi tentang sistem target melalui pendataan pasif dan aktif"
+      },
+      {
+        "title": "Pembuatan Serangan",
+        "content": "Analisis mendalam terhadap celah keamanan, memfasilitasi strategi mitigasi yang komprehensif melawan ancaman"
+      },
+      {
+        "title": "Perbaikan dan Laporan",
+        "content": "Menghasilkan laporan, meningkatkan keamanan keseluruhan berdasarkan hasil uji"
+      }
+    ]
+  }
+}

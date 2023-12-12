@@ -1,0 +1,52 @@
+{
+  "banner": {
+    "title": "Security Monitoring & Assessment",
+    "content": "This tool and service offer real-time monitoring and protection for software applications to detect and respond to potential attacks, vulnerabilities, and errors.",
+    "button": "Get Started"
+  },
+  "features": {
+    "title": "Key Features",
+    "content": "These are the key features on our software to help you ensure secure programming practices.",
+    "cards": [
+      {
+        "title": "Continuous Monitoring for security threats"
+      },
+      {
+        "title": "Send alert when suspicious activity detected"
+      },
+      {
+        "title": "Identifies and reports on potential weaknesses"
+      }
+    ]
+  },
+  "benefit": {
+    "title": "The Key Benefit <br /> Of Our Service",
+    "content": "The assessment features go beyond mere identification, offering in-depth analyses of vulnerabilities and potential weaknesses. Elevate your cybersecurity posture with our Security Monitoring and Assessment, here are sme benefits to empower you to stay a step ahead in the ever-evolving landscape of digital security.",
+    "item1": "Boosts software security with active threat monitoring and response",
+    "item2": "Reduces the likelihood of data breaches and security incidents",
+    "item3": "Reduces downtime and financial losses from cyber attacks",
+    "item4": "Supports compliance with security regulations and standards"
+  },
+  "process": {
+    "blueText": "Our Work Process",
+    "title": "How Our Security Monitoring & Assessment Tools Work ",
+    "cards": [
+      {
+        "title": "Scan and Detect",
+        "content": "Thoroughly examine the web app for potential vulnerabilities"
+      },
+      {
+        "title": "Assess",
+        "content": "Assess and prioritize fixing detected vulnerabilities"
+      },
+      {
+        "title": "Resolve",
+        "content": "Identify problem and address security vulnerabilities in the web app"
+      },
+      {
+        "title": "Continuously Secure",
+        "content": "Maintain ongoing security protocols to protect the web application"
+      }
+    ]
+  }
+}

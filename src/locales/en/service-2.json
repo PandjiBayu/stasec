@@ -1,0 +1,52 @@
+{
+  "banner": {
+    "title": "Secure Development Tools",
+    "content": "A cutting-edge software to assess and enhance the security of your code, ensuring your applications are built with security in mind.",
+    "button": "Get Started"
+  },
+  "features": {
+    "title": "Key Features",
+    "content": "These are the key features on our software to help you ensure secure programming practices.",
+    "cards": [
+      {
+        "title": "Early detection of issues"
+      },
+      {
+        "title": "Improve Code Quality"
+      },
+      {
+        "title": "Fix issues before releasing the code"
+      }
+    ]
+  },
+  "benefit": {
+    "title": "The Key Benefit <br /> Of Our Service",
+    "content": "Unlock unparalleled security insights with our Penetration Test solution. Safeguard your digital assets by proactively identifying vulnerabilities, fortifying your defenses, and ensuring resilience against potential cyber threats. Get all of the benefit to provide your cybersecurity needs.",
+    "item1": "Reduces the risk of security vulnerabilities in the software",
+    "item2": "Ensures that security is a part of development  process",
+    "item3": "Reduce the need for costly post-development security fixes",
+    "item4": "Enhances overall software quality"
+  },
+  "process": {
+    "blueText": "Our Work Process",
+    "title": "How Our Secure Development Tool Work ",
+    "cards": [
+      {
+        "title": "Detect",
+        "content": "Analyze web app, find vulnerabilities, and use mechanisms to locate security issues"
+      },
+      {
+        "title": "Examine",
+        "content": "Assess vulnerability severity and prioritize fixes based on potential impact"
+      },
+      {
+        "title": "Resolve",
+        "content": "Address security vulnerabilities by implementing comprehensive measures to identify and remediate potential threats"
+      },
+      {
+        "title": "Continuously Secure",
+        "content": "Continuous monitoring ensures a resilient defense against potential threats"
+      }
+    ]
+  }
+}

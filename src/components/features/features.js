@@ -24,6 +24,7 @@ import BookCheck from "../icons/book-check";
 import BookText from "../icons/book-text";
 import EnvironmentIcon from "../icons/environment";
 import Customize from "../icons/customize";
+import { useTranslation } from "react-i18next";
 
 const iconMappings = {
   cyberSecurity: CyberSecurity,
@@ -56,28 +57,39 @@ const Features = ({
   title,
   content,
   cards,
+  withContent = true,
+  translateKey = "features",
 }) => {
+  const { t } = useTranslation();
+
   return (
     <>
       {cardType == 1 ? (
         <section className="flex flex-col justify-center w-full py-12 space-y-12 reditems-center md:px-10 ">
           <div className="flex flex-col items-center space-y-4">
             {blueCondition && (
-              <div className="text-[24px] text-center text-[#1A57FF]">{blueText}</div>
+              <div className="text-[24px] text-center text-[#1A57FF]">
+                {t(`${translateKey}.blueText`)}
+              </div>
             )}
             <h2
               className="title-text"
-              dangerouslySetInnerHTML={{ __html: title }}
+              dangerouslySetInnerHTML={{ __html: t(`${translateKey}.title`) }}
             ></h2>
-            <p className="text-[18px] text-center">{content}</p>
+            <p className="text-[18px] text-center">
+              {t(`${translateKey}.content`)}
+            </p>
           </div>
           <div className="flex flex-wrap items-center justify-center h-full gap-2 px-2 space-x-1 md:gap-6 md:space-x-8">
             {cards.map((card, index) => (
               <Cards
+                index={index}
                 key={index}
                 card={card}
                 cardIcon={card.cardIcon}
                 cardType={cardType}
+                withContent={withContent}
+                translateKey={translateKey}
               />
             ))}
           </div>
@@ -88,11 +100,11 @@ const Features = ({
             <div className="text-[24px] text-[#1A57FF]">{blueText}</div>
             <div
               className="title-text"
-              dangerouslySetInnerHTML={{ __html: title }}
+              dangerouslySetInnerHTML={{ __html: t(`${translateKey}.title`) }}
             ></div>
             <div
               className="text-[18px]"
-              dangerouslySetInnerHTML={{ __html: content }}
+              dangerouslySetInnerHTML={{ __html: t(`${translateKey}.content`) }}
             ></div>
           </div>
           <div className="flex flex-col md:flex-row items-center w-full gap-12 pt-[70px]">
@@ -106,9 +118,11 @@ const Features = ({
                         <CardIcon width={48} height={48} color={"#1A57FF"} />
                       </div>
                       <div className="text-[24px] font-semibold">
-                        {card.cardTitle}
+                        {t(`${translateKey}.cards.${index}.title`)}
                       </div>
-                      <div className="text-[16px]">{card.cardContent}</div>
+                      <div className="text-[16px]">
+                        {t(`${translateKey}.cards.${index}.content`)}
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -119,8 +133,10 @@ const Features = ({
       ) : cardType == 3 ? (
         <section className="flex flex-col pb-12 px-4 md:px-[80px] space-y-12 w-full ">
           <div className="flex flex-col items-center space-y-4">
-            <div className="text-[24px] text-[#1A57FF]">{blueText}</div>
-            <div className="title-text">{title}</div>
+            <div className="text-[24px] text-[#1A57FF]">
+              {t(`${translateKey}.blueText`)}
+            </div>
+            <div className="title-text">{t(`${translateKey}.title`)}</div>
           </div>
           <div className="flex flex-col items-center justify-center h-full gap-2 space-x-1 space-y-8 md:space-y-0 md:flex-row md:gap-6 md:space-x-8">
             {cards.map((card, index) => {
@@ -128,10 +144,12 @@ const Features = ({
               return (
                 <div className="flex items-center" key={index}>
                   <Cards
+                    index={index}
                     key={index}
                     card={card}
                     cardIcon={card.cardIcon}
                     cardType={cardType}
+                    translateKey={translateKey}
                   />
                   {index + 1 != cards.length && (
                     <div className="pl-[24px] lg:block hidden">

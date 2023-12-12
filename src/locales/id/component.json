@@ -1,0 +1,20 @@
+{
+  "header": {
+    "home": "BERANDA",
+    "service": "LAYANAN",
+    "industry": "INDUSTRI",
+    "about": "TENTANG KAMI",
+    "contact": "HUBUNGI KAMI",
+    "service_1": "Penetration Testing",
+    "service_2": "Secure Development Tools",
+    "service_3": "Security Monitoring & Assessment"
+  },
+  "testimonial": {
+    "title": "Mengapa Klien Menyukai Layanan Kami?"
+  },
+  "footer": {
+    "title": "Perkuat Masa Depan Digital dengan Solusi Keamanan Kami.",
+    "content": "STASEC memberikan pertahanan proaktif terhadap ancaman perangkat yang terus berkembang.",
+    "button": "Hubungi Kami"
+  }
+}

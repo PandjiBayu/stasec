@@ -87,7 +87,7 @@ export const serviceFeatures3 = {
 };
 
 export const keyBenefits = {
-    cardType: 2,
+  cardType: 2,
   cards: [
     {
       cardIcon: "customize",
