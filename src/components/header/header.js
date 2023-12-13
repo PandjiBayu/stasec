@@ -8,6 +8,7 @@ import { usePathname } from "next/navigation";
 import MobileMenu from "./mobile-menu";
 import { useTranslation } from "react-i18next";
 import { link } from "@/libs/utils";
+import Language from "../language/language";
 
 const Header = () => {
   const { t, i18n } = useTranslation();
@@ -148,6 +149,9 @@ const Header = () => {
         >
           {t("component:header.contact")}
         </Link>
+        <div className="hidden md:inline-block">
+          <Language />
+        </div>
 
         <button
           onClick={openMobileMenu}
