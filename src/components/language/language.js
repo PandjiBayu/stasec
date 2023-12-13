@@ -54,16 +54,16 @@ const Language = () => {
       {isActiveDropdown && (
         <div className="md:absolute mt-2 bg-[#262626] border border-gray-800 rounded-md shadow-lg flex flex-col">
           <span
-            className="p-4 hover:bg-gray-700 cursor-pointer"
+            className="p-4 cursor-pointer hover:bg-gray-700"
             onClick={() => handleChange("en")}
           >
-            EN
+            ENG
           </span>
           <span
-            className="p-4 hover:bg-gray-700 cursor-pointer"
+            className="p-4 cursor-pointer hover:bg-gray-700"
             onClick={() => handleChange("id")}
           >
-            ID
+            IND
           </span>
         </div>
       )}
