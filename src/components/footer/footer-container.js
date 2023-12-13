@@ -19,7 +19,7 @@ const FooterContainer = () => {
           }}
         />
         <div className="relative z-10 flex flex-col items-center p-6 md:p-20 sm:p-10">
-          <div className="text-3xl md:text-[48px] text-center font-bold">
+          <div className="text-3xl md:text-[48px] text-center font-bold leading-normal">
             {t("component:footer.title")}
           </div>
           <p className="pt-4 text-base text-center fpoint-text md:text-lg">
