@@ -40,27 +40,36 @@ const Footer = () => {
             <Instagram width={24} height={24} />
           </div>
           <div className="socmed-border">
-            <Facebook width={24} height={24} />
-          </div>
-          <div className="socmed-border">
             <Twitter width={24} height={24} />
           </div>
           <div className="socmed-border">
-            <Youtube width={24} height={24} />
+            <Link href={"https://www.linkedin.com/company/stasec"}>
+              <Youtube width={24} height={24} />
+            </Link>
           </div>
         </div>
       </div>
       <div className="flex flex-col space-y-8 md:space-y-[40px] mt-10 lg:mt-0">
-        <div className="text-[24px] font-bold">{t("component:footerTitle.quickLink")}</div>
+        <div className="text-[24px] font-bold">
+          {t("component:footerTitle.quickLink")}
+        </div>
         <div className="flex flex-col gap-4">
           <Link href={link(i18n, "/")}>{t("component:footerLink.home")}</Link>
-          <Link href={link(i18n, "/industry")}>{t("component:footerLink.industry")}</Link>
-          <Link href={link(i18n, "/about")}>{t("component:footerLink.about")}</Link>
-          <Link href={link(i18n, "/contact")}>{t("component:footerLink.contact")}</Link>
+          <Link href={link(i18n, "/industry")}>
+            {t("component:footerLink.industry")}
+          </Link>
+          <Link href={link(i18n, "/about")}>
+            {t("component:footerLink.about")}
+          </Link>
+          <Link href={link(i18n, "/contact")}>
+            {t("component:footerLink.contact")}
+          </Link>
         </div>
       </div>
       <div className="flex flex-col space-y-8 md:space-y-[40px]">
-        <div className="text-[24px] font-bold">{t("component:footerTitle.service")}</div>
+        <div className="text-[24px] font-bold">
+          {t("component:footerTitle.service")}
+        </div>
         <div className="flex flex-col gap-4">
           <Link href={link(i18n, "/service-1")}>Penetration Testing</Link>
           <Link href={link(i18n, "/service-2")}>Secure Development Tools</Link>
@@ -70,7 +79,9 @@ const Footer = () => {
         </div>
       </div>
       <div className="flex flex-col space-y-8 md:space-y-[40px]">
-        <div className="text-[24px] font-bold">{t("component:footerTitle.contactUs")}</div>
+        <div className="text-[24px] font-bold">
+          {t("component:footerTitle.contactUs")}
+        </div>
         <div className="flex flex-col space-y-[16px]">
           <div className="flex items-center space-x-2">
             <Mail width={16} height={16} />
