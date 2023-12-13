@@ -51,16 +51,16 @@ const Footer = () => {
         </div>
       </div>
       <div className="flex flex-col space-y-8 md:space-y-[40px] mt-10 lg:mt-0">
-        <div className="text-[24px] font-bold">Quick Links</div>
+        <div className="text-[24px] font-bold">{t("component:footerTitle.quickLink")}</div>
         <div className="flex flex-col gap-4">
-          <Link href={link(i18n, "/")}>Home</Link>
-          <Link href={link(i18n, "/industry")}>Industry</Link>
-          <Link href={link(i18n, "/about")}>About</Link>
-          <Link href={link(i18n, "/contact")}>Contact</Link>
+          <Link href={link(i18n, "/")}>{t("component:footerLink.home")}</Link>
+          <Link href={link(i18n, "/industry")}>{t("component:footerLink.industry")}</Link>
+          <Link href={link(i18n, "/about")}>{t("component:footerLink.about")}</Link>
+          <Link href={link(i18n, "/contact")}>{t("component:footerLink.contact")}</Link>
         </div>
       </div>
       <div className="flex flex-col space-y-8 md:space-y-[40px]">
-        <div className="text-[24px] font-bold">Services</div>
+        <div className="text-[24px] font-bold">{t("component:footerTitle.service")}</div>
         <div className="flex flex-col gap-4">
           <Link href={link(i18n, "/service-1")}>Penetration Testing</Link>
           <Link href={link(i18n, "/service-2")}>Secure Development Tools</Link>
@@ -70,7 +70,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="flex flex-col space-y-8 md:space-y-[40px]">
-        <div className="text-[24px] font-bold">Contact Us</div>
+        <div className="text-[24px] font-bold">{t("component:footerTitle.contactUs")}</div>
         <div className="flex flex-col space-y-[16px]">
           <div className="flex items-center space-x-2">
             <Mail width={16} height={16} />

@@ -16,5 +16,16 @@
     "title": "Fortify Your Digital Future with Our Security Solution",
     "content": "Ensures a proactive defense against evolving threats, providing peace of mind for your digital landscape.",
     "button": "Get In Touch"
+  },
+  "footerTitle": {
+    "quickLink": "Quick Link",
+    "contactUs": "Contact Us",
+    "service": "Service"
+  },
+  "footerLink": {
+    "home": "Home",
+    "industry": "Industry",
+    "about": "About",
+    "contact": "Contact"
   }
 }

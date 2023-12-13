@@ -16,5 +16,16 @@
     "title": "Perkuat Masa Depan Digital dengan Solusi Keamanan Kami.",
     "content": "STASEC memberikan pertahanan proaktif terhadap ancaman perangkat yang terus berkembang.",
     "button": "Hubungi Kami"
+  },
+  "footerTitle": {
+    "quickLink": "Tautan Cepat",
+    "contactUs": "Hubungi Kami",
+    "service": "Layanan"
+  },
+  "footerLink": {
+    "home": "Beranda",
+    "industry": "Industri",
+    "about": "Tentang Kami",
+    "contact": "Hubungi Kami"
   }
 }
