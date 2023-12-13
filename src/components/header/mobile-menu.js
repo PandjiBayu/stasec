@@ -38,7 +38,6 @@ const MobileMenu = ({ open, isActive }) => {
                 <span class="text-base font-medium">
                   {t("component:header.service")}
                 </span>
-
                 <span class="shrink-0 transition duration-300 group-open:-rotate-180">
                   {open ? (
                     <svg
