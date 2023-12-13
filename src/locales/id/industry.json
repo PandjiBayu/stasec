@@ -3,5 +3,23 @@
     "title": "Industri",
     "content": "Layanan kami dirancang khusus untuk menjaga keamanan siber di berbagai industri. Kami memberikan solusi kepada bisnis agar bisa berkembang dengan aman di era digital.",
     "button": "Mulai"
-  }
+  },
+  "contents": [
+    {
+      "title": "Industri Keuangan",
+      "content": "Untuk mendukungindustri keuangan, perusahaan kami berkomitmen untuk menjaga keamanan transaksi dan data yang bersifat sensitif. Dengan beroperasi di dalam lingkungan yang ketat diatur dan rentan terhadap berbagai ancaman, kami menyajikan solusi yang krusial melalui langkah-langkah pencegahan serta respons yang cepat terhadap insiden. Melalui layanan kami, kami berusaha untuk membantu industri ini mencegah risiko kerugian keuangan dan membangun kepercayaan pelanggan."
+    },
+    {
+      "title": "Industri Automotif",
+      "content": "Industri otomotif, yang tidak hanya penting untuk pertumbuhan ekonomi tetapi juga penuh dengan inovasi menarik seperti kendaraan listrik dan otonom, sedang mengalami perkembangan pesat. Saat sektor ini bergerak menuju standar baru dalam hal lingkungan dan keselamatan, keamanan siber menjadi semakin vital. Memastikan keamanan kendaraan yang terkoneksi dengan perangkat bukan hanya kebutuhan, melainkan langkah penting untuk merawat keselamatan dan privasi konsumen."
+    },
+    {
+      "title": "Institusi dan Pemerintahan",
+      "content": "Di era digital ini, peran pemerintah dan lembaga menjadi sangat krusial dalam memberikan layanan penting dan menjaga infrastruktur yang vital. Keamanan siber menjadi semakin penting karena ketergantungan mereka pada teknologi untuk melindungi data sensitif, memastikan integritas proses, dan menangkal ancaman siber. Mengingat semakin kompleksnya serangan yang terjadi, diperlukan langkah-langkah keamanan siber yang kuat untuk mencegah pelanggaran dan menjamin keamanan serta kepercayaan masyarakat yang dilayani."
+    },
+    {
+      "title": "Kesehatan",
+      "content": "Rumah sakit saat ini mengandalkan catatan elektronik dan perangkat terhubung dalam penyediaan layanan kesehatan, namun hal ini juga membuka peluang untuk terjadinya ancaman siber. Melindungi data pasien dan memastikan integritas prosedur medis menjadi prioritas utama. Oleh karena itu, institusi kesehatan perlu menempatkan keamanan siber sebagai hal yang sangat penting agar dapat menjamin kepercayaan pasien dan kelangsungan pelayanan medis yang optimal."
+    }
+  ]
 }
