@@ -1,7 +1,10 @@
 import Link from "next/link";
 import Language from "../language/language";
+import { useTranslation } from "react-i18next";
 
 const MobileMenu = ({ open, isActive }) => {
+  const { t } = useTranslation();
+
   return (
     <div
       className={`block mt-4 ${
@@ -20,7 +23,7 @@ const MobileMenu = ({ open, isActive }) => {
               } rounded md:bg-transparent md:text-blue-700 md:p-0 text-white`}
               aria-current="page"
             >
-              Home
+              {t("component:header.home")}
             </Link>
           </li>
           <li>
@@ -32,7 +35,9 @@ const MobileMenu = ({ open, isActive }) => {
                     : "hover:bg-gray-800"
                 } rounded md:bg-transparent md:text-blue-700 md:p-0 text-white`}
               >
-                <span class="text-base font-medium">Services</span>
+                <span class="text-base font-medium">
+                  {t("component:header.service")}
+                </span>
 
                 <span class="shrink-0 transition duration-300 group-open:-rotate-180">
                   {open ? (
@@ -104,7 +109,7 @@ const MobileMenu = ({ open, isActive }) => {
                   : "hover:bg-gray-800"
               } rounded md:bg-transparent md:text-blue-700 md:p-0 text-white`}
             >
-              Industry
+              {t("component:header.industry")}
             </Link>
           </li>
           <li>
@@ -116,7 +121,7 @@ const MobileMenu = ({ open, isActive }) => {
                   : "hover:bg-gray-800"
               } rounded md:bg-transparent md:text-blue-700 md:p-0 text-white`}
             >
-              About
+              {t("component:header.about")}
             </Link>
           </li>
           <li className="pt-3">
@@ -124,7 +129,7 @@ const MobileMenu = ({ open, isActive }) => {
               href={"/contact"}
               className="px-5 py-4 text-xs font-medium text-white bg-blue-800 hover:bg-blue-900 focus:ring-4 focus:ring-blue-300 rounded-xl sm:text-sm dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
             >
-              CONTACT US
+              {t("component:header.contact")}
             </Link>
           </li>
           <li>

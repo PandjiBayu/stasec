@@ -47,18 +47,7 @@ const Language = () => {
       onClick={toggleDropdown}
     >
       <div className="flex items-center space-x-1 cursor-pointer px-5 py-2.5">
-        <div>
-          {currentLocale === "en" ? (
-            <Image width={32} height={32} src="/english.png" alt="English" />
-          ) : (
-            <Image
-              width={32}
-              height={32}
-              src="/indonesia.png"
-              alt="Indonesia"
-            />
-          )}
-        </div>
+        <div>{currentLocale === "en" ? "EN" : "ID"}</div>
         <ArrowDown />
       </div>
 
@@ -68,18 +57,13 @@ const Language = () => {
             className="p-4 hover:bg-gray-700 cursor-pointer"
             onClick={() => handleChange("en")}
           >
-            <Image width={32} height={32} src="/english.png" alt="English" />
+            EN
           </span>
           <span
             className="p-4 hover:bg-gray-700 cursor-pointer"
             onClick={() => handleChange("id")}
           >
-            <Image
-              width={32}
-              height={32}
-              src="/indonesia.png"
-              alt="Indonesia"
-            />
+            ID
           </span>
         </div>
       )}

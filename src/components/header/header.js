@@ -28,12 +28,12 @@ const Header = () => {
   const isActive = (path) => {
     if (path === "/service") {
       return (
-        route.startsWith("/service-1") ||
-        route.startsWith("/service-2") ||
-        route.startsWith("/service-3")
+        route.startsWith(`${i18n.language === "en" ? "" : "/id"}/service-1`) ||
+        route.startsWith(`${i18n.language === "en" ? "" : "/id"}/service-2`) ||
+        route.startsWith(`${i18n.language === "en" ? "" : "/id"}/service-3`)
       );
     }
-    return route === path;
+    return route === `${i18n.language === "en" ? "" : "/id"}${path}`;
   };
   useEffect(() => {
     const handleScroll = () => {
@@ -143,14 +143,16 @@ const Header = () => {
             {t("component:header.about")}
           </Link>
         </div>
-        <Link
-          href={link(i18n, "/contact")}
-          className="md:block hidden text-white bg-gradient-to-br from-[#4B08B4] to-[#103BC3] hover:bg-blue-900 focus:ring-4 focus:ring-blue-300 font-medium rounded-xl text-xs sm:text-sm md:px-5 md:py-4 px-2 py-2.5 sm:ml-1 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
-        >
-          {t("component:header.contact")}
-        </Link>
-        <div className="hidden md:inline-block">
-          <Language />
+        <div className="flex gap-4 items-center">
+          <Link
+            href={link(i18n, "/contact")}
+            className="md:block hidden text-white bg-gradient-to-br from-[#4B08B4] to-[#103BC3] hover:bg-blue-900 focus:ring-4 focus:ring-blue-300 font-medium rounded-xl text-xs sm:text-sm md:px-5 md:py-4 px-2 py-2.5 sm:ml-1 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
+          >
+            {t("component:header.contact")}
+          </Link>
+          <div className="hidden md:inline-block">
+            <Language />
+          </div>
         </div>
 
         <button
