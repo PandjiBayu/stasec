@@ -100,6 +100,91 @@ const MobileMenu = ({ open, isActive }) => {
             </details>
           </li>
           <li>
+            <details class="group [&_summary::-webkit-details-marker]:hidden">
+              <summary
+                className={`flex cursor-pointer items-center justify-between py-2 px-3 text-white ${
+                  isActive("/partner")
+                    ? "hover:bg-blue-800 bg-blue-700"
+                    : "hover:bg-gray-800"
+                } rounded md:bg-transparent md:text-blue-700 md:p-0 text-white`}
+              >
+                <span class="text-base font-medium">
+                  {t("component:header.partners")}
+                </span>
+                <span class="shrink-0 transition duration-300 group-open:-rotate-180">
+                  {open ? (
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-5 w-5"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                  ) : (
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-5 w-5"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                  )}
+                </span>
+              </summary>
+
+              <ul class="mt-2 space-y-1 px-4">
+                <li>
+                  <Link
+                    href="/partner"
+                    class="block py-2 px-3 text-gray-300 rounded md:bg-transparent md:text-blue-700 md:p-0  hover:bg-gray-800 capitalize hover:text-gray-100"
+                  >
+                    Joint Services & Solutions
+                  </Link>
+                </li>
+
+                <li>
+                  <Link
+                    href="/partner"
+                    class="block py-2 px-3 text-gray-300 rounded md:bg-transparent md:text-blue-700 md:p-0  hover:bg-gray-800 capitalize hover:text-gray-100"
+                  >
+                    Professional Resource Services
+                  </Link>
+                </li>
+
+                <li>
+                  <Link
+                    href="/partner"
+                    class="block py-2 px-3 text-gray-300 rounded md:bg-transparent md:text-blue-700 md:p-0  hover:bg-gray-800 capitalize hover:text-gray-100"
+                  >
+                    Strategic Collaborators
+                  </Link>
+                </li>
+              </ul>
+            </details>
+          </li>
+          <li>
+            <Link
+              href="/pricing"
+              className={`block py-2 px-3 text-white ${
+                isActive("/pricing")
+                  ? "hover:bg-blue-800 bg-blue-700"
+                  : "hover:bg-gray-800"
+              } rounded md:bg-transparent md:text-blue-700 md:p-0 text-white`}
+            >
+              {t("component:header.pricing")}
+            </Link>
+          </li>
+          <li>
             <Link
               href="/industry"
               className={`block py-2 px-3 text-white ${
