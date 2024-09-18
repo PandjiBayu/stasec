@@ -10,7 +10,7 @@ const Logo = ({ width, height, isSticky }) => {
       alt={isSticky ? 'Sticky Logo' : 'Logo'}
       width={width}
       height={height}
-      className="w-[96px] md:w-[136px]"
+      className="w-[120px] md:w-[160px]"
     />
   );
 };

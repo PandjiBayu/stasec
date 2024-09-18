@@ -23,6 +23,7 @@ import Banner from "@/components/banner-homepage/banner";
 import FooterContainer from "@/components/footer/footer-container";
 import TranslationsProvider from "@/components/TranslationsProvider";
 import translate from "../i18n";
+import Testimonial_Sec from "@/components/testimonial/testimonial-sec";
 
 const page = ["home", "component"];
 
@@ -170,8 +171,9 @@ export default async function Home({ params: { locale } }) {
           </div>
         </div>
         {/* TESTI */}
-        <div className="flex flex-col items-center justify-center content-bg-8">
+        <div className="flex flex-col items-center justify-center content-bg-8" id="testimonial">
           <Testimonial />
+          <Testimonial_Sec />
         </div>
 
         <FooterContainer />

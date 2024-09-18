@@ -3,11 +3,16 @@
     "home": "HOME",
     "service": "SERVICE",
     "industry": "INDUSTRY",
+    "partners": "PARTNERS",
+    "pricing": "PRICING",
     "about": "ABOUT",
     "contact": "CONTACT US",
     "service_1": "Penetration Testing",
     "service_2": "Secure Development Tools",
-    "service_3": "Security Monitoring & Assessment"
+    "service_3": "Security Monitoring & Assessment",
+    "partners_1": "Joint Services & Solutions",
+    "partners_2": "Professional Resource Services",
+    "partners_3": "Strategic Collaborators"
   },
   "testimonial": {
     "title": "Why Customers Love Working With Us"
@@ -20,12 +25,17 @@
   "footerTitle": {
     "quickLink": "Quick Link",
     "contactUs": "Contact Us",
-    "service": "Service"
+    "service": "Service",
+    "newsLetter": "News Letter"
   },
   "footerLink": {
+    "service": "Our Service",
+    "about": "About Us",
+    "pricing": "Pricing",
+    "testimonial": "Testimonial",
     "home": "Home",
     "industry": "Industry",
-    "about": "About",
+    "partners": "Partners",
     "contact": "Contact"
   },
   "contact": {

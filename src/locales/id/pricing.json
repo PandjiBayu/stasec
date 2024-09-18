@@ -1,0 +1,65 @@
+{
+    "banner": {
+        "title": "Pilih Rencana Perlindungan yang Tepat untuk Bisnis Anda",
+        "content": "Jelajahi rencana keamanan siber kami yang disesuaikan untuk memenuhi kebutuhan unik organisasi Anda. Apakah Anda baru memulai, sedang berkembang, atau sudah mapan, kami memiliki solusi yang tepat untuk Anda."
+    },
+    "pricing": {
+        "cards": [
+            {
+                "cardTitle": "Basic",
+                "cardSubTitle": "Cocok untuk usaha kecil dan menengah yang memiliki kurang dari 5 fitur.",
+                "cardPricing": "IDR 5.799.999",
+                "cardListContent":[
+                    {
+                        "listContent": "Infrastruktur Pemindaian"
+                    },
+                    {
+                        "listContent": "Pemindaian Kode Pengembangan"
+                    },
+                    {
+                        "listContent": "Pelatihan Keamanan Siber"
+                    }
+                ]
+            },
+            {
+            "cardTitle": "Medium",
+            "cardSubTitle": "Upgrade untuk kapabilitas yang diperluas, ideal untuk bisnis yang berkembang dengan kebutuhan yang moderat.",
+            "cardPricing": "Hubungi Kami",
+            "cardListContent":[
+                    {
+                    "listContent": "Termasuk dalam Rencana Basic"
+                    },
+                    {
+                    "listContent": "Fuzzing API"
+                    },
+                    {
+                    "listContent": "Enumerasi Aset Digital"
+                    },
+                    {
+                    "listContent": "Layanan Dukungan Teknis"
+                    }
+                ]
+            },
+            {
+            "cardTitle": "Enterprice",
+            "cardSubTitle": "Buka fitur-fitur canggih untuk perusahaan besar dengan dukungan khusus.",
+            "cardPricing": "Hubungi Kami",
+            "cardListContent":[
+                    {
+                    "listContent": "Termasuk dalam Rencana Medium"
+                    },
+                    {
+                    "listContent": "Pemantauan Kerentanan Secara Real-Time"
+                    },
+                    {
+                    "listContent": "Penilaian Keamanan Berkelanjutan"
+                    },
+                    {
+                    "listContent": "Bantuan Teknis Khusus"
+                    }
+                ]
+            }
+        ],
+        "inquireNow": "Hubungi Kami"
+    }
+}

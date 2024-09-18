@@ -24,6 +24,19 @@ const Testimonial = () => {
     },
   ];
 
+  const testimonial_img = [
+    {
+      image: "/partner-1.png",
+      width: 123,
+      height: 91
+    },
+    {
+      image: "/partner-2.png",
+      width: 235,
+      height: 47
+    },
+  ]
+
   const goToPrevious = () => {
     const isFirstSlide = currentIndex === 0;
     const newIndex = isFirstSlide ? testimonials.length - 1 : currentIndex - 1;
@@ -90,6 +103,18 @@ const Testimonial = () => {
         >
           <ArrowRight width={14} height={13} />
         </button>
+      </div>
+      <div className="flex flex-row items-center space-y-2 gap-10 pt-14">
+        {testimonial_img.map((testimonial, index) => (
+          <div key={index}>
+            <Image
+              src={testimonial.image}
+              width={testimonial.width}
+              height={testimonial.height}
+              alt={`customer img ${index + 1}`}
+            />
+          </div>
+        ))}
       </div>
     </section>
   );

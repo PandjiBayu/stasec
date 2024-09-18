@@ -22,22 +22,28 @@ const ContentRight = ({ imgPos, image, title, content, index }) => {
     imgPath = "/scales.png";
   } else if (image === "health-care") {
     imgPath = "/health-care.png";
+  } else if (image === "group-1686") {
+    imgPath = "/group-1686.png";
+  } else if (image === "group-1685") {
+    imgPath = "/group-1685.png";
+  } else if (image === "group-1684") {
+    imgPath = "/group-1684.png";
   }
 
   const { t } = useTranslation();
 
   return (
-    <section className=" flex flex-col md:flex-row items-start md:items-center justify-center w-full px-2 md:px-[80px] py-[48px] space-x-1 md:space-x-24">
+    <section className={`flex flex-col md:flex-row items-start md:items-center justify-center w-full px-2 md:px-[80px] ${["group-1686", "group-1685", "group-1684"].includes(image) ? "py-[150px]" : "py-[48px]"} space-x-1 md:space-x-24`}>
       <div
         className={`image-wrapper ${
           imgPos === "right" ? "order-0 md:order-1" : ""
         } w-full flex justify-center items-center`}
       >
         <Image
-          className="w-full md:w-[600px]"
+          className={`w-full ${["group-1686", "group-1685", "group-1684"].includes(image) ? "md:w-[400px]" : "md:w-[600px]"}`}
           src={imgPath}
           width={400}
-          height={600}
+          height={["group-1686", "group-1685", "group-1684"].includes(image) ? 400 : 600}
           alt={image}
         />
       </div>

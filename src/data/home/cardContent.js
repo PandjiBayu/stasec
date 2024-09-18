@@ -56,3 +56,30 @@ export const goalsCard = {
     },
   ],
 };
+
+export const synergeticCard = {
+  cardType: 3,
+  title: "Synergetic Outcomes",
+  cards: [
+      {
+        cardTitle: "Collaboration and Knowledge Sharing",
+        cardContent: "Stasec is committed to growing together with its partners. To this end, each Stasec partner can receive knowledge-sharing benefits for their company and employees. These benefits can include regular workshops and training for employees, as well as management consulting and special partner access."
+      },
+      {
+        cardTitle: "Resource Optimization",
+        cardContent: "Reduce the need for significant investments in new hires, streamline operations, and focus on the core products each party develops. Collaboration utilizing specialized resources can create an efficient combined expertise, reducing costs for both parties."
+      },
+      {
+        cardTitle: "Enhanced Offerings",
+        cardContent: "Providing a broader range of products and services enables both parties to offer more comprehensive digital solutions. Integrated application development services and cybersecurity products offer clients a wider array of options."
+      },
+      {
+        cardTitle: "Shared Growth",
+        cardContent: "By leveraging wider market access and reach, both parties can expand their market presence and client base."
+      },
+      {
+        cardTitle: "Brand Strengthening",
+        cardContent: "Through collaboration, both parties can enhance their brand credibility and reputation."
+      }
+    ]
+};

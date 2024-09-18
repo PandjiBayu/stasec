@@ -14,8 +14,10 @@ const Header = () => {
   const { t, i18n } = useTranslation();
 
   const [isSticky, setIsSticky] = useState(false);
-  const [isActiveDropdown, setIsActiveDropdown] = useState(false);
+  const [isServiceDropdownActive, setIsServiceDropdownActive] = useState(false);
+  const [isPartnersDropdownActive, setIsPartnersDropdownActive] = useState(false);
   const [selectedService, setSelectedService] = useState(null);
+  const [selectedPartners, setSelectedPartners] = useState(null);
 
   const [open, setOpen] = useState(false);
 
@@ -38,7 +40,7 @@ const Header = () => {
   useEffect(() => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY;
-      const threshold = 50;
+      const threshold = 80;
       setIsSticky(scrollPosition > threshold);
     };
 
@@ -49,13 +51,24 @@ const Header = () => {
     };
   }, []);
 
-  const toggleDropdown = () => {
-    setIsActiveDropdown(!isActiveDropdown);
+  const toggleServiceDropdown = () => {
+    setIsServiceDropdownActive(!isServiceDropdownActive);
+    setIsPartnersDropdownActive(false); // Ensure the other dropdown is closed
+  };
+
+  const togglePartnersDropdown = () => {
+    setIsPartnersDropdownActive(!isPartnersDropdownActive);
+    setIsServiceDropdownActive(false); // Ensure the other dropdown is closed
   };
 
   const selectService = (service) => {
     setSelectedService(service);
-    setIsActiveDropdown(false);
+    setIsServiceDropdownActive(false); // Close the dropdown after selection
+  };
+
+  const selectPartners = (partners) => {
+    setSelectedPartners(partners);
+    setIsPartnersDropdownActive(false); // Close the dropdown after selection
   };
 
   const currentBtnClass =
@@ -73,9 +86,9 @@ const Header = () => {
           href={link(i18n, "/")}
           className="z-10 flex items-center px-2 lg:px-10"
         >
-          <Logo width={136} height={56} isSticky={isSticky} />
+          <Logo width={160} height={80} isSticky={isSticky} />
         </Link>
-        <div className="items-center hidden text-sm md:flex lg:gap-14 md:gap-8 sm:gap-4">
+        <div className="items-center hidden text-sm md:flex lg:gap-8 md:gap-6 sm:gap-4">
           <Link
             href={link(i18n, "/")}
             className={`${
@@ -84,7 +97,7 @@ const Header = () => {
           >
             {t("component:header.home")}
           </Link>
-          <div className={`relative inline-block`} onClick={toggleDropdown}>
+          <div className={`relative inline-block`} onClick={toggleServiceDropdown}>
             <div
               className={`flex items-center space-x-1 cursor-pointer px-5 py-2.5  ${
                 isActive("/service") ? currentBtnClass : ""
@@ -94,8 +107,8 @@ const Header = () => {
               <ArrowDown />
             </div>
 
-            {isActiveDropdown && (
-              <div className="absolute mt-2 bg-[#262626] border border-gray-800 rounded-md shadow-lg w-[200px] flex flex-col">
+            {isServiceDropdownActive && (
+              <div className="absolute mt-2 bg-[#262626] border border-gray-800 rounded-md shadow-lg w-[200px] flex flex-col z-50">
                 <Link
                   href={link(i18n, "/service-1")}
                   className={`p-4 hover:bg-gray-700 cursor-pointer ${
@@ -126,6 +139,56 @@ const Header = () => {
               </div>
             )}
           </div>
+          <div className={`relative inline-block`} onClick={togglePartnersDropdown}>
+            <div
+              className={`flex items-center space-x-1 cursor-pointer px-5 py-2.5  ${
+                isActive("/partner") ? currentBtnClass : ""
+              }`}
+            >
+              <div>{t("component:header.partners")}</div>
+              <ArrowDown />
+            </div>
+
+            {isPartnersDropdownActive && (
+              <div className="absolute mt-2 bg-[#262626] border border-gray-800 rounded-md shadow-lg w-[200px] flex flex-col z-50">
+                <Link
+                  href={link(i18n, "/partner")}
+                  className={`p-4 hover:bg-gray-700 cursor-pointer ${
+                    selectedPartners === "Partners 1" ? "font-bold" : ""
+                  }`}
+                  onClick={() => selectPartners("Partners 1")}
+                >
+                  {t("component:header.partners_1")}
+                </Link>
+                <Link
+                  href={link(i18n, "/partner")}
+                  className={`p-4 hover:bg-gray-700 cursor-pointer ${
+                    selectedPartners === "Partners 2" ? "font-bold" : ""
+                  }`}
+                  onClick={() => selectPartners("Partners 2")}
+                >
+                  {t("component:header.partners_2")}
+                </Link>
+                <Link
+                  href={link(i18n, "/partner")}
+                  className={`p-4 hover:bg-gray-700 cursor-pointer ${
+                    selectedPartners === "Partners 3" ? "font-bold" : ""
+                  }`}
+                  onClick={() => selectPartners("Partners 3")}
+                >
+                  {t("component:header.partners_3")}
+                </Link>
+              </div>
+            )}
+          </div>
+          <Link
+            href={link(i18n, "/pricing")}
+            className={`${
+              isActive("/pricing") ? currentBtnClass : "z-10"
+            } px-5 py-2.5`}
+          >
+            {t("component:header.pricing")}
+          </Link>
           <Link
             href={link(i18n, "/industry")}
             className={`${

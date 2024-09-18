@@ -123,7 +123,7 @@ body {
 .header-title {
   color: #fff;
   font-family: "Switzer Regular", sans-serif;
-  font-size: 80px;
+  font-size: 60px;
   font-style: normal;
   font-weight: 700;
   line-height: 100%;
@@ -142,9 +142,21 @@ body {
   top: 1200px;
 }
 
+.line-vector-1-1 {
+  z-index: -1;
+  left: -250px;
+  top: 1000px;
+}
+
 .line-vector-2 {
   z-index: -1;
   left: -250px;
+  top: 1800px;
+}
+
+.line-vector-2-2 {
+  z-index: -1;
+  right: -250px;
   top: 1800px;
 }
 
@@ -154,9 +166,21 @@ body {
   top: 2500px;
 }
 
+.line-vector-3-3 {
+  z-index: -1;
+  left: -250px;
+  top: 2500px;
+}
+
 .line-vector-4 {
   z-index: -1;
   left: -250px;
+  top: 3200px;
+}
+
+.line-vector-4-4 {
+  z-index: -1;
+  right: -250px;
   top: 3200px;
 }
 
@@ -164,6 +188,12 @@ body {
   z-index: -1;
   right: -250px;
   top: 3900px;
+}
+
+.line-vector-5-5 {
+  z-index: -1;
+  left: -250px;
+  top: 4200px;
 }
 
 .line-vector-6 {
@@ -265,6 +295,47 @@ body {
     ),
     url(../../../public/industry-image.png);
   background-size: cover;
+}
+
+.pricing-image {
+  background: linear-gradient(
+    180deg,
+    rgba(23, 23, 23, 0) 14.67%,
+    #171717de 98%
+    ),
+    url(../../../public/pricing-hero.png);
+  background-size: cover;
+}
+
+.card-hover1:hover {
+  height: 600px;
+  margin-top: 12px;
+}
+.card-hover2:hover {
+  height: 600px;
+  margin-top: 12px;
+}
+.card-pricing {
+  position: relative;
+  z-index: 1;
+}
+
+.card-pricing::before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: linear-gradient(157.03deg, rgba(118, 118, 118, 0.52) -4.85%, #13317D 55.4%, rgba(0, 0, 0, 0.7) 112.14%);
+  z-index: -1;
+  border-radius: inherit;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.card-pricing:hover::before {
+  opacity: 1;
 }
 
 .industry-gradient {
@@ -374,10 +445,20 @@ body {
 }
 
 @media (max-width: 768px) {
-  .service1-image {
+  .service1-image, .partner-image {
     background-position: center;
     background-repeat: no-repeat;
   }
+}
+
+.partner-image {
+  background: linear-gradient(
+    180deg,
+      rgba(23, 23, 23, 0.2) 61.24%,
+      #171717 100%
+    ),
+    url(../../../public/hero-partner.png);
+  background-size: cover;
 }
 
 .service1-bg-1 {

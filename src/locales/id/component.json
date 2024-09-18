@@ -3,11 +3,16 @@
     "home": "BERANDA",
     "service": "LAYANAN",
     "industry": "INDUSTRI",
+    "partners": "KEMITRAAN",
+    "pricing": "BIAYA",
     "about": "TENTANG KAMI",
     "contact": "HUBUNGI KAMI",
     "service_1": "Penetration Testing",
     "service_2": "Secure Development Tools",
-    "service_3": "Security Monitoring & Assessment"
+    "service_3": "Security Monitoring & Assessment",
+    "partners_1": "Joint Services & Solutions",
+    "partners_2": "Professional Resource Services",
+    "partners_3": "Strategic Collaborators"
   },
   "testimonial": {
     "title": "Mengapa Klien Menyukai Layanan Kami?"
@@ -23,6 +28,9 @@
     "service": "Layanan"
   },
   "footerLink": {
+    "service": "Jasa Kami",
+    "pricing": "Biaya",
+    "testimonial": "Testimonial",
     "home": "Beranda",
     "industry": "Industri",
     "about": "Tentang Kami",
